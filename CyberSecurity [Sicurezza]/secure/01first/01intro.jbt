@@ -1,0 +1,246 @@
+
+\title{Appunti di Sicurezza}
+\author{Giacomo Bergami (c) 2012}
+Appunti di Sicurezza by Bergami Giacomo is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Italy License.
+\pagebreak
+\tableofcontents
+\pagebreak
+
+
+\chapter{Introduzione}
+La sicurezza informatica non è mai un fattore a se stante, in quanto per
+poter parlare di sicurezza bisogna prendere come riferimento anche il sistema
+informatico che si vuole proteggere. Inoltre non esistono mai delle soluzioni
+che sono la panacea definitiva, in quanto ogni problema esigerà una risoluzione
+specifica; inoltre la sicurezza deve ricoprire tutti i livelli, partendo
+dall'hardware, al sistema operativo, all'utente che utilizza quel dato sistema:
+infatti la sicurezza di un sistema è determinato dalla tenuta del suo anello 
+più debole, in quanto sarà poi sufficiente concentrarsi su quel punto
+per ottenere il dominio sull'intero sistema. Si può inoltre notare che questo
+fenomeno sia anche un fenomeno sociologico e psicologico, ma ci limiteremo
+all'aspetto informatico.
+
+
+Restringeremo il nostro campo di studio ai \bf{NIS}, ovvero ``Network 
+Information System'': è un sistema che non comprende un oggetto unico,
+ma un insieme di calcolatori collegati all'interno di una rete assieme agli
+utenti umani che li adoperano (manutentori, configuratori, programmatori, etc.).
+Il problema è che, oggi giorno, questi sistemi non sono molto affidabili
+(\bf{trustworthy}). Spesso infatti questi NIS sono cablati con \bf{legacy software}
+(ovvero software di vecchia data), che per motivi economici viene ancora
+utilizzato, in quanto sarebbe molto più costoso riscriverne uno nuovo.
+Questi costituiscono appunto uno dei maggiori punti di debolezza in quanto
+spesso sono privi di documentazione, o di descrizioni in genere: appaiono 
+dunque delle scatole opache impossibili da decifrare e quindi difficili da
+manutenere.
+
+
+In caso di legacy software, l'unico modo per poter effettuare la manutenzione è quindi la creazione di
+agglomerati software (patch), per rispondere a delle esigenze successive, 
+diventando quindi dei sistemi estremamente complessi da gestire, riducendo
+così il loro grado di affidabilità.
+
+
+Altro motivo d'attacco è l'utilizzo di software \bf{off the shelf}, ovvero
+immediatamente disponibile in commercio: è un software di produzione di massa,
+e quindi di basso costo. Questo oggetto sarà così diffuso, che sarà molto 
+facile che esistano persone che abbiano scoperto come attaccare questo
+software: abbassando i costi di acquisizione del software, si abbassa 
+conseguentemente la fiducia che riponiamo nel nostro sistema; caso opposto è 
+rappresentato dal software a produzione ``artigianale''.
+
+\section{Tipologie di attacchi}
+%description
+	\item[Identity Theft] con questo termine (``furto d'identità''), si
+				vuole rubare l'identificazione informatica
+				di un utente, o meglio ci si vuole impossessare
+				dei dati che lo identificano, in modo da poter
+				effettuare delle operazioni a lui consentite,
+				in quanto appunto utente con particolari 
+				privilegi.
+	\item[Phishing] questo termine identifica un particolare furto dell'identità
+				informatica di un individuo che provvede 
+				a fornire i dati direttamente al malintenzionato,
+				in quanto quest'ultimo si è camuffato come 
+				ente nel quale l'utente ripone fiducia.
+	\item[Cyberextortion] questo termine indica una minaccia perpetrata da
+				un criminale informatico nei confronti di un
+				ente, allo scopo di intimorire l'ultimo per
+				ricevere un beneficio
+	\item[Cyberwarfare] questo termine indica una guerra di tipo 
+				tecnologica, che può avvenire quindi tra 
+				intelligenze straniere, o colpire direttamente
+				parte informatizzate di alcuni stati.
+	\item[Hacktivism] con questo termine si indica un attacco informatico
+				perpetrato non per scopi economici, ma a fini
+				politici da attivisti.
+.%
+
+\section{Trustworthyness (Affidabilità)}
+Possiamo dire che il nostro sistema NIS è affidabile se esso continua a
+resistere agli attacchi che gli vengono quotidianamente inflitti, con 
+attacchi più o meno potenti. Altri disturbi nel quale esso si puo' trovare
+immerso (questi sono conseguentemente inevitabili) possono
+essere dovuti al contesto ambientale nel quale è immerso: quest'ultimo
+ostacolo può essere evitato con la replicazione in altri luoghi del sistema,
+ma dovremo comunque considerare un limite superiore di tolleranza, entro il
+quale il servizio non risulterà più fruibile. Deve inoltre funzionare 
+nonostante l'utilizzo del sistema da parte di esseri umani, o della presenza
+di bug al suo interno.
+
+
+All'interno di un sistema sono presenti  due tipologie 
+differenti di requisiti, quelli \bf{funzionali} (ovvero la stretta aderenza
+alle specifiche: descrivono quello che ci si aspetta in output dal programma
+una volta fornito un suo input) e quelli \bf{non funzionali} («descrivono le 
+proprietà del sistema software in relazione a
+determinati servizi o funzioni e possono anche essere relativi al
+processo»), tra i quali\footnote{Altro requisito non funzionale che costituisce
+la QoS (``Quality of Service'') è la scalabilità} appare la caratteristica dell'affidabilità. 
+
+
+Dobbiamo per altro considerare perché l'affidabilità di un sistema non sia
+considerato come un requisito funzionale di un sistema: infatti  sarebbe impossibile 
+conoscere tutti i possibili attacchi in input, in quanto
+non saremmo mai in grado di caratterizzarli completamente, poiché ciò 
+implicherebbe che saremmo stati in grado di risolvere questa problematica già
+in fase di realizzazione del software. In quanto questi
+sono imprevedibili, di fatto la nostra soluzione è impraticabile. 
+
+\section{Metafora fisica per realtà metafisica}
+Possiamo ora effettuare un paragone tra il mondo reale e quello informatico:
+possiamo vedere che la sicurezza viene (appunto) assicurata in base al
+valore che si attribuisce ai proprii oggetti (che le minacce tentano di 
+minare) che vengono protetti tramite \it{lucchetti} (che impediscono l'accesso
+all'oggetto) apribili solamente mediante tramite certe \it{chiavi}, ed un 
+sistema di punizione dell'atto criminale coniugato alla certezza della
+pena. Inoltre non tutti i lucchetti sono uguali, ma avranno una soglia di
+difficoltà di scassinamento differente (\bf{theresold}): saranno lucchetti
+con chiavi differenti e con diversi gradi di resistenza, usati in base al
+particolare contesto.
+
+Possiamo inoltre vedere che i lucchetti fungono da \bf{autorizzazione} (specifico
+chi ha le credenzialità sufficienti per poter accedere), e sono necessari per
+soddisfare la confidenzialità dell'informazione: questo richiede dei meccanismi
+di controllo degli accessi. Le chiavi inoltre sono dei meccanismi di 
+\bf{autentificazione} (necessari per aprire i ``lucchetti''), ottenendo in questo
+modo l'autorizzazione del sistema ad accedere alle risorse che gli sono consentite.
+
+
+Inoltre, anche la totale sicurezza del nostro modello può comportare la
+totale inusabilità del nostro sistema, in quanto saremo eccessivamente
+vincolati dalle procedure di sicurezza: inoltre dovremmo garantire un costo
+per proteggere il nostro oggetto adeguato alla seguente relazione:
+\[p(\textrm{Mancare})\cdot \textrm{costo}>\textrm{CostoSicurezza}\]
+solo in questo caso è conveniente appunto assicurare il nostro prodotto tramite
+dei meccanismi di sicurezza. Tornando ora ai NIS, il sistema di punizione,
+coincide con il sistema di sicurezza del mondo fisico, mentre
+il valore degli oggetti è correlabile con il valore dei nostri dati, che vogliamo
+proteggere concedendoli solamente a chi riteniamo autorizzato.
+
+
+La nostra informazione inoltre è memorizzata tramite bit, ed assume significato
+(e quindi valore) solamente se è contestualizzata all'interno di un discorso
+generale: parallelamente il loro valore dipenderà dal valore che si attribuisce
+al contesto nel quale esso è immerso.
+%enumerate
+\item Possiamo effettuare una protezione tramite cifratura: anche se questa
+	si rivelasse affidabile dal punto di vista matematico, in quanto il
+	computer non è programmabile tramite teoremi ma solamente tramite
+	programmi dell'essere umano, anche la crittografia può essere soggetta
+	ad errori.
+\item Pretendere sicurezza implica anche l'impostazione di diversi livelli della
+	configurazione, in quanto a differenti livelli possono presentarsi
+	differenti problemi
+\item Spesso il problema consta degli utenti stessi, in quanto spesso questi
+	disabilitano la sicurezza prevista nei sistemi: infatti gli utenti
+	di solito preferiscono il prodotto nuovo vetusto, in confronto ad uno
+	aggiornato e sicuro.
+.%
+
+Un altro ostacolo alla sicurezza è costituita dai \it{brevetti commerciali}:
+questi infatti sono di ostacolo alla resa affidabile dei nostri sistemi, così
+anche altri problemi possono essere presenti in software artigianale: in quanto
+non è un programma di vasta fruizione, saremo meno a conoscenza di eventuali
+problemi che esso presenta. Infatti la sicurezza del nostro sistema non 
+dovrebbe dipendere dalla segretezza dei suoi meccanismi, quanto piuttosto 
+da come esso è costruito e da come esso funziona, in quanto, come abbiamo già 
+potuto osservare, non si ha una forma sufficiente di sicurezza tramite la non
+divulgazione. Da queste considerazioni segue che è fondamentale il concetto di 
+\bf{open design}: non è tanto importante rendere segreto il meccanismo del
+``lucchetto'', quanto è importante rendere segreta la chiave: in questo modo
+inoltre possiamo ridurre la quantità delle informazioni da rendere segrete,
+concentrando la nostra sicurezza in un ambito più ristretto.
+
+\section{Analisi dei NIS}
+Come in un qualsiasi altro sistema informatico, possiamo studiare i seguenti
+aspetti, che possono essere presenti anche nella gestione della sicurezza,
+ma cambiano di nome (indicati per tanto come secondo identificativo):
+%itemize
+\diam \bf{Specifica / Policy (Politica}: cosa ci si aspetta che il sistema produca
+\diam \bf{Implementazione / Mechanism}: messa in atto delle specifiche
+\diam \bf{Correttezza / Assurance}: verifica della correttezza dell'implementazione
+.%
+All'interno di un sistema dobbiamo considerare anche:
+%itemize
+\diam \bf{Vulnerabilità}: è la sensibilità del sistema ai danneggiamenti
+\diam \bf{Attacco}: è uno specifico metodo per sfruttare una vulnerabilità 
+\diam \bf{Minaccia}: è un ente motivato a lanciare un attacco contro il sistema
+.%
+
+Si può inoltre notare che, con il passare del tempo, il tempo tra scoperta della
+vulnerabilità e l'attacco che sfrutta questo bug, si accorcia sempre di più con
+il passare del tempo; chiamiamo inoltre \bf{vulnerability window} (``finestra
+di vulnerabilità'') l'intervallo di tempo tra la scoperta della vulnerabilità
+e la release della patch che cerca di sistemare il problema, e \bf{zero day attack}
+l'attacco che avviene all'interno di detta finestra di vulnerabilità. Tuttavia
+si può evidenziare che di solito il tempo medio di attacco dopo la scoperta del bug è nettamente
+inferiore al tempo medio impiegato per risolvere il problema.
+
+Oggi giorno si assiste anche al fenomeno del \bf{Google Hacking}: mentre un 
+tempo per perpetrare un attacco era necessario possedere delle specifiche 
+competenze in materia, oggi l'accesso facilitato alle informazioni tramite 
+Google o tramite ``pacchetti software'' specializzati, che forniscono degli
+attacchi preconfezionati.
+
+
+\section{Politiche di sicurezza}
+Le politiche di sicurezza riguardano i seguenti ambiti:
+%description
+\item[Segretezza] detta anche confidenzialità, impone il controllo di chi
+ 	ha il permesso di leggere le risorse; storicamente si è sempre inteso
+ 	la sicurezza all'interno di questo ambito, anche se solamente questo
+ 	fattore non implica effettivamente sicurezza.
+\item[Integrità] impone il controllo sui permessi di modifica delle informazioni,
+	o come esse in genere vengono utilizzate
+\item[Disponibilità] impone un'immediata disponibilità delle risorse. Potrei 
+	infatti ottenere sicurezza attenendomi strettamente ai principi di cui
+	sopra, semplicemente non rendendo disponibile la risorsa che voglio
+	proteggere: tuttavia in questo modo la risorsa risulta inservibile
+	in quanto non accedibile. Vogliamo infatti che la nostra risorsa sia
+	accedibile in un tempo ragionevole ed in modo tempestivo.
+\item[Accountability] con questo vincolo (traducibile con ``tracciabilità'')
+	vogliamo imporre di venir a conoscenza chi ha avuto accesso alla risorsa,
+	in modo da poter rintracciare e ricostruire gli accessi e le modifiche 
+	effettuate; ciò consente anche di rilevare eventuali accessi da parte di
+	criminali informatici. Questo requisito, spesso chiamato anche \it{auditing},
+	assieme ad \it{autenificazione} e \it{autorizzazione} fanno parte del
+	\bf{Golden Standard of Security}.
+.%
+
+Tutte queste caratteristiche insieme garantiscono l'\it{assurance}, ovvero ci
+garantiscono che il sistema è affidabile. Noi infatti vorremo essere in grado
+di fornire una dimostrazione matematica dell'effettiva sicurezza del nostro
+sistema: tuttavia questa via è praticabile unicamente per piccoli sistemi
+, in quanto più esso è complesso, più è imprevedibile considerare tutti
+i diversi casi di possibili vulnerabilità. 
+
+
+Da ciò segue che, per garantire maggiormente la
+affidabilità del nostro sistema, possiamo creare all'interno dei nostri 
+progetti delle piccole funzionalità (\bf{Economy of Mechanism}), ovvero con un 
+numero limitato di righe di codice,
+riducendo conseguentemente la complessità del nostro sistema, in quanto
+avremo piccole zone di codice sulle quali concentrarci per controllare la 
+correttezza del nostro sistema; conseguentemente, un approccio modulare nel
+nostro sistema garantisce complessivamente una maggiore affidabilità.

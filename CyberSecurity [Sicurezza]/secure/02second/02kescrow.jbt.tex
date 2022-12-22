@@ -1,0 +1,93 @@
+\section{Key Escrow and Secret Sharing}
+
+Con il termine \textbf{escrow} si vuole intender un concetto che va oltre al 
+semplice deposito di un bene (in questo caso la chiave): con questo termine 
+si intende infatti la consegna di questo ad un terzo, dal quale possiamo 
+riottenerlo in base ad una condizione che si è verificata. Vedremo ora quali 
+problemi ponga la custodia di tali ``segreti'' (le chiavi), in base all'affidamento
+ad una o più persone. 
+
+
+Supponiamo inizialmente che la chiave o una password per accedere ad alcune
+risorse condivise sia conosciuta da una 
+sola persona; questi possono essere la chiave privata di crittografia 
+asimmetrica, o la chiave di crittografia simmetrica, o dei dati presenti
+all'interno di un calcolatore che, non verranno mai comunicati, ma che 
+non vogliamo che siano accedibili dall'esterno. Vogliamo inoltre che l'utente possa accedere
+in un modo trasparente ai dati, senza conoscere necessariamente tale segreto.
+
+
+Se il segreto rimane custodito unicamente da quella persona, ci si pone il problema di come 
+accedere alle informazioni in caso di sua assenza, 
+se per una serie di motivi queste non sono conseguentemente più disponibili. 
+Vorremo inseguito che anche altri individui autorizzati possano accedere a quei dati,
+anche in mancanza del personale irreperibile. Introdurremo quindi questo problema per gradi.
+
+
+\subsection{Security officer}
+Una possibile soluzione al problema si potrebbe avere con un \textbf{secutiry 
+officer}, che custodisce per l'azienda il segreto che è stato affidato
+ad un altro utente, in modo tale che si possano sempre recuperare i dati anche 
+in mancanza di quel preciso utente. Questo segreto potrà essere inserito 
+all'interno di un qualsiasi supporto, di modo che il security officier non conosca tale segreto
+se non in quella forma: ciò potrebbe essere utile per effettuare 
+controlli sul sistema, in modo da controllare le operazioni svolte dal sistema
+quando l'utente privilegiato è assente, dando a quest'ultimo 
+eventualmente un avviso, qualora il controllore agisca con il suo stesso segreto
+quando invece è in servizio. 
+
+
+In questo modo, tuttavia, si riavrebbe da capo lo stesso problema: la mancanza
+di questo security officier potrebbe causare a sua volta la rovina dell'intero
+sistema: si potrebbe quindi dividere la nostra chiave in $n$ parti ed affidarla
+a rispettivi security officiers, criptando quei pezzi con le loro chiavi pubbliche.
+In questo modo vogliamo far diminuire esponenzialmente la probabilità che,
+alla mancanza di un agente, il segreto non sia più custodibile. 
+
+
+Possiamo inoltre ben vedere che non potremo dividere esattamente in $k$ parti 
+la chiave, poiché in questo modo sarebbe possibile ricostruire con poco 
+sforzo la parte rimanente: se $k=2$, saremmo a conoscenza di 
+metà del segreto, facendo così scendere la possibilità di riconoscimento della
+chiave da una sua parte da $p^k$ a $p^{\frac{1}{2}k}$ (con questo appunto
+intendiamo una qualsiasi suddivisione della risorsa in senso effettivo, ovvero
+un suo partizionamento).
+
+
+Passiamo ora ad analizzare un caso immediato di ``suddivisione'', con $k=2$:
+in quanto sappiamo che $x \oplus x \oplus y = x\oplus y \oplus x = y$, allora
+generato un valore random \texttt R della stessa lunghezza del segreto \texttt S,
+possiamo consegnare ad un agente \texttt R ed all'altro \texttt R$\oplus$\texttt S. In questo
+modo, solamente con la compresenza dei due, si potrà ricostruire il segreto iniziale.
+In questo modo inoltre non si rileva più necessario mantenere il segreto iniziale
+\texttt S. Si può dimostrare inoltre che questo metodo è di fatti \textbf{confidenziale},
+in quanto nessun agente trae alcun vantaggio dalla conoscenza della loro parte
+di chiave; sebbene questo sia evidente per il detentore di \texttt R, questo risulta
+meno ovvio per \texttt R$\oplus$\texttt S, in quanto ad ogni modo si intravede un legame
+con \texttt S ma, essendo ottenuto \texttt R con una stringa casuale, ci si ricondurrebbe
+alla ricostruzione della stringa casuale \texttt R, esattamente come nel cifrario
+perfetto \textit{one-time-pad}. Possiamo generalizzare questo comportamento 
+tra $n$ agenti assegnando ad $n-1$ agenti i valori random $\mathtt R_1\dots \mathtt R_{n-1}$,
+ed assegnando all'ultimo il segreto $\mathtt R_1\oplus\dots \mathtt R_{n-1}\oplus \mathtt S$.
+Tuttavia in questo modo non garantiamo la disponibilità, in quanto dobbiamo 
+ora garantire che \textbf{tutti} i detentori del segreto siano sempre presenti,
+peggiorando quindi la probabilità che, alla mancanza di uno, il segreto risulti
+irrecuperabile. 
+
+
+Segue necessariamente che, per garantire anche la \textbf{disponibilità}, dobbiamo
+indebolire lo schema inizilae, in modo che per conoscere il segreto non siano
+necessari tutti gli $n$ agenti, ma che siano presenti in un numero $t<n$
+utilizzando uno schema a soglia (\textit{theresold scheme}): in questo modo si impone
+che siano necessari solamente $t$ utenti per poter accedere al segreto.
+
+
+Ciò è risolubile non generando gli $\mathtt R_i$ in modo casuale, ma dei polinomi
+casuali di grado $t-1$:
+\[g(x)=(\sum_{i=1}^{t-1} a_ix^i+\mathtt S)\text{ mod  } p\]
+dove $p$ è un numero \textit{primo} più grande dei valori costanti scelti arbitrariamente
+$a_i$, ovvero maggiore del $\max \Set{a_i}_{i< t}$; in seguito ad
+ogni agente verrà associato un segreto:
+\[\forall i\leq n. \mathtt S_i = g(i)\]
+in questo modo garantiamo che la curva $g(i)$ sia ricostruibile conoscendo 
+solamente $t$ valori che stanno su di essa.
