@@ -1,0 +1,35 @@
+\hypertarget{pthread__ext_8h_source}{
+\section{src/proxy/include/pthread\_\-ext.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef \_\_PTHREAD\_TYPE\_\_H\_\_}
+00002 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define \_\_PTHREAD\_TYPE\_\_H\_\_}
+00003 \textcolor{preprocessor}{}
+00004 \textcolor{preprocessor}{#include <pthread.h>}
+00005 \textcolor{preprocessor}{#include <stdio.h>}
+00006 \textcolor{preprocessor}{#include <stdlib.h>}
+00007 \textcolor{preprocessor}{#include <string.h>}
+00008 
+\hypertarget{pthread__ext_8h_source_l00012}{}\hyperlink{pthread__ext_8h_a45c94f43dc0e6640ce504b74803841b3}{00012} \textcolor{preprocessor}{#define mutex\_init(x)   do \{                                    \(\backslash\)}
+00013 \textcolor{preprocessor}{                         int rtn  = pthread\_mutex\_init(x,NULL); \(\backslash\)}
+00014 \textcolor{preprocessor}{                         if (rtn) \{\(\backslash\)}
+00015 \textcolor{preprocessor}{                                fprintf(stderr,"Error while init mutex: %s\(\backslash\)n", (c
+      har*)strerror(rtn));    \(\backslash\)}
+00016 \textcolor{preprocessor}{                                exit(1);                        \(\backslash\)}
+00017 \textcolor{preprocessor}{                         \}                                      \(\backslash\)}
+00018 \textcolor{preprocessor}{                        \} while(0)}
+00019 \textcolor{preprocessor}{}
+00020 
+\hypertarget{pthread__ext_8h_source_l00024}{}\hyperlink{pthread__ext_8h_ac816822b3cc57dd414e08eab2f13bab1}{00024} \textcolor{preprocessor}{#define cond\_init(x)    do \{                                    \(\backslash\)}
+00025 \textcolor{preprocessor}{                         int rtn = pthread\_cond\_init(x,NULL);   \(\backslash\)}
+00026 \textcolor{preprocessor}{                         if (rtn) \{ \(\backslash\)}
+00027 \textcolor{preprocessor}{                                fprintf(stderr,"Error while init condition: %s\(\backslash\)n"
+      , (char*)strerror(rtn));        \(\backslash\)}
+00028 \textcolor{preprocessor}{                                exit(1);                        \(\backslash\)}
+00029 \textcolor{preprocessor}{                         \}                                      \(\backslash\)}
+00030 \textcolor{preprocessor}{                        \} while(0)}
+00031 \textcolor{preprocessor}{}
+00032 
+00033 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

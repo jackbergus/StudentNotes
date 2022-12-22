@@ -1,0 +1,70 @@
+\hypertarget{toserver_8c}{
+\section{Riferimenti per il file src/proxy/toserver.c}
+\label{toserver_8c}\index{src/proxy/toserver.c@{src/proxy/toserver.c}}
+}
+{\ttfamily \#include \char`\"{}toserver.h\char`\"{}}\par
+Grafo delle dipendenze di inclusione per toserver.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{toserver_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{toserver_8c_a011d09dc3c763ec3a26b0706a0e8d173}{fetch} (char $\ast$buffer, char $\ast$remote\_\-path, int fdclient)
+\item 
+void \hyperlink{toserver_8c_afaf61404515e765b53f67004ae097034}{handle\_\-serverPool} (int whoami, \hyperlink{structmsg}{msg} $\ast$params)
+\item 
+void \hyperlink{toserver_8c_a631a452041188727281fda66f1db8dee}{handle\_\-prefetchPool} (int whoami, struct \hyperlink{structreslist}{reslist} $\ast$prefetch\_\-res)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{toserver_8c_a011d09dc3c763ec3a26b0706a0e8d173}{
+\index{toserver.c@{toserver.c}!fetch@{fetch}}
+\index{fetch@{fetch}!toserver.c@{toserver.c}}
+\subsubsection[{fetch}]{\setlength{\rightskip}{0pt plus 5cm}int fetch (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{char $\ast$}]{remote\_\-path, }
+\item[{int}]{fdclient}
+\end{DoxyParamCaption}
+)}}
+\label{toserver_8c_a011d09dc3c763ec3a26b0706a0e8d173}
+\hyperlink{toserver_8h_a011d09dc3c763ec3a26b0706a0e8d173}{fetch()}: Richiesta della risorsa ed eventuale memorizzazione nel filesystem \hypertarget{toserver_8c_a631a452041188727281fda66f1db8dee}{
+\index{toserver.c@{toserver.c}!handle\_\-prefetchPool@{handle\_\-prefetchPool}}
+\index{handle\_\-prefetchPool@{handle\_\-prefetchPool}!toserver.c@{toserver.c}}
+\subsubsection[{handle\_\-prefetchPool}]{\setlength{\rightskip}{0pt plus 5cm}void handle\_\-prefetchPool (
+\begin{DoxyParamCaption}
+\item[{int}]{whoami, }
+\item[{struct {\bf reslist} $\ast$}]{prefetch\_\-res}
+\end{DoxyParamCaption}
+)}}
+\label{toserver_8c_a631a452041188727281fda66f1db8dee}
+\hyperlink{toserver_8h_a631a452041188727281fda66f1db8dee}{handle\_\-prefetchPool()}: Gestione del prefetching 
+\begin{DoxyParams}{Parametri}
+{\em whoami,:} & Indicatore del thread corrente \\
+\hline
+{\em prefetch\_\-res:Indicazione} & della risorsa da ottenere \\
+\hline
+\end{DoxyParams}
+\hypertarget{toserver_8c_afaf61404515e765b53f67004ae097034}{
+\index{toserver.c@{toserver.c}!handle\_\-serverPool@{handle\_\-serverPool}}
+\index{handle\_\-serverPool@{handle\_\-serverPool}!toserver.c@{toserver.c}}
+\subsubsection[{handle\_\-serverPool}]{\setlength{\rightskip}{0pt plus 5cm}void handle\_\-serverPool (
+\begin{DoxyParamCaption}
+\item[{int}]{whoami, }
+\item[{{\bf msg} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}
+\label{toserver_8c_afaf61404515e765b53f67004ae097034}
+\hyperlink{toserver_8h_afaf61404515e765b53f67004ae097034}{handle\_\-serverPool()}: Gestione della richiesta client 
+\begin{DoxyParams}{Parametri}
+{\em whoami,:} & Indicatore del thread corrente \\
+\hline
+{\em params,:} & Parametri indicanti la richiesta \\
+\hline
+\end{DoxyParams}

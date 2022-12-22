@@ -1,0 +1,32 @@
+\hypertarget{init__globals_8h_source}{
+\section{src/proxy/include/init\_\-globals.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef GLOBAL\_INIT\_EXTERN}
+00002 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define GLOBAL\_INIT\_EXTERN}
+00003 \textcolor{preprocessor}{}
+00004 \textcolor{preprocessor}{#include "\hyperlink{types_8h}{types.h}"}
+00005 \textcolor{preprocessor}{#include "\hyperlink{toclient_8h}{toclient.h}"}
+00006 \textcolor{preprocessor}{#include "\hyperlink{proxy_2include_2libhashtable_8h}{libhashtable.h}"}
+00007 
+00008                         \textcolor{comment}{/**********************************/}
+00009                         \textcolor{comment}{/* Variabili riguardanti i thread */}
+00010                         \textcolor{comment}{/**********************************/}
+00011 \textcolor{keyword}{extern} \hyperlink{structSCHEDULING}{SCHEDULING}               \hyperlink{init__globals_8h_aaafb4d6007c97b57d7d75ec8d35320b7}{serverPool};
+00012 \textcolor{keyword}{extern} \hyperlink{structSCHEDULING}{SCHEDULING}               \hyperlink{init__globals_8h_a9776fe27bea82f31563d8d03fcec031b}{prefetchPool};
+00013 \textcolor{keyword}{extern} \hyperlink{structSCHEDULING}{SCHEDULING}               \hyperlink{init__globals_8h_a277a408c4ace33607843d4115575205d}{cachePool};
+00014 
+00015                         \textcolor{comment}{/********************************/}
+00016                         \textcolor{comment}{/* Variabile di stato del Proxy */}
+00017                         \textcolor{comment}{/********************************/}
+00018 \textcolor{keyword}{extern} \textcolor{keyword}{struct }\hyperlink{structproxy}{proxy} \hyperlink{init__globals_8h_a7b3f255b75a87d11925e77e590d74208}{global};
+00019 \textcolor{keyword}{extern} \hyperlink{structARGS__ONE}{ARGS_ONE} \hyperlink{init__globals_8h_a72f746d2570f1fea7e4ee2e4eb729052}{prefetch_arg};
+00020 
+00021                         \textcolor{comment}{/************************/}
+00022                         \textcolor{comment}{/* Gestione della Cache */}
+00023                         \textcolor{comment}{/************************/}
+00024 \textcolor{keyword}{extern} \hyperlink{structHRES}{HRES} \hyperlink{init__globals_8h_a9aed88224c606d69de27e819bb130601}{cache_hash_table};
+00025 
+00026 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

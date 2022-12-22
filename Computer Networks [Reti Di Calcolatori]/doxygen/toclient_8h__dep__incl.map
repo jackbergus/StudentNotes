@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$init__globals_8h.html" title="src/proxy/include/init_globals.h" alt="" coords="349,83,549,112"/>
+<area shape="rect" id="node11" href="$toserver_8h.html" title="src/proxy/include/toserver.h" alt="" coords="308,392,489,421"/>
+<area shape="rect" id="node13" href="$init_8h.html" title="src/proxy/include/init.h" alt="" coords="124,469,276,499"/>
+<area shape="rect" id="node5" href="$bank__functs_8h.html" title="src/proxy/include/bank_functs.h" alt="" coords="43,160,248,189"/>
+<area shape="rect" id="node8" href="$connect_8h.html" title="src/proxy/include/connect.h" alt="" coords="308,315,489,344"/>
+<area shape="rect" id="node16" href="$uni__list_8h.html" title="src/proxy/include/uni_list.h" alt="" coords="272,160,448,189"/>
+<area shape="rect" id="node18" href="$thread__functs_8h.html" title="src/proxy/include/thread_functs.h" alt="" coords="51,237,264,267"/>
+<area shape="rect" id="node24" href="$lists_8h.html" title="src/proxy/include/lists.h" alt="" coords="288,237,448,267"/>
+</map>

@@ -1,0 +1,66 @@
+\hypertarget{hres_8h_source}{
+\section{src/hashtable/include/hres.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{ * hres.h}
+00003 \textcolor{comment}{ * This file is part of hashtable}
+00004 \textcolor{comment}{ *}
+00005 \textcolor{comment}{ * Copyright (C) 2012 - Giacomo Bergami}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * hashtable is free software; you can redistribute it and/or modify}
+00008 \textcolor{comment}{ * it under the terms of the GNU General Public License as published by}
+00009 \textcolor{comment}{ * the Free Software Foundation; either version 2 of the License, or}
+00010 \textcolor{comment}{ * (at your option) any later version.}
+00011 \textcolor{comment}{ *}
+00012 \textcolor{comment}{ * hashtable is distributed in the hope that it will be useful,}
+00013 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00014 \textcolor{comment}{ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00015 \textcolor{comment}{ * GNU General Public License for more details.}
+00016 \textcolor{comment}{ *}
+00017 \textcolor{comment}{ * You should have received a copy of the GNU General Public License}
+00018 \textcolor{comment}{ * along with hashtable; if not, write to the Free Software}
+00019 \textcolor{comment}{ * Foundation, Inc., 51 Franklin St, Fifth Floor, }
+00020 \textcolor{comment}{ * Boston, MA  02110-1301  USA}
+00021 \textcolor{comment}{ */}
+00022 \textcolor{preprocessor}{#ifndef \_\_HRES\_H\_\_}
+00023 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define \_\_HRES\_H\_\_}
+00024 \textcolor{preprocessor}{}
+00025 
+00026 \textcolor{comment}{/*      Standard Library        */}
+00027 \textcolor{preprocessor}{#include        <sys/types.h>}
+00028 \textcolor{preprocessor}{#include        <pthread.h>}
+00029 
+00030 
+00031 \textcolor{comment}{/*      Project's Library       */}
+00032 \textcolor{preprocessor}{#include        "\hyperlink{lett__scritt_8h}{lett_scritt.h}"}
+00033 \textcolor{preprocessor}{#include        "\hyperlink{filesystem_8h}{filesystem.h}"}
+00034 \textcolor{preprocessor}{#include        "\hyperlink{fsys_8h}{fsys.h}"}
+00035 \textcolor{preprocessor}{#include        "\hyperlink{hash_8h}{hash.h}"}
+00036 
+00037 
+00038 \textcolor{comment}{/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
+00039 
+00040 
+\hypertarget{hres_8h_source_l00041}{}\hyperlink{structHRES}{00041} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{
+00042         \textcolor{keyword}{struct }\hyperlink{structhash__tbl}{hash_tbl}         hashtable[MAX\_HRES];
+00043         \textcolor{keyword}{struct }\hyperlink{structCS__struct}{CS_struct}        lettscrit[MAX\_HRES];
+00044 \} \hyperlink{structHRES}{HRES};
+\hypertarget{hres_8h_source_l00045}{}\hyperlink{structHRES_a75644267093228e40a1569db3d8dcb99}{00045} 
+00049 \textcolor{keywordtype}{void} \hyperlink{hres_8c_aa0ae30f694c899f863c4e1404354b3fa}{init_hres}(\hyperlink{structHRES}{HRES}* ptr);
+00050 
+00051 
+00056 \textcolor{keywordtype}{int} \hyperlink{hres_8c_a118782cf3075e54ee1fc6f6237eab316}{is_inhash}(\hyperlink{structHRES}{HRES}* phash, \textcolor{keywordtype}{char}* remote\_file);
+00057 
+00058 
+00071 \textcolor{keywordtype}{int} \hyperlink{hres_8c_a29c7cd31b93151d8cf8350c10889dc71}{handle_file_filesystem}(\hyperlink{structHRES}{HRES}* \hyperlink{hash_8c_ab452b41a0ffaccf36bb382238124f330}{hash}, \textcolor{keywordtype}{char}* remote\_file, \textcolor{keywordtype}{void}* res, \textcolor{keywordtype}{int} creat\_ot
+      h\_delete);
+00072 
+00073 
+00074 \textcolor{keywordtype}{int} \hyperlink{hres_8c_a9ecd1c6c001cbcfda6f82d7093ed51b1}{map_cached_file}(\hyperlink{structHRES}{HRES}* \hyperlink{hash_8c_ab452b41a0ffaccf36bb382238124f330}{hash}, \textcolor{keywordtype}{char}* remote\_file,\textcolor{keywordtype}{void}** toret);
+00075 
+00076 
+00077 \textcolor{keywordtype}{void} \hyperlink{hres_8c_a41d556d59572d6c5f91d62ee04343f7b}{close_cached_file}(\hyperlink{structHRES}{HRES}* \hyperlink{hash_8c_ab452b41a0ffaccf36bb382238124f330}{hash}, \textcolor{keywordtype}{char}* remote\_file, \textcolor{keywordtype}{void}* toclose, \textcolor{keywordtype}{int} fd);
+00078 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

@@ -1,0 +1,61 @@
+%% preambolo standard dei miei documenti %%
+\documentclass[a4paper,11pt,italian]{book}
+
+\usepackage{tikz,xifthen}
+\usepackage{pgf}
+\usepackage{makeidx}
+\usepackage{amsfonts}
+\usepackage{amsmath,amsthm}
+\usepackage{mathpazo}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage[italian]{varioref}
+\usepackage[tight,italian]{minitoc}
+\usepackage{braket}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=2cm,rmargin=2cm,headheight=2cm,headsep=1cm,footskip=1cm}
+\usepackage{amsthm}
+\usepackage{babel}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+
+
+
+\usepackage{listings} %­Per inserire codice
+%\usepackage[usenames]{color} %­Per permettere la colorazione dei caratteri
+
+\lstset{ %
+  language=SQL,                % the language of the code
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+}
+
+
+\newcommand{\diam}{\item[$\diamond$]} % punto elenco diamante
+\theoremstyle{plain}\newtheorem{teorema}{Teorema}[chapter]
+\theoremstyle{plain}\newtheorem{corollario}{Corollario}[chapter]
+\theoremstyle{plain}\newtheorem{define}{Definizione}
+\makeatother
+
+
+\usepackage{subfig}
+\setcounter{secnumdepth}{9}
+\setcounter{tocdepth}{9}
+\usetikzlibrary{er}
+\usepackage[unicode=true, pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1,
+ pdfborder={0 0 1},backref=false,colorlinks=false]
+ {hyperref}
+
+% \input{beghe} % contiene le mie funzioni di facilitazione
+\newtheorem{theorem}{Teorema}

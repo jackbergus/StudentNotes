@@ -1,0 +1,162 @@
+\hypertarget{filesystem_8c}{
+\section{Riferimenti per il file src/hashtable/filesystem.c}
+\label{filesystem_8c}\index{src/hashtable/filesystem.c@{src/hashtable/filesystem.c}}
+}
+{\ttfamily \#include \char`\"{}filesystem.h\char`\"{}}\par
+Grafo delle dipendenze di inclusione per filesystem.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{filesystem_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{filesystem_8c_ad43c01993d7f6e284ee3e383c7d162ea}{recursiveDelete} (char $\ast$dirname)
+\item 
+char \hyperlink{filesystem_8c_a65074cfd748ed70c0d9059845bdfcfaf}{file\_\-exists} (char $\ast$filename, unsigned int $\ast$time, char $\ast$is\_\-blank, struct stat $\ast$retbuf, int $\ast$pfd)
+\item 
+char \hyperlink{filesystem_8c_a9f0c9e11c1f7e44a1311d85759e20b15}{folder\_\-empty} (char $\ast$dirname)
+\item 
+char $\ast$ \hyperlink{filesystem_8c_a190fe9c539b35b922ea73c7e0a91f342}{obtain\_\-local} (char $\ast$remote)
+\item 
+char $\ast$ \hyperlink{filesystem_8c_a5fe76e8b94c9acd4f281f70feaf475e9}{resource\_\-exists} (char $\ast$remote, int deallocate, char $\ast$result, unsigned int $\ast$time, char $\ast$blank, struct stat $\ast$retbuf, int $\ast$pfd)
+\item 
+void \hyperlink{filesystem_8c_aa3d66f4f6df47fbd507644860c8655c8}{re\_\-new\_\-resource} (char $\ast$cache\_\-path, struct stat $\ast$retbuf, int $\ast$pfd)
+\item 
+void \hyperlink{filesystem_8c_a171f1a6dc274a446c1c7b0be9125a86d}{resource\_\-remove} (char $\ast$path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{filesystem_8c_a65074cfd748ed70c0d9059845bdfcfaf}{
+\index{filesystem.c@{filesystem.c}!file\_\-exists@{file\_\-exists}}
+\index{file\_\-exists@{file\_\-exists}!filesystem.c@{filesystem.c}}
+\subsubsection[{file\_\-exists}]{\setlength{\rightskip}{0pt plus 5cm}char file\_\-exists (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename, }
+\item[{unsigned int $\ast$}]{time, }
+\item[{char $\ast$}]{is\_\-blank, }
+\item[{struct stat $\ast$}]{retbuf, }
+\item[{int $\ast$}]{pfd}
+\end{DoxyParamCaption}
+)}}
+\label{filesystem_8c_a65074cfd748ed70c0d9059845bdfcfaf}
+Funzioni accessorie per la cache file\_\-exist(): Verifica l'esistenza del file {\itshape filename\/}. Se il pathname esiste ed è un file, restituisce 1, se esso è una cartella restituisce 2, se non esiste 0. 
+\begin{DoxyParams}{Parametri}
+{\em filename,:} & file locale del quale controllare l'esistenza \\
+\hline
+{\em time,:} & Conterrà il tempo da Epoch della creazione del file \\
+\hline
+{\em is\_\-blank,:} & Restituisce, se passato come argomento, se il file è solamente troncato \\
+\hline
+{\em retbuf,:} & Restituisce lo fstat del file, se esiste. \\
+\hline
+{\em pfd,:} & Possibile (o NULL) puntatore al FileDescriptor: in quel caso il file non verrà chiuso \\
+\hline
+\end{DoxyParams}
+\hypertarget{filesystem_8c_a9f0c9e11c1f7e44a1311d85759e20b15}{
+\index{filesystem.c@{filesystem.c}!folder\_\-empty@{folder\_\-empty}}
+\index{folder\_\-empty@{folder\_\-empty}!filesystem.c@{filesystem.c}}
+\subsubsection[{folder\_\-empty}]{\setlength{\rightskip}{0pt plus 5cm}char folder\_\-empty (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{dirname}
+\end{DoxyParamCaption}
+)}}
+\label{filesystem_8c_a9f0c9e11c1f7e44a1311d85759e20b15}
+\hypertarget{filesystem_8c_a190fe9c539b35b922ea73c7e0a91f342}{
+\index{filesystem.c@{filesystem.c}!obtain\_\-local@{obtain\_\-local}}
+\index{obtain\_\-local@{obtain\_\-local}!filesystem.c@{filesystem.c}}
+\subsubsection[{obtain\_\-local}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ obtain\_\-local (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{remote}
+\end{DoxyParamCaption}
+)}}
+\label{filesystem_8c_a190fe9c539b35b922ea73c7e0a91f342}
+Funzioni fondamentali \hyperlink{filesystem_8c_a190fe9c539b35b922ea73c7e0a91f342}{obtain\_\-local()}: Dato il pathning remoto, alloca in una stringa l'eventuale pathning locale corrispondente 
+\begin{DoxyParams}{Parametri}
+{\em remote,:} & percorso remoto del quale ottenere la conversione alla stringa corrente \\
+\hline
+\end{DoxyParams}
+\hypertarget{filesystem_8c_aa3d66f4f6df47fbd507644860c8655c8}{
+\index{filesystem.c@{filesystem.c}!re\_\-new\_\-resource@{re\_\-new\_\-resource}}
+\index{re\_\-new\_\-resource@{re\_\-new\_\-resource}!filesystem.c@{filesystem.c}}
+\subsubsection[{re\_\-new\_\-resource}]{\setlength{\rightskip}{0pt plus 5cm}void re\_\-new\_\-resource (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{cache\_\-path, }
+\item[{struct stat $\ast$}]{retbuf, }
+\item[{int $\ast$}]{pfd}
+\end{DoxyParamCaption}
+)}}
+\label{filesystem_8c_aa3d66f4f6df47fbd507644860c8655c8}
+\hyperlink{filesystem_8c_aa3d66f4f6df47fbd507644860c8655c8}{re\_\-new\_\-resource()}: Data il path della cache, crea la nuova risorsa: se le cartelle intermedie non esistono, esse vengono create, ed il file finale viene troncato ed aperto alla dimensione base massima. Restituisce la data di creazione del file 
+\begin{DoxyParams}{Parametri}
+{\em cache\_\-path,:} & Identifica il percorso locale della risorsa \\
+\hline
+{\em retbuf,:} & Identifica lo stat del file che è stato aperto. Se non NULL viene aggiornato. \\
+\hline
+{\em pfd,:} & Identifica il FileDescriptor del nuovo file. Se non NULL viene aggiornato, altrimenti viene chiuso. \\
+\hline
+\end{DoxyParams}
+\hypertarget{filesystem_8c_ad43c01993d7f6e284ee3e383c7d162ea}{
+\index{filesystem.c@{filesystem.c}!recursiveDelete@{recursiveDelete}}
+\index{recursiveDelete@{recursiveDelete}!filesystem.c@{filesystem.c}}
+\subsubsection[{recursiveDelete}]{\setlength{\rightskip}{0pt plus 5cm}void recursiveDelete (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{dirname}
+\end{DoxyParamCaption}
+)}}
+\label{filesystem_8c_ad43c01993d7f6e284ee3e383c7d162ea}
+\hyperlink{filesystem_8c_ad43c01993d7f6e284ee3e383c7d162ea}{recursiveDelete()}: Effettua l'eliminazione ricorsiva degli elementi all'interno della directory 
+\begin{DoxyParams}{Parametri}
+{\em dirname,:} & Percorso della cartella da svuotare ricorsivamente \\
+\hline
+\end{DoxyParams}
+\hypertarget{filesystem_8c_a5fe76e8b94c9acd4f281f70feaf475e9}{
+\index{filesystem.c@{filesystem.c}!resource\_\-exists@{resource\_\-exists}}
+\index{resource\_\-exists@{resource\_\-exists}!filesystem.c@{filesystem.c}}
+\subsubsection[{resource\_\-exists}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ resource\_\-exists (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{remote, }
+\item[{int}]{deallocate, }
+\item[{char $\ast$}]{result, }
+\item[{unsigned int $\ast$}]{time, }
+\item[{char $\ast$}]{blank, }
+\item[{struct stat $\ast$}]{retbuf, }
+\item[{int $\ast$}]{pfd}
+\end{DoxyParamCaption}
+)}}
+\label{filesystem_8c_a5fe76e8b94c9acd4f281f70feaf475e9}
+\hyperlink{filesystem_8c_a5fe76e8b94c9acd4f281f70feaf475e9}{resource\_\-exists()}: Questa funzione verifica se il path remoto esista o meno. In base al valore del parametro {\itshape deallocate\/}, viene restituita o meno la stringa convertita della risorsa locale corrispondente 
+\begin{DoxyParams}{Parametri}
+{\em remote,:} & path remoto \\
+\hline
+{\em deallocate,:} & indica se deallocare l'indirizzo locale della risorsa corrispondente \\
+\hline
+{\em result,:} & verrà scritto in questo puntatore l'esistenza o meno del file \\
+\hline
+{\em time,:} & tempo di creazione della risorsa \\
+\hline
+{\em blank,:} & restituisce se il file è stato troncato o meno (e quindi vuoto) \\
+\hline
+{\em retbuf,:} & restituisce (se non NULL) il puntatore all'fstat del file in cache \\
+\hline
+{\em pfd,:} & Possibile (o NULL) puntatore al FileDescriptor: viene passato un fd aperto. \\
+\hline
+\end{DoxyParams}
+\hypertarget{filesystem_8c_a171f1a6dc274a446c1c7b0be9125a86d}{
+\index{filesystem.c@{filesystem.c}!resource\_\-remove@{resource\_\-remove}}
+\index{resource\_\-remove@{resource\_\-remove}!filesystem.c@{filesystem.c}}
+\subsubsection[{resource\_\-remove}]{\setlength{\rightskip}{0pt plus 5cm}void resource\_\-remove (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}
+\label{filesystem_8c_a171f1a6dc274a446c1c7b0be9125a86d}
+\hyperlink{filesystem_8c_a171f1a6dc274a446c1c7b0be9125a86d}{resource\_\-remove()}: Questa funzione effettua l'unlink sul file definito, ed inoltre via via eventualmente cancella le cartelle genitori se queste sono vuote. 
+\begin{DoxyParams}{Parametri}
+{\em path,:} & Risorsa remota \\
+\hline
+\end{DoxyParams}

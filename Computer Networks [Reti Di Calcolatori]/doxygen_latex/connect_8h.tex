@@ -1,0 +1,125 @@
+\hypertarget{connect_8h}{
+\section{Riferimenti per il file src/proxy/include/connect.h}
+\label{connect_8h}\index{src/proxy/include/connect.h@{src/proxy/include/connect.h}}
+}
+{\ttfamily \#include $<$netinet/tcp.h$>$}\par
+{\ttfamily \#include $<$sys/uio.h$>$}\par
+{\ttfamily \#include $<$arpa/inet.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$errno.h$>$}\par
+{\ttfamily \#include $<$sys/select.h$>$}\par
+{\ttfamily \#include $<$sys/time.h$>$}\par
+{\ttfamily \#include $<$sys/types.h$>$}\par
+{\ttfamily \#include $<$unistd.h$>$}\par
+{\ttfamily \#include \char`\"{}init\_\-globals.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}consts.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}macro.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}communication.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}thread\_\-functs.h\char`\"{}}\par
+Grafo delle dipendenze di inclusione per connect.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{connect_8h__incl}
+\end{center}
+\end{figure}
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{connect_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{connect_8h_a1810a697ffea7e0c6fa75a04975bf592}{MAX\_\-TENTATIVI}~10
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{connect_8h_a3f4566cd203c4eee3462788024e92ace}{invia\_\-client\_\-termina} (struct \hyperlink{structconnection}{connection} $\ast$local, char $\ast$res)
+\item 
+void \hyperlink{connect_8h_a18f58a0c2eaf27d94f052b0d1da20ff9}{fallisci\_\-tutto} (struct \hyperlink{structconnection}{connection} $\ast$ptr)
+\item 
+int \hyperlink{connect_8h_a71bcb65831f8c8fae42279514515fa41}{session} (char $\ast$obtained\_\-remote, char $\ast$resourcepath, int client)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{connect_8h_a1810a697ffea7e0c6fa75a04975bf592}{
+\index{connect.h@{connect.h}!MAX\_\-TENTATIVI@{MAX\_\-TENTATIVI}}
+\index{MAX\_\-TENTATIVI@{MAX\_\-TENTATIVI}!connect.h@{connect.h}}
+\subsubsection[{MAX\_\-TENTATIVI}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-TENTATIVI~10}}
+\label{connect_8h_a1810a697ffea7e0c6fa75a04975bf592}
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{connect_8h_a18f58a0c2eaf27d94f052b0d1da20ff9}{
+\index{connect.h@{connect.h}!fallisci\_\-tutto@{fallisci\_\-tutto}}
+\index{fallisci\_\-tutto@{fallisci\_\-tutto}!connect.h@{connect.h}}
+\subsubsection[{fallisci\_\-tutto}]{\setlength{\rightskip}{0pt plus 5cm}void fallisci\_\-tutto (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}
+\label{connect_8h_a18f58a0c2eaf27d94f052b0d1da20ff9}
+\hyperlink{connect_8c_a18f58a0c2eaf27d94f052b0d1da20ff9}{fallisci\_\-tutto()}: Chiude definitivamente la connessione, ed eventualmente effettua l'inoltro della richiesta tramite lettura in cache. 
+\begin{DoxyParams}{Parametri}
+{\em ptr,:} & Parametro della connessione con il server \\
+\hline
+\end{DoxyParams}
+\hypertarget{connect_8h_a3f4566cd203c4eee3462788024e92ace}{
+\index{connect.h@{connect.h}!invia\_\-client\_\-termina@{invia\_\-client\_\-termina}}
+\index{invia\_\-client\_\-termina@{invia\_\-client\_\-termina}!connect.h@{connect.h}}
+\subsubsection[{invia\_\-client\_\-termina}]{\setlength{\rightskip}{0pt plus 5cm}void invia\_\-client\_\-termina (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{local, }
+\item[{char $\ast$}]{res}
+\end{DoxyParamCaption}
+)}}
+\label{connect_8h_a3f4566cd203c4eee3462788024e92ace}
+\hyperlink{connect_8c_a3f4566cd203c4eee3462788024e92ace}{invia\_\-client\_\-termina()}: Effettua l'invio al client della risorsa ottenuta 
+\begin{DoxyParams}{Parametri}
+{\em local,:} & Stato di connessione con il server \\
+\hline
+{\em res,:} & Risorsa da inviare al client \\
+\hline
+\end{DoxyParams}
+\hypertarget{connect_8h_a71bcb65831f8c8fae42279514515fa41}{
+\index{connect.h@{connect.h}!session@{session}}
+\index{session@{session}!connect.h@{connect.h}}
+\subsubsection[{session}]{\setlength{\rightskip}{0pt plus 5cm}int session (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{obtained\_\-remote, }
+\item[{char $\ast$}]{resourcepath, }
+\item[{int}]{client}
+\end{DoxyParamCaption}
+)}}
+\label{connect_8h_a71bcb65831f8c8fae42279514515fa41}
+\hyperlink{connect_8c_a71bcb65831f8c8fae42279514515fa41}{session()}: Effettua la connessione con un server, fornendo la risposta ad un dato client. 
+\begin{DoxyParams}{Parametri}
+{\em obtained\_\-remote,:} & Buffer di memorizzazione della risposta \\
+\hline
+{\em resourcepath,:} & Percorso della risorsa remota \\
+\hline
+{\em client,:} & FileDescriptor del client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Restituisce 1 in caso di fallimento, altrimenti 0
+\end{DoxyReturn}
+\hyperlink{connect_8c_a71bcb65831f8c8fae42279514515fa41}{session()}: Instaura una sessione completa con il server, comprensiva della gestione dei tentativi 
+\begin{DoxyParams}{Parametri}
+{\em obtained\_\-remote,:} & Buffer all'interno del quale verrà memorizzata la risorsa \\
+\hline
+{\em resourcepath,:} & Percorso remoto della risorsa da ottenere \\
+\hline
+{\em client,:} & Socket del client \\
+\hline
+\end{DoxyParams}

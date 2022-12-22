@@ -1,0 +1,222 @@
+\hypertarget{communication_8h}{
+\section{Riferimenti per il file src/proxy/include/communication.h}
+\label{communication_8h}\index{src/proxy/include/communication.h@{src/proxy/include/communication.h}}
+}
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include \char`\"{}macro.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}types.h\char`\"{}}\par
+Grafo delle dipendenze di inclusione per communication.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{communication_8h__incl}
+\end{center}
+\end{figure}
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{communication_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{communication_8h_a369266c24eacffb87046522897a570d5}{\_\-GNU\_\-SOURCE}
+\item 
+\#define \hyperlink{communication_8h_ae6be846173beb2523efa0e39a2647f9e}{distance}(ptr1, ptr2)~((!(sizeof(ptr1)==sizeof(ptr2))) ? -\/1 : (((ptr2)-\/(ptr1))/sizeof($\ast$ptr1)))
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{communication_8h_a39ad01fec548910dd7fd722537033534}{get\_\-resource\_\-alloc} (char $\ast$text, char $\ast$$\ast$next)
+\item 
+int \hyperlink{communication_8h_abbd2fd5049554023af399048ad6d4062}{dorequest} (char $\ast$\hyperlink{structrequest}{request}, int TYPE, char $\ast$path, int low, int hight)
+\item 
+int \hyperlink{communication_8h_a09cedc111b49debbe01a911404453c26}{doreply} (char $\ast$reply, int TYPE, int len, int empire, int low, int hight, char $\ast$content)
+\item 
+\hyperlink{structrequest}{request} $\ast$ \hyperlink{communication_8h_aba3197538fb2869ab4a55528246dd131}{parseRequest} (char $\ast$buf, int len)
+\item 
+int \hyperlink{communication_8h_ab12714b42bbc6fd90428798fda112559}{parseHead} (char $\ast$buf, int buflen, int $\ast$len, unsigned int $\ast$expire, int $\ast$low, int $\ast$hight, char $\ast$$\ast$cont)
+\item 
+char $\ast$ \hyperlink{communication_8h_af9904e9c60828f623aaf1da8db0f5ee0}{getIP} (char $\ast$URL, char $\ast$dest)
+\item 
+char $\ast$ \hyperlink{communication_8h_aa1b29de3719021427beab813714d5759}{getPort} (char $\ast$URLp, char $\ast$dest)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{communication_8h_a369266c24eacffb87046522897a570d5}{
+\index{communication.h@{communication.h}!\_\-GNU\_\-SOURCE@{\_\-GNU\_\-SOURCE}}
+\index{\_\-GNU\_\-SOURCE@{\_\-GNU\_\-SOURCE}!communication.h@{communication.h}}
+\subsubsection[{\_\-GNU\_\-SOURCE}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-GNU\_\-SOURCE}}
+\label{communication_8h_a369266c24eacffb87046522897a570d5}
+\hypertarget{communication_8h_ae6be846173beb2523efa0e39a2647f9e}{
+\index{communication.h@{communication.h}!distance@{distance}}
+\index{distance@{distance}!communication.h@{communication.h}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}\#define distance(
+\begin{DoxyParamCaption}
+\item[{}]{ptr1, }
+\item[{}]{ptr2}
+\end{DoxyParamCaption}
+)~((!(sizeof(ptr1)==sizeof(ptr2))) ? -\/1 : (((ptr2)-\/(ptr1))/sizeof($\ast$ptr1)))}}
+\label{communication_8h_ae6be846173beb2523efa0e39a2647f9e}
+\hyperlink{communication_8h_ae6be846173beb2523efa0e39a2647f9e}{distance()}
+
+MACRO DI CALCOLO -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ Permette di effettuare il calcolo in quale posizione si trova ptr2 rispetto a ptr1, sapendo che sono puntatori con la stessa dimensione in memoria 
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{communication_8h_a09cedc111b49debbe01a911404453c26}{
+\index{communication.h@{communication.h}!doreply@{doreply}}
+\index{doreply@{doreply}!communication.h@{communication.h}}
+\subsubsection[{doreply}]{\setlength{\rightskip}{0pt plus 5cm}int doreply (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{reply, }
+\item[{int}]{TYPE, }
+\item[{int}]{len, }
+\item[{int}]{empire, }
+\item[{int}]{low, }
+\item[{int}]{hight, }
+\item[{char $\ast$}]{content}
+\end{DoxyParamCaption}
+)}}
+\label{communication_8h_a09cedc111b49debbe01a911404453c26}
+\hyperlink{communication_8c_a09cedc111b49debbe01a911404453c26}{doreply()} Funzione che stampa all'interno di un buffer di caratteri la risposta da inoltrare. Ritorna 0 se TYPE è un valore compreso tra le costanti predefinite. 
+\begin{DoxyParams}{Parametri}
+{\em reply,:} & Buffer dove viene stampato il risultato \\
+\hline
+{\em TYPE,:} & Tipologia della richeista da inoltrare (const.h) \\
+\hline
+{\em len,:} & Lunghezza della risposta che si sta ottenendo con la funzione \\
+\hline
+{\em empire,:} & Expiry time \\
+\hline
+{\em low,:} & Eventuale low range \\
+\hline
+{\em hight,:} & Eventuale hight range. Se hight$<$low, allora non viene inserito l'upper \\
+\hline
+{\em content,:} & Eventuale contenuto del messaggio \\
+\hline
+\end{DoxyParams}
+\hypertarget{communication_8h_abbd2fd5049554023af399048ad6d4062}{
+\index{communication.h@{communication.h}!dorequest@{dorequest}}
+\index{dorequest@{dorequest}!communication.h@{communication.h}}
+\subsubsection[{dorequest}]{\setlength{\rightskip}{0pt plus 5cm}int dorequest (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{request, }
+\item[{int}]{TYPE, }
+\item[{char $\ast$}]{path, }
+\item[{int}]{low, }
+\item[{int}]{hight}
+\end{DoxyParamCaption}
+)}}
+\label{communication_8h_abbd2fd5049554023af399048ad6d4062}
+\hyperlink{communication_8c_abbd2fd5049554023af399048ad6d4062}{dorequest()} Funzione che stampa all'interno di un buffer di caratteri la richiesta da inoltrare Restituisce 0 se la generazione è andata a buon fine, altrimenti 1 (se TYPE non è un valore previsto da const.h) 
+\begin{DoxyParams}{Parametri}
+{\em request,:} & Percorso dove salvare il valore della richiesta \\
+\hline
+{\em TYPE,:} & Tipo della richiesta da generare \\
+\hline
+{\em path,:} & Percorso remoto della risorsa. \\
+\hline
+{\em low,:} & Low Range della risorsa ottenuta \\
+\hline
+{\em hight,:} & Hight Range della risorsa ottenuta. Se il valore è inferiore a low, allora inserisce solo il low. \\
+\hline
+\end{DoxyParams}
+\hypertarget{communication_8h_a39ad01fec548910dd7fd722537033534}{
+\index{communication.h@{communication.h}!get\_\-resource\_\-alloc@{get\_\-resource\_\-alloc}}
+\index{get\_\-resource\_\-alloc@{get\_\-resource\_\-alloc}!communication.h@{communication.h}}
+\subsubsection[{get\_\-resource\_\-alloc}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\_\-resource\_\-alloc (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{text, }
+\item[{char $\ast$$\ast$}]{next}
+\end{DoxyParamCaption}
+)}}
+\label{communication_8h_a39ad01fec548910dd7fd722537033534}
+\hyperlink{communication_8c_a39ad01fec548910dd7fd722537033534}{get\_\-resource\_\-alloc()}: Restituisce una stringa ove è allocata la risorsa indicato dal buffer passato come argomento 
+\begin{DoxyParams}{Parametri}
+{\em text,:} & puntatore al buffer di memoria dove è contenuta la risposta \\
+\hline
+{\em next,:} & puntatore ad un puntatore a carattere che verrà aggiornato con la posizione dalla quale riprendere la scansione con la get\_\-resource\_\-alloc \\
+\hline
+\end{DoxyParams}
+\hypertarget{communication_8h_af9904e9c60828f623aaf1da8db0f5ee0}{
+\index{communication.h@{communication.h}!getIP@{getIP}}
+\index{getIP@{getIP}!communication.h@{communication.h}}
+\subsubsection[{getIP}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ getIP (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{URL, }
+\item[{char $\ast$}]{dest}
+\end{DoxyParamCaption}
+)}}
+\label{communication_8h_af9904e9c60828f623aaf1da8db0f5ee0}
+\hyperlink{communication_8c_af9904e9c60828f623aaf1da8db0f5ee0}{getIP()} Questa funzione restituisce in dest il valore dell'IP fornito: restituisce NULL se il matching è stato scorretto, altrimenti il punto successivo da cui riprendere l'analisi della stringa 
+\begin{DoxyParams}{Parametri}
+{\em URL,:} & Contiene l'URL partendo da \char`\"{}mhttp://\char`\"{} \\
+\hline
+{\em dest,:} & Bufffer di destinazione dove salvare la stringa remota \\
+\hline
+\end{DoxyParams}
+\hypertarget{communication_8h_aa1b29de3719021427beab813714d5759}{
+\index{communication.h@{communication.h}!getPort@{getPort}}
+\index{getPort@{getPort}!communication.h@{communication.h}}
+\subsubsection[{getPort}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ getPort (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{URLp, }
+\item[{char $\ast$}]{dest}
+\end{DoxyParamCaption}
+)}}
+\label{communication_8h_aa1b29de3719021427beab813714d5759}
+\hyperlink{communication_8c_aa1b29de3719021427beab813714d5759}{getPort()} Questa funzione ottiene la porta del nostro URL, concordemente all'analisi effettuata precedentemente per trovare l'IP. Si comporta in modo analogo a \hyperlink{communication_8c_af9904e9c60828f623aaf1da8db0f5ee0}{getIP()}: il puntatore restituito in caso di procedura corretta è il pathening \hypertarget{communication_8h_ab12714b42bbc6fd90428798fda112559}{
+\index{communication.h@{communication.h}!parseHead@{parseHead}}
+\index{parseHead@{parseHead}!communication.h@{communication.h}}
+\subsubsection[{parseHead}]{\setlength{\rightskip}{0pt plus 5cm}int parseHead (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf, }
+\item[{int}]{buflen, }
+\item[{int $\ast$}]{len, }
+\item[{unsigned int $\ast$}]{expire, }
+\item[{int $\ast$}]{low, }
+\item[{int $\ast$}]{hight, }
+\item[{char $\ast$$\ast$}]{cont}
+\end{DoxyParamCaption}
+)}}
+\label{communication_8h_ab12714b42bbc6fd90428798fda112559}
+\hyperlink{communication_8c_ab12714b42bbc6fd90428798fda112559}{parseHead()} Effettua il parsing della stringa all'interno di buf. Viene restituito il numero della risposta se è una risposta ben formata, altrimenti 0 (anche se buf è NULL). Vengono passti per parametri i valori assunti dallo header del messaggio. 
+\begin{DoxyParams}{Parametri}
+{\em buf,:} & Eventuale buffer dal quale leggere la risposta ricevuta \\
+\hline
+{\em buflen,:} & Lunghezza della parte di memoria effettiva in memoria \\
+\hline
+{\em len,:} & Lunghezza del parametro LEN della richiesta INF \\
+\hline
+{\em expire,:} & Expire time fornito dal messaggio dalla richiesta inf \\
+\hline
+{\em low,:} & Low range \\
+\hline
+{\em hight,:} & Hight Range \\
+\hline
+{\em cont,:} & Punto dal quale continuare la lettura (puntatore al body) \\
+\hline
+\end{DoxyParams}
+\hypertarget{communication_8h_aba3197538fb2869ab4a55528246dd131}{
+\index{communication.h@{communication.h}!parseRequest@{parseRequest}}
+\index{parseRequest@{parseRequest}!communication.h@{communication.h}}
+\subsubsection[{parseRequest}]{\setlength{\rightskip}{0pt plus 5cm}{\bf request}$\ast$ parseRequest (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}
+\label{communication_8h_aba3197538fb2869ab4a55528246dd131}
+\hyperlink{communication_8c_aba3197538fb2869ab4a55528246dd131}{parseRequest()} Funzione che effettua il parsing della richiesta remota. 
+\begin{DoxyParams}{Parametri}
+{\em buf,:} & Buffer contenente la risorsa \\
+\hline
+{\em len,:} & Lunghezza della risorsa del buffer \\
+\hline
+\end{DoxyParams}

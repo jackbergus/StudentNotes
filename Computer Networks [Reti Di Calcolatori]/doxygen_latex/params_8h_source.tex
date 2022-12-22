@@ -1,0 +1,94 @@
+\hypertarget{params_8h_source}{
+\section{src/proxy/include/params.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{ * params.h}
+00003 \textcolor{comment}{ * This file is part of proxy}
+00004 \textcolor{comment}{ *}
+00005 \textcolor{comment}{ * Copyright (C) 2012 - Giacomo Bergami, Paolo de Luca}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * proxy is free software; you can redistribute it and/or modify}
+00008 \textcolor{comment}{ * it under the terms of the GNU General Public License as published by}
+00009 \textcolor{comment}{ * the Free Software Foundation; either version 2 of the License, or}
+00010 \textcolor{comment}{ * (at your option) any later version.}
+00011 \textcolor{comment}{ *}
+00012 \textcolor{comment}{ * proxy is distributed in the hope that it will be useful,}
+00013 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00014 \textcolor{comment}{ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00015 \textcolor{comment}{ * GNU General Public License for more details.}
+00016 \textcolor{comment}{ *}
+00017 \textcolor{comment}{ * You should have received a copy of the GNU General Public License}
+00018 \textcolor{comment}{ * along with proxy; if not, write to the Free Software}
+00019 \textcolor{comment}{ * Foundation, Inc., 51 Franklin St, Fifth Floor, }
+00020 \textcolor{comment}{ * Boston, MA  02110-1301  USA}
+00021 \textcolor{comment}{ */}
+00022 
+00023 
+00024 \textcolor{preprocessor}{#ifndef \_\_PARAMS\_\_H\_\_}
+00025 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define \_\_PARAMS\_\_H\_\_}
+00026 \textcolor{preprocessor}{}
+00027 
+00028         \textcolor{comment}{/*      Standard library        */}
+00029 \textcolor{preprocessor}{#include <stdio.h>}
+00030 \textcolor{preprocessor}{#include <stdlib.h>}
+00031 \textcolor{preprocessor}{#include <getopt.h>}
+00032 \textcolor{preprocessor}{#include <sys/types.h>}
+00033 \textcolor{preprocessor}{#include <sys/wait.h>}
+00034 \textcolor{preprocessor}{#include <sys/socket.h>} 
+00035 \textcolor{preprocessor}{#include <sys/types.h>}  
+00036 \textcolor{preprocessor}{#include <sys/time.h>}           
+00037 \textcolor{preprocessor}{#include <netinet/in.h>}         
+00038 \textcolor{preprocessor}{#include <errno.h>}              
+00039 \textcolor{preprocessor}{#include <arpa/inet.h>}  
+00040 \textcolor{preprocessor}{#include <obstack.h>}
+00041 
+00042 
+00043         \textcolor{comment}{/*      Project's library       */}
+00044 \textcolor{preprocessor}{#include "\hyperlink{macro_8h}{macro.h}"}
+00045 \textcolor{preprocessor}{#include "\hyperlink{communication_8h}{communication.h}"}
+00046 
+00047 
+00048 \textcolor{comment}{/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
+00049 
+00054 \textcolor{keywordtype}{int} \hyperlink{params_8h_afaf7d30794de45a759063054ec9257a8}{init_params}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}* argv[], \textcolor{keyword}{struct} \hyperlink{structproxy}{proxy}* params);
+00055 
+\hypertarget{params_8h_source_l00056}{}\hyperlink{params_8h_afe107f8385341e11aef32eaac290b39a}{00056} \textcolor{preprocessor}{#define obstack\_chunk\_alloc malloc}
+\hypertarget{params_8h_source_l00057}{}\hyperlink{params_8h_a10ffd65176663f1396a3607ebb41470c}{00057} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define obstack\_chunk\_free  free}
+00058 \textcolor{preprocessor}{}
+\hypertarget{params_8h_source_l00061}{}\hyperlink{params_8h_a44ee6dcb438ae8dc40790c3fe7154f7f}{00061} \textcolor{preprocessor}{#define IS\_EOOPT(ptr) (((((ptr)->name)||((ptr)->has\_arg)||((ptr)->flag)||((ptr)->
+      val))==0) ? 1 : 0)}
+00062 \textcolor{preprocessor}{}
+\hypertarget{params_8h_source_l00065}{}\hyperlink{params_8h_a8d0dd189eff26f611d22d7a7ad388683}{00065} \textcolor{preprocessor}{#define GETOPT\_L(argc,argv,longk,optptr,w) getopt\_long(argc,argv,w,longk,optptr)}
+00066 \textcolor{preprocessor}{}
+\hypertarget{params_8h_source_l00070}{}\hyperlink{params_8h_aedb4daf5fe76858cd084783779297d79}{00070} \textcolor{preprocessor}{#define WHILE\_GETOPT\_L(argc,argv,longk,optptr,val,w) while(((val)=GETOPT\_L(argc,a
+      rgv,longk,optptr,w))!=-1)}
+00071 \textcolor{preprocessor}{}
+\hypertarget{params_8h_source_l00075}{}\hyperlink{params_8h_a09bfcda4b6271c0433fe966790b97d41}{00075} \textcolor{preprocessor}{#define LONGNAME(struc,opt)             ((struc)[opt].name)}
+00076 \textcolor{preprocessor}{}
+\hypertarget{params_8h_source_l00080}{}\hyperlink{params_8h_affec572f11fcba59ce0cd49cbcd0110f}{00080} \textcolor{preprocessor}{#define HAS\_ARG                         (optarg)}
+00081 \textcolor{preprocessor}{}
+\hypertarget{params_8h_source_l00085}{}\hyperlink{params_8h_a5aa18e1ec393434183b928424fad7f77}{00085} \textcolor{preprocessor}{#define HAS\_OTHER\_ARGS(argc)            (optind<(argc))}
+00086 \textcolor{preprocessor}{}
+\hypertarget{params_8h_source_l00090}{}\hyperlink{params_8h_a52cb524154eeb8941bf2601e8078bcf4}{00090} \textcolor{preprocessor}{#define REMAINING\_ARGS(argc)            ((argc)-optind+1)}
+00091 \textcolor{preprocessor}{}
+\hypertarget{params_8h_source_l00095}{}\hyperlink{params_8h_aee0a3c4f579d6dd25dd1f7a7a7ad9270}{00095} \textcolor{preprocessor}{#define GET\_NEXT\_OPTIND(argc,argv)      (HAS\_OTHER\_ARGS(argc) ? ((argv)[optind++]
+      ) : ((char*)0) )}
+00096 \textcolor{preprocessor}{}
+00097 
+00098 
+00099 
+\hypertarget{params_8h_source_l00103}{}\hyperlink{params_8h_a8776d923eee38be0af8b743ac50e4a85}{00103} \textcolor{preprocessor}{#define START\_CYCLE(argc,argv,longk)    do \{\(\backslash\)}
+00104 \textcolor{preprocessor}{                                                int option\_index = 0;\(\backslash\)}
+00105 \textcolor{preprocessor}{                                                int c;\(\backslash\)}
+00106 \textcolor{preprocessor}{                                                char* allocando = mkshortopt(long
+      k);\(\backslash\)}
+00107 \textcolor{preprocessor}{                                                WHILE\_GETOPT\_L(argc,argv,longk,&o
+      ption\_index,c,allocando) \{ \(\backslash\)}
+00108 \textcolor{preprocessor}{                                                switch(c) \{     }
+00109 \textcolor{preprocessor}{}
+\hypertarget{params_8h_source_l00113}{}\hyperlink{params_8h_a7cd88e938d4078f0694f78d22e5c5ca4}{00113} \textcolor{preprocessor}{#define END\_CYCLE                        \} \} free(allocando); \} while(0)}
+00114 \textcolor{preprocessor}{}
+00115 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

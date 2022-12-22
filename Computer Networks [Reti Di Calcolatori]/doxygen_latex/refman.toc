@@ -1,0 +1,424 @@
+\select@language {italian}
+\contentsline {chapter}{\numberline {1}Indice delle strutture dati}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Strutture dati}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Indice dei file}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Elenco dei file}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Documentazione delle classi}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Riferimenti per la struct \_\discretionary {-}{}{}\_\discretionary {-}{}{}mialista\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Documentazione dei campi}{5}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}next}{5}{subsubsection.3.1.1.1}
+\contentsline {section}{\numberline {3.2}Riferimenti per la struct ARGS\_\discretionary {-}{}{}ONE}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Descrizione dettagliata}{7}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Documentazione dei campi}{7}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}sched}{7}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}whoami}{7}{subsubsection.3.2.2.2}
+\contentsline {section}{\numberline {3.3}Riferimenti per la struct connection}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Descrizione dettagliata}{7}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Documentazione dei campi}{8}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}expiry}{8}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}fd\_\discretionary {-}{}{}client}{8}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}fd\_\discretionary {-}{}{}server}{8}{subsubsection.3.3.2.3}
+\contentsline {subsubsection}{\numberline {3.3.2.4}PATH}{8}{subsubsection.3.3.2.4}
+\contentsline {subsubsection}{\numberline {3.3.2.5}sIP}{8}{subsubsection.3.3.2.5}
+\contentsline {subsubsection}{\numberline {3.3.2.6}sPort}{8}{subsubsection.3.3.2.6}
+\contentsline {subsubsection}{\numberline {3.3.2.7}tentativi}{8}{subsubsection.3.3.2.7}
+\contentsline {section}{\numberline {3.4}Riferimenti per la struct CS\_\discretionary {-}{}{}struct}{8}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Documentazione dei campi}{9}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}attr}{9}{subsubsection.3.4.1.1}
+\contentsline {section}{\numberline {3.5}Riferimenti per la struct hash\_\discretionary {-}{}{}tbl}{9}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Descrizione dettagliata}{9}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Documentazione dei campi}{9}{subsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.2.1}elements}{9}{subsubsection.3.5.2.1}
+\contentsline {subsubsection}{\numberline {3.5.2.2}value}{9}{subsubsection.3.5.2.2}
+\contentsline {section}{\numberline {3.6}Riferimenti per la struct HRES}{9}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Documentazione dei campi}{10}{subsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.1.1}hashtable}{10}{subsubsection.3.6.1.1}
+\contentsline {subsubsection}{\numberline {3.6.1.2}lettscrit}{10}{subsubsection.3.6.1.2}
+\contentsline {section}{\numberline {3.7}Riferimenti per la struct JOB}{11}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Descrizione dettagliata}{11}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Documentazione dei campi}{11}{subsection.3.7.2}
+\contentsline {subsubsection}{\numberline {3.7.2.1}args}{11}{subsubsection.3.7.2.1}
+\contentsline {subsubsection}{\numberline {3.7.2.2}procedura}{11}{subsubsection.3.7.2.2}
+\contentsline {section}{\numberline {3.8}Riferimenti per la struct JOB\_\discretionary {-}{}{}QUEUE}{11}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Descrizione dettagliata}{12}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Documentazione dei campi}{12}{subsection.3.8.2}
+\contentsline {subsubsection}{\numberline {3.8.2.1}head}{12}{subsubsection.3.8.2.1}
+\contentsline {subsubsection}{\numberline {3.8.2.2}todo}{13}{subsubsection.3.8.2.2}
+\contentsline {section}{\numberline {3.9}Riferimenti per la struct list\_\discretionary {-}{}{}ptrint}{13}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Documentazione dei campi}{14}{subsection.3.9.1}
+\contentsline {subsubsection}{\numberline {3.9.1.1}elem}{14}{subsubsection.3.9.1.1}
+\contentsline {subsubsection}{\numberline {3.9.1.2}valore}{14}{subsubsection.3.9.1.2}
+\contentsline {section}{\numberline {3.10}Riferimenti per la struct msg}{14}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Descrizione dettagliata}{15}{subsection.3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}Documentazione dei campi}{15}{subsection.3.10.2}
+\contentsline {subsubsection}{\numberline {3.10.2.1}rq}{15}{subsubsection.3.10.2.1}
+\contentsline {subsubsection}{\numberline {3.10.2.2}sock}{15}{subsubsection.3.10.2.2}
+\contentsline {section}{\numberline {3.11}Riferimenti per la struct proxy}{15}{section.3.11}
+\contentsline {subsection}{\numberline {3.11.1}Descrizione dettagliata}{15}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}Documentazione dei campi}{16}{subsection.3.11.2}
+\contentsline {subsubsection}{\numberline {3.11.2.1}fd}{16}{subsubsection.3.11.2.1}
+\contentsline {subsubsection}{\numberline {3.11.2.2}ip}{16}{subsubsection.3.11.2.2}
+\contentsline {subsubsection}{\numberline {3.11.2.3}level}{16}{subsubsection.3.11.2.3}
+\contentsline {subsubsection}{\numberline {3.11.2.4}meStesso}{16}{subsubsection.3.11.2.4}
+\contentsline {subsubsection}{\numberline {3.11.2.5}port}{16}{subsubsection.3.11.2.5}
+\contentsline {section}{\numberline {3.12}Riferimenti per la struct request}{16}{section.3.12}
+\contentsline {subsection}{\numberline {3.12.1}Descrizione dettagliata}{16}{subsection.3.12.1}
+\contentsline {subsection}{\numberline {3.12.2}Documentazione dei campi}{16}{subsection.3.12.2}
+\contentsline {subsubsection}{\numberline {3.12.2.1}PATH}{16}{subsubsection.3.12.2.1}
+\contentsline {subsubsection}{\numberline {3.12.2.2}rangehight}{17}{subsubsection.3.12.2.2}
+\contentsline {subsubsection}{\numberline {3.12.2.3}rangelow}{17}{subsubsection.3.12.2.3}
+\contentsline {subsubsection}{\numberline {3.12.2.4}TYPE}{17}{subsubsection.3.12.2.4}
+\contentsline {section}{\numberline {3.13}Riferimenti per la struct request\_\discretionary {-}{}{}cache}{17}{section.3.13}
+\contentsline {subsection}{\numberline {3.13.1}Documentazione dei campi}{17}{subsection.3.13.1}
+\contentsline {subsubsection}{\numberline {3.13.1.1}elemen}{17}{subsubsection.3.13.1.1}
+\contentsline {subsubsection}{\numberline {3.13.1.2}fd\_\discretionary {-}{}{}client}{17}{subsubsection.3.13.1.2}
+\contentsline {subsubsection}{\numberline {3.13.1.3}fd\_\discretionary {-}{}{}file}{17}{subsubsection.3.13.1.3}
+\contentsline {subsubsection}{\numberline {3.13.1.4}remote}{17}{subsubsection.3.13.1.4}
+\contentsline {section}{\numberline {3.14}Riferimenti per la struct reslist}{17}{section.3.14}
+\contentsline {subsection}{\numberline {3.14.1}Descrizione dettagliata}{18}{subsection.3.14.1}
+\contentsline {subsection}{\numberline {3.14.2}Documentazione dei campi}{18}{subsection.3.14.2}
+\contentsline {subsubsection}{\numberline {3.14.2.1}prefetch\_\discretionary {-}{}{}num}{18}{subsubsection.3.14.2.1}
+\contentsline {subsubsection}{\numberline {3.14.2.2}remote\_\discretionary {-}{}{}path}{18}{subsubsection.3.14.2.2}
+\contentsline {section}{\numberline {3.15}Riferimenti per la struct SCHEDULING}{18}{section.3.15}
+\contentsline {subsection}{\numberline {3.15.1}Descrizione dettagliata}{19}{subsection.3.15.1}
+\contentsline {subsection}{\numberline {3.15.2}Documentazione dei campi}{20}{subsection.3.15.2}
+\contentsline {subsubsection}{\numberline {3.15.2.1}non\_\discretionary {-}{}{}empty}{20}{subsubsection.3.15.2.1}
+\contentsline {subsubsection}{\numberline {3.15.2.2}planning}{20}{subsubsection.3.15.2.2}
+\contentsline {subsubsection}{\numberline {3.15.2.3}qlock}{20}{subsubsection.3.15.2.3}
+\contentsline {subsubsection}{\numberline {3.15.2.4}qsize}{20}{subsubsection.3.15.2.4}
+\contentsline {chapter}{\numberline {4}Documentazione dei file}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Riferimenti per il file src/hashtable/filesystem.c}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Documentazione delle funzioni}{22}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}file\_\discretionary {-}{}{}exists}{22}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}folder\_\discretionary {-}{}{}empty}{22}{subsubsection.4.1.1.2}
+\contentsline {subsubsection}{\numberline {4.1.1.3}obtain\_\discretionary {-}{}{}local}{22}{subsubsection.4.1.1.3}
+\contentsline {subsubsection}{\numberline {4.1.1.4}re\_\discretionary {-}{}{}new\_\discretionary {-}{}{}resource}{22}{subsubsection.4.1.1.4}
+\contentsline {subsubsection}{\numberline {4.1.1.5}recursiveDelete}{22}{subsubsection.4.1.1.5}
+\contentsline {subsubsection}{\numberline {4.1.1.6}resource\_\discretionary {-}{}{}exists}{23}{subsubsection.4.1.1.6}
+\contentsline {subsubsection}{\numberline {4.1.1.7}resource\_\discretionary {-}{}{}remove}{23}{subsubsection.4.1.1.7}
+\contentsline {section}{\numberline {4.2}Riferimenti per il file src/hashtable/fsys.c}{23}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Documentazione delle funzioni}{24}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}FileClose}{24}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}FileCreate}{24}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.1.3}FileOpen}{25}{subsubsection.4.2.1.3}
+\contentsline {section}{\numberline {4.3}Riferimenti per il file src/hashtable/hash.c}{25}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Documentazione delle definizioni}{26}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}SEED}{26}{subsubsection.4.3.1.1}
+\contentsline {subsection}{\numberline {4.3.2}Documentazione delle funzioni}{26}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}hash}{26}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}hash\_\discretionary {-}{}{}exists}{26}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.3}hash\_\discretionary {-}{}{}insert}{26}{subsubsection.4.3.2.3}
+\contentsline {subsubsection}{\numberline {4.3.2.4}hash\_\discretionary {-}{}{}occupied}{26}{subsubsection.4.3.2.4}
+\contentsline {subsubsection}{\numberline {4.3.2.5}hash\_\discretionary {-}{}{}remove}{26}{subsubsection.4.3.2.5}
+\contentsline {subsubsection}{\numberline {4.3.2.6}hashb}{26}{subsubsection.4.3.2.6}
+\contentsline {subsubsection}{\numberline {4.3.2.7}init\_\discretionary {-}{}{}hashtbl}{26}{subsubsection.4.3.2.7}
+\contentsline {section}{\numberline {4.4}Riferimenti per il file src/hashtable/hres.c}{27}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Documentazione delle funzioni}{27}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}close\_\discretionary {-}{}{}cached\_\discretionary {-}{}{}file}{27}{subsubsection.4.4.1.1}
+\contentsline {subsubsection}{\numberline {4.4.1.2}handle\_\discretionary {-}{}{}file\_\discretionary {-}{}{}filesystem}{27}{subsubsection.4.4.1.2}
+\contentsline {subsubsection}{\numberline {4.4.1.3}init\_\discretionary {-}{}{}hres}{28}{subsubsection.4.4.1.3}
+\contentsline {subsubsection}{\numberline {4.4.1.4}is\_\discretionary {-}{}{}inhash}{28}{subsubsection.4.4.1.4}
+\contentsline {subsubsection}{\numberline {4.4.1.5}map\_\discretionary {-}{}{}cached\_\discretionary {-}{}{}file}{28}{subsubsection.4.4.1.5}
+\contentsline {subsubsection}{\numberline {4.4.1.6}parseHead\_\discretionary {-}{}{}time}{28}{subsubsection.4.4.1.6}
+\contentsline {section}{\numberline {4.5}Riferimenti per il file src/hashtable/include/consts.h}{29}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Documentazione delle definizioni}{30}{subsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1.1}HASH\_\discretionary {-}{}{}SIZE}{30}{subsubsection.4.5.1.1}
+\contentsline {subsubsection}{\numberline {4.5.1.2}MAX\_\discretionary {-}{}{}FILE}{30}{subsubsection.4.5.1.2}
+\contentsline {subsubsection}{\numberline {4.5.1.3}MAX\_\discretionary {-}{}{}HRES}{30}{subsubsection.4.5.1.3}
+\contentsline {subsubsection}{\numberline {4.5.1.4}MOD}{30}{subsubsection.4.5.1.4}
+\contentsline {subsubsection}{\numberline {4.5.1.5}MULT1}{30}{subsubsection.4.5.1.5}
+\contentsline {subsubsection}{\numberline {4.5.1.6}MULT2}{30}{subsubsection.4.5.1.6}
+\contentsline {subsubsection}{\numberline {4.5.1.7}NHASH1}{30}{subsubsection.4.5.1.7}
+\contentsline {subsubsection}{\numberline {4.5.1.8}NHASH2}{30}{subsubsection.4.5.1.8}
+\contentsline {section}{\numberline {4.6}Riferimenti per il file src/proxy/include/consts.h}{30}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Documentazione delle definizioni}{33}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}BLACK}{33}{subsubsection.4.6.1.1}
+\contentsline {subsubsection}{\numberline {4.6.1.2}BLUE}{33}{subsubsection.4.6.1.2}
+\contentsline {subsubsection}{\numberline {4.6.1.3}BOLD}{33}{subsubsection.4.6.1.3}
+\contentsline {subsubsection}{\numberline {4.6.1.4}CYAN}{33}{subsubsection.4.6.1.4}
+\contentsline {subsubsection}{\numberline {4.6.1.5}END\_\discretionary {-}{}{}COLOR}{33}{subsubsection.4.6.1.5}
+\contentsline {subsubsection}{\numberline {4.6.1.6}GET}{33}{subsubsection.4.6.1.6}
+\contentsline {subsubsection}{\numberline {4.6.1.7}GREEN}{33}{subsubsection.4.6.1.7}
+\contentsline {subsubsection}{\numberline {4.6.1.8}INF}{33}{subsubsection.4.6.1.8}
+\contentsline {subsubsection}{\numberline {4.6.1.9}INFO}{33}{subsubsection.4.6.1.9}
+\contentsline {subsubsection}{\numberline {4.6.1.10}INTERVAL\_\discretionary {-}{}{}NOT\_\discretionary {-}{}{}FOUND}{33}{subsubsection.4.6.1.10}
+\contentsline {subsubsection}{\numberline {4.6.1.11}LIMIT\_\discretionary {-}{}{}FILE}{33}{subsubsection.4.6.1.11}
+\contentsline {subsubsection}{\numberline {4.6.1.12}MAGENTA}{33}{subsubsection.4.6.1.12}
+\contentsline {subsubsection}{\numberline {4.6.1.13}MAX\_\discretionary {-}{}{}BUFF}{33}{subsubsection.4.6.1.13}
+\contentsline {subsubsection}{\numberline {4.6.1.14}MAX\_\discretionary {-}{}{}FILE}{33}{subsubsection.4.6.1.14}
+\contentsline {subsubsection}{\numberline {4.6.1.15}MAX\_\discretionary {-}{}{}PATH}{33}{subsubsection.4.6.1.15}
+\contentsline {subsubsection}{\numberline {4.6.1.16}MAX\_\discretionary {-}{}{}TIME}{33}{subsubsection.4.6.1.16}
+\contentsline {subsubsection}{\numberline {4.6.1.17}MAX\_\discretionary {-}{}{}TIMESELECT}{33}{subsubsection.4.6.1.17}
+\contentsline {subsubsection}{\numberline {4.6.1.18}MAX\_\discretionary {-}{}{}uTIME}{33}{subsubsection.4.6.1.18}
+\contentsline {subsubsection}{\numberline {4.6.1.19}MAXCONN}{33}{subsubsection.4.6.1.19}
+\contentsline {subsubsection}{\numberline {4.6.1.20}MAXIDREF}{33}{subsubsection.4.6.1.20}
+\contentsline {subsubsection}{\numberline {4.6.1.21}MAXREF}{33}{subsubsection.4.6.1.21}
+\contentsline {subsubsection}{\numberline {4.6.1.22}MAXREQUEST}{33}{subsubsection.4.6.1.22}
+\contentsline {subsubsection}{\numberline {4.6.1.23}NO\_\discretionary {-}{}{}MORE\_\discretionary {-}{}{}THREAD}{33}{subsubsection.4.6.1.23}
+\contentsline {subsubsection}{\numberline {4.6.1.24}NOT\_\discretionary {-}{}{}FOUND}{33}{subsubsection.4.6.1.24}
+\contentsline {subsubsection}{\numberline {4.6.1.25}OK}{33}{subsubsection.4.6.1.25}
+\contentsline {subsubsection}{\numberline {4.6.1.26}OK\_\discretionary {-}{}{}INFO}{33}{subsubsection.4.6.1.26}
+\contentsline {subsubsection}{\numberline {4.6.1.27}OK\_\discretionary {-}{}{}RANGE}{33}{subsubsection.4.6.1.27}
+\contentsline {subsubsection}{\numberline {4.6.1.28}PROXY\_\discretionary {-}{}{}IP}{33}{subsubsection.4.6.1.28}
+\contentsline {subsubsection}{\numberline {4.6.1.29}PROXY\_\discretionary {-}{}{}PORT}{33}{subsubsection.4.6.1.29}
+\contentsline {subsubsection}{\numberline {4.6.1.30}RED}{33}{subsubsection.4.6.1.30}
+\contentsline {subsubsection}{\numberline {4.6.1.31}RESET\_\discretionary {-}{}{}COLOR}{33}{subsubsection.4.6.1.31}
+\contentsline {subsubsection}{\numberline {4.6.1.32}SOCKET\_\discretionary {-}{}{}ERROR}{33}{subsubsection.4.6.1.32}
+\contentsline {subsubsection}{\numberline {4.6.1.33}START\_\discretionary {-}{}{}COLOR}{33}{subsubsection.4.6.1.33}
+\contentsline {subsubsection}{\numberline {4.6.1.34}UNKNOWN\_\discretionary {-}{}{}ERROR}{33}{subsubsection.4.6.1.34}
+\contentsline {subsubsection}{\numberline {4.6.1.35}UNKNOWN\_\discretionary {-}{}{}ERROR\_\discretionary {-}{}{}SIZE}{33}{subsubsection.4.6.1.35}
+\contentsline {subsubsection}{\numberline {4.6.1.36}WHITE}{33}{subsubsection.4.6.1.36}
+\contentsline {subsubsection}{\numberline {4.6.1.37}WRONG\_\discretionary {-}{}{}REQUEST}{33}{subsubsection.4.6.1.37}
+\contentsline {subsubsection}{\numberline {4.6.1.38}YELLOW}{33}{subsubsection.4.6.1.38}
+\contentsline {section}{\numberline {4.7}Riferimenti per il file src/hashtable/include/filesystem.h}{33}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Documentazione delle definizioni}{36}{subsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.1.1}\_\discretionary {-}{}{}GNU\_\discretionary {-}{}{}SOURCE}{36}{subsubsection.4.7.1.1}
+\contentsline {subsubsection}{\numberline {4.7.1.2}cache\_\discretionary {-}{}{}free}{36}{subsubsection.4.7.1.2}
+\contentsline {subsubsection}{\numberline {4.7.1.3}close\_\discretionary {-}{}{}map}{36}{subsubsection.4.7.1.3}
+\contentsline {subsubsection}{\numberline {4.7.1.4}EXPIRED}{36}{subsubsection.4.7.1.4}
+\contentsline {subsubsection}{\numberline {4.7.1.5}FILE\_\discretionary {-}{}{}SIZE}{36}{subsubsection.4.7.1.5}
+\contentsline {subsubsection}{\numberline {4.7.1.6}NOW}{36}{subsubsection.4.7.1.6}
+\contentsline {subsubsection}{\numberline {4.7.1.7}PAST}{36}{subsubsection.4.7.1.7}
+\contentsline {subsection}{\numberline {4.7.2}Documentazione delle funzioni}{36}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}file\_\discretionary {-}{}{}exists}{36}{subsubsection.4.7.2.1}
+\contentsline {subsubsection}{\numberline {4.7.2.2}folder\_\discretionary {-}{}{}empty}{37}{subsubsection.4.7.2.2}
+\contentsline {subsubsection}{\numberline {4.7.2.3}obtain\_\discretionary {-}{}{}local}{37}{subsubsection.4.7.2.3}
+\contentsline {subsubsection}{\numberline {4.7.2.4}re\_\discretionary {-}{}{}new\_\discretionary {-}{}{}resource}{37}{subsubsection.4.7.2.4}
+\contentsline {subsubsection}{\numberline {4.7.2.5}recursiveDelete}{37}{subsubsection.4.7.2.5}
+\contentsline {subsubsection}{\numberline {4.7.2.6}resource\_\discretionary {-}{}{}exists}{38}{subsubsection.4.7.2.6}
+\contentsline {subsubsection}{\numberline {4.7.2.7}resource\_\discretionary {-}{}{}remove}{38}{subsubsection.4.7.2.7}
+\contentsline {section}{\numberline {4.8}Riferimenti per il file src/hashtable/include/fsys.h}{38}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Documentazione delle funzioni}{40}{subsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.1.1}FileClose}{40}{subsubsection.4.8.1.1}
+\contentsline {subsubsection}{\numberline {4.8.1.2}FileCreate}{40}{subsubsection.4.8.1.2}
+\contentsline {subsubsection}{\numberline {4.8.1.3}FileOpen}{40}{subsubsection.4.8.1.3}
+\contentsline {section}{\numberline {4.9}Riferimenti per il file src/hashtable/include/hash.h}{41}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Documentazione delle definizioni}{43}{subsection.4.9.1}
+\contentsline {subsubsection}{\numberline {4.9.1.1}\_\discretionary {-}{}{}BSD\_\discretionary {-}{}{}SOURCE}{43}{subsubsection.4.9.1.1}
+\contentsline {subsection}{\numberline {4.9.2}Documentazione delle funzioni}{43}{subsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.2.1}hash}{43}{subsubsection.4.9.2.1}
+\contentsline {subsubsection}{\numberline {4.9.2.2}hash\_\discretionary {-}{}{}exists}{43}{subsubsection.4.9.2.2}
+\contentsline {subsubsection}{\numberline {4.9.2.3}hash\_\discretionary {-}{}{}insert}{43}{subsubsection.4.9.2.3}
+\contentsline {subsubsection}{\numberline {4.9.2.4}hash\_\discretionary {-}{}{}occupied}{43}{subsubsection.4.9.2.4}
+\contentsline {subsubsection}{\numberline {4.9.2.5}hash\_\discretionary {-}{}{}remove}{43}{subsubsection.4.9.2.5}
+\contentsline {subsubsection}{\numberline {4.9.2.6}hashb}{43}{subsubsection.4.9.2.6}
+\contentsline {subsubsection}{\numberline {4.9.2.7}init\_\discretionary {-}{}{}hashtbl}{43}{subsubsection.4.9.2.7}
+\contentsline {section}{\numberline {4.10}Riferimenti per il file src/hashtable/include/hres.h}{43}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Documentazione delle funzioni}{45}{subsection.4.10.1}
+\contentsline {subsubsection}{\numberline {4.10.1.1}close\_\discretionary {-}{}{}cached\_\discretionary {-}{}{}file}{45}{subsubsection.4.10.1.1}
+\contentsline {subsubsection}{\numberline {4.10.1.2}handle\_\discretionary {-}{}{}file\_\discretionary {-}{}{}filesystem}{45}{subsubsection.4.10.1.2}
+\contentsline {subsubsection}{\numberline {4.10.1.3}init\_\discretionary {-}{}{}hres}{45}{subsubsection.4.10.1.3}
+\contentsline {subsubsection}{\numberline {4.10.1.4}is\_\discretionary {-}{}{}inhash}{45}{subsubsection.4.10.1.4}
+\contentsline {subsubsection}{\numberline {4.10.1.5}map\_\discretionary {-}{}{}cached\_\discretionary {-}{}{}file}{46}{subsubsection.4.10.1.5}
+\contentsline {section}{\numberline {4.11}Riferimenti per il file src/hashtable/include/lett\_\discretionary {-}{}{}scritt.h}{46}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Documentazione delle definizioni}{48}{subsection.4.11.1}
+\contentsline {subsubsection}{\numberline {4.11.1.1}P}{48}{subsubsection.4.11.1.1}
+\contentsline {subsubsection}{\numberline {4.11.1.2}V}{48}{subsubsection.4.11.1.2}
+\contentsline {subsubsection}{\numberline {4.11.1.3}WREAD}{48}{subsubsection.4.11.1.3}
+\contentsline {subsubsection}{\numberline {4.11.1.4}WWRITE}{48}{subsubsection.4.11.1.4}
+\contentsline {subsection}{\numberline {4.11.2}Documentazione delle ridefinizioni di tipo (typedef)}{48}{subsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.2.1}ANYTYPE}{48}{subsubsection.4.11.2.1}
+\contentsline {subsection}{\numberline {4.11.3}Documentazione delle funzioni}{48}{subsection.4.11.3}
+\contentsline {subsubsection}{\numberline {4.11.3.1}init\_\discretionary {-}{}{}struct}{48}{subsubsection.4.11.3.1}
+\contentsline {subsubsection}{\numberline {4.11.3.2}struct\_\discretionary {-}{}{}do\_\discretionary {-}{}{}read}{48}{subsubsection.4.11.3.2}
+\contentsline {subsubsection}{\numberline {4.11.3.3}struct\_\discretionary {-}{}{}do\_\discretionary {-}{}{}write}{48}{subsubsection.4.11.3.3}
+\contentsline {subsubsection}{\numberline {4.11.3.4}struct\_\discretionary {-}{}{}end\_\discretionary {-}{}{}read}{49}{subsubsection.4.11.3.4}
+\contentsline {subsubsection}{\numberline {4.11.3.5}struct\_\discretionary {-}{}{}end\_\discretionary {-}{}{}write}{49}{subsubsection.4.11.3.5}
+\contentsline {section}{\numberline {4.12}Riferimenti per il file src/hashtable/include/libhashtable.h}{49}{section.4.12}
+\contentsline {section}{\numberline {4.13}Riferimenti per il file src/proxy/include/libhashtable.h}{50}{section.4.13}
+\contentsline {section}{\numberline {4.14}Riferimenti per il file src/hashtable/lett\_\discretionary {-}{}{}scritt.c}{51}{section.4.14}
+\contentsline {subsection}{\numberline {4.14.1}Documentazione delle funzioni}{52}{subsection.4.14.1}
+\contentsline {subsubsection}{\numberline {4.14.1.1}init\_\discretionary {-}{}{}struct}{52}{subsubsection.4.14.1.1}
+\contentsline {subsubsection}{\numberline {4.14.1.2}struct\_\discretionary {-}{}{}do\_\discretionary {-}{}{}read}{52}{subsubsection.4.14.1.2}
+\contentsline {subsubsection}{\numberline {4.14.1.3}struct\_\discretionary {-}{}{}do\_\discretionary {-}{}{}write}{52}{subsubsection.4.14.1.3}
+\contentsline {subsubsection}{\numberline {4.14.1.4}struct\_\discretionary {-}{}{}end\_\discretionary {-}{}{}read}{52}{subsubsection.4.14.1.4}
+\contentsline {subsubsection}{\numberline {4.14.1.5}struct\_\discretionary {-}{}{}end\_\discretionary {-}{}{}write}{52}{subsubsection.4.14.1.5}
+\contentsline {section}{\numberline {4.15}Riferimenti per il file src/proxy/communication.c}{52}{section.4.15}
+\contentsline {subsection}{\numberline {4.15.1}Documentazione delle funzioni}{53}{subsection.4.15.1}
+\contentsline {subsubsection}{\numberline {4.15.1.1}atreturn}{53}{subsubsection.4.15.1.1}
+\contentsline {subsubsection}{\numberline {4.15.1.2}atreturns}{54}{subsubsection.4.15.1.2}
+\contentsline {subsubsection}{\numberline {4.15.1.3}doreply}{54}{subsubsection.4.15.1.3}
+\contentsline {subsubsection}{\numberline {4.15.1.4}dorequest}{54}{subsubsection.4.15.1.4}
+\contentsline {subsubsection}{\numberline {4.15.1.5}get\_\discretionary {-}{}{}resource\_\discretionary {-}{}{}alloc}{54}{subsubsection.4.15.1.5}
+\contentsline {subsubsection}{\numberline {4.15.1.6}getfirstlevel\_\discretionary {-}{}{}next}{55}{subsubsection.4.15.1.6}
+\contentsline {subsubsection}{\numberline {4.15.1.7}getIP}{55}{subsubsection.4.15.1.7}
+\contentsline {subsubsection}{\numberline {4.15.1.8}getPort}{55}{subsubsection.4.15.1.8}
+\contentsline {subsubsection}{\numberline {4.15.1.9}haspos}{55}{subsubsection.4.15.1.9}
+\contentsline {subsubsection}{\numberline {4.15.1.10}parseHead}{55}{subsubsection.4.15.1.10}
+\contentsline {subsubsection}{\numberline {4.15.1.11}parseRequest}{56}{subsubsection.4.15.1.11}
+\contentsline {subsubsection}{\numberline {4.15.1.12}surfto}{56}{subsubsection.4.15.1.12}
+\contentsline {subsection}{\numberline {4.15.2}Documentazione delle variabili}{56}{subsection.4.15.2}
+\contentsline {subsubsection}{\numberline {4.15.2.1}oldoutptfd}{56}{subsubsection.4.15.2.1}
+\contentsline {section}{\numberline {4.16}Riferimenti per il file src/proxy/connect.c}{56}{section.4.16}
+\contentsline {subsection}{\numberline {4.16.1}Documentazione delle definizioni}{57}{subsection.4.16.1}
+\contentsline {subsubsection}{\numberline {4.16.1.1}INIT\_\discretionary {-}{}{}CONNECT}{57}{subsubsection.4.16.1.1}
+\contentsline {subsection}{\numberline {4.16.2}Documentazione delle funzioni}{57}{subsection.4.16.2}
+\contentsline {subsubsection}{\numberline {4.16.2.1}base\_\discretionary {-}{}{}read}{57}{subsubsection.4.16.2.1}
+\contentsline {subsubsection}{\numberline {4.16.2.2}establishConnection}{57}{subsubsection.4.16.2.2}
+\contentsline {subsubsection}{\numberline {4.16.2.3}fallisci\_\discretionary {-}{}{}tutto}{57}{subsubsection.4.16.2.3}
+\contentsline {subsubsection}{\numberline {4.16.2.4}init\_\discretionary {-}{}{}connect\_\discretionary {-}{}{}struct}{58}{subsubsection.4.16.2.4}
+\contentsline {subsubsection}{\numberline {4.16.2.5}invia\_\discretionary {-}{}{}client\_\discretionary {-}{}{}termina}{58}{subsubsection.4.16.2.5}
+\contentsline {subsubsection}{\numberline {4.16.2.6}send\_\discretionary {-}{}{}request}{58}{subsubsection.4.16.2.6}
+\contentsline {subsubsection}{\numberline {4.16.2.7}server\_\discretionary {-}{}{}base\_\discretionary {-}{}{}send}{58}{subsubsection.4.16.2.7}
+\contentsline {subsubsection}{\numberline {4.16.2.8}server\_\discretionary {-}{}{}complete\_\discretionary {-}{}{}read}{59}{subsubsection.4.16.2.8}
+\contentsline {subsubsection}{\numberline {4.16.2.9}server\_\discretionary {-}{}{}complete\_\discretionary {-}{}{}send}{59}{subsubsection.4.16.2.9}
+\contentsline {subsubsection}{\numberline {4.16.2.10}session}{59}{subsubsection.4.16.2.10}
+\contentsline {section}{\numberline {4.17}Riferimenti per il file src/proxy/include/bank\_\discretionary {-}{}{}functs.h}{59}{section.4.17}
+\contentsline {section}{\numberline {4.18}Riferimenti per il file src/proxy/include/bank\_\discretionary {-}{}{}head.h}{60}{section.4.18}
+\contentsline {subsection}{\numberline {4.18.1}Documentazione delle funzioni}{61}{subsection.4.18.1}
+\contentsline {subsubsection}{\numberline {4.18.1.1}cache\_\discretionary {-}{}{}done}{61}{subsubsection.4.18.1.1}
+\contentsline {subsubsection}{\numberline {4.18.1.2}cache\_\discretionary {-}{}{}exists}{61}{subsubsection.4.18.1.2}
+\contentsline {subsubsection}{\numberline {4.18.1.3}cache\_\discretionary {-}{}{}init}{62}{subsubsection.4.18.1.3}
+\contentsline {subsubsection}{\numberline {4.18.1.4}cache\_\discretionary {-}{}{}init\_\discretionary {-}{}{}socket}{62}{subsubsection.4.18.1.4}
+\contentsline {section}{\numberline {4.19}Riferimenti per il file src/proxy/include/communication.h}{62}{section.4.19}
+\contentsline {subsection}{\numberline {4.19.1}Documentazione delle definizioni}{64}{subsection.4.19.1}
+\contentsline {subsubsection}{\numberline {4.19.1.1}\_\discretionary {-}{}{}GNU\_\discretionary {-}{}{}SOURCE}{64}{subsubsection.4.19.1.1}
+\contentsline {subsubsection}{\numberline {4.19.1.2}distance}{64}{subsubsection.4.19.1.2}
+\contentsline {subsection}{\numberline {4.19.2}Documentazione delle funzioni}{64}{subsection.4.19.2}
+\contentsline {subsubsection}{\numberline {4.19.2.1}doreply}{64}{subsubsection.4.19.2.1}
+\contentsline {subsubsection}{\numberline {4.19.2.2}dorequest}{64}{subsubsection.4.19.2.2}
+\contentsline {subsubsection}{\numberline {4.19.2.3}get\_\discretionary {-}{}{}resource\_\discretionary {-}{}{}alloc}{65}{subsubsection.4.19.2.3}
+\contentsline {subsubsection}{\numberline {4.19.2.4}getIP}{65}{subsubsection.4.19.2.4}
+\contentsline {subsubsection}{\numberline {4.19.2.5}getPort}{65}{subsubsection.4.19.2.5}
+\contentsline {subsubsection}{\numberline {4.19.2.6}parseHead}{65}{subsubsection.4.19.2.6}
+\contentsline {subsubsection}{\numberline {4.19.2.7}parseRequest}{66}{subsubsection.4.19.2.7}
+\contentsline {section}{\numberline {4.20}Riferimenti per il file src/proxy/include/connect.h}{66}{section.4.20}
+\contentsline {subsection}{\numberline {4.20.1}Documentazione delle definizioni}{68}{subsection.4.20.1}
+\contentsline {subsubsection}{\numberline {4.20.1.1}MAX\_\discretionary {-}{}{}TENTATIVI}{68}{subsubsection.4.20.1.1}
+\contentsline {subsection}{\numberline {4.20.2}Documentazione delle funzioni}{68}{subsection.4.20.2}
+\contentsline {subsubsection}{\numberline {4.20.2.1}fallisci\_\discretionary {-}{}{}tutto}{68}{subsubsection.4.20.2.1}
+\contentsline {subsubsection}{\numberline {4.20.2.2}invia\_\discretionary {-}{}{}client\_\discretionary {-}{}{}termina}{68}{subsubsection.4.20.2.2}
+\contentsline {subsubsection}{\numberline {4.20.2.3}session}{68}{subsubsection.4.20.2.3}
+\contentsline {section}{\numberline {4.21}Riferimenti per il file src/proxy/include/init.h}{69}{section.4.21}
+\contentsline {subsection}{\numberline {4.21.1}Documentazione delle funzioni}{69}{subsection.4.21.1}
+\contentsline {subsubsection}{\numberline {4.21.1.1}handle\_\discretionary {-}{}{}client\_\discretionary {-}{}{}request}{69}{subsubsection.4.21.1.1}
+\contentsline {subsubsection}{\numberline {4.21.1.2}init\_\discretionary {-}{}{}proxy\_\discretionary {-}{}{}clientside}{70}{subsubsection.4.21.1.2}
+\contentsline {subsubsection}{\numberline {4.21.1.3}start\_\discretionary {-}{}{}threads}{70}{subsubsection.4.21.1.3}
+\contentsline {section}{\numberline {4.22}Riferimenti per il file src/proxy/include/init\_\discretionary {-}{}{}globals.h}{70}{section.4.22}
+\contentsline {subsection}{\numberline {4.22.1}Documentazione delle variabili}{72}{subsection.4.22.1}
+\contentsline {subsubsection}{\numberline {4.22.1.1}cache\_\discretionary {-}{}{}hash\_\discretionary {-}{}{}table}{72}{subsubsection.4.22.1.1}
+\contentsline {subsubsection}{\numberline {4.22.1.2}cachePool}{72}{subsubsection.4.22.1.2}
+\contentsline {subsubsection}{\numberline {4.22.1.3}global}{72}{subsubsection.4.22.1.3}
+\contentsline {subsubsection}{\numberline {4.22.1.4}prefetch\_\discretionary {-}{}{}arg}{72}{subsubsection.4.22.1.4}
+\contentsline {subsubsection}{\numberline {4.22.1.5}prefetchPool}{72}{subsubsection.4.22.1.5}
+\contentsline {subsubsection}{\numberline {4.22.1.6}serverPool}{72}{subsubsection.4.22.1.6}
+\contentsline {section}{\numberline {4.23}Riferimenti per il file src/proxy/include/lists.h}{72}{section.4.23}
+\contentsline {section}{\numberline {4.24}Riferimenti per il file src/proxy/include/macro.h}{72}{section.4.24}
+\contentsline {subsection}{\numberline {4.24.1}Documentazione delle definizioni}{74}{subsection.4.24.1}
+\contentsline {subsubsection}{\numberline {4.24.1.1}CPrintf}{74}{subsubsection.4.24.1.1}
+\contentsline {subsubsection}{\numberline {4.24.1.2}kassert}{74}{subsubsection.4.24.1.2}
+\contentsline {subsubsection}{\numberline {4.24.1.3}ONCONDRET1}{74}{subsubsection.4.24.1.3}
+\contentsline {subsubsection}{\numberline {4.24.1.4}SET\_\discretionary {-}{}{}TIMEOUT}{74}{subsubsection.4.24.1.4}
+\contentsline {section}{\numberline {4.25}Riferimenti per il file src/proxy/include/params.h}{75}{section.4.25}
+\contentsline {subsection}{\numberline {4.25.1}Documentazione delle definizioni}{77}{subsection.4.25.1}
+\contentsline {subsubsection}{\numberline {4.25.1.1}END\_\discretionary {-}{}{}CYCLE}{77}{subsubsection.4.25.1.1}
+\contentsline {subsubsection}{\numberline {4.25.1.2}GET\_\discretionary {-}{}{}NEXT\_\discretionary {-}{}{}OPTIND}{77}{subsubsection.4.25.1.2}
+\contentsline {subsubsection}{\numberline {4.25.1.3}GETOPT\_\discretionary {-}{}{}L}{77}{subsubsection.4.25.1.3}
+\contentsline {subsubsection}{\numberline {4.25.1.4}HAS\_\discretionary {-}{}{}ARG}{77}{subsubsection.4.25.1.4}
+\contentsline {subsubsection}{\numberline {4.25.1.5}HAS\_\discretionary {-}{}{}OTHER\_\discretionary {-}{}{}ARGS}{77}{subsubsection.4.25.1.5}
+\contentsline {subsubsection}{\numberline {4.25.1.6}IS\_\discretionary {-}{}{}EOOPT}{77}{subsubsection.4.25.1.6}
+\contentsline {subsubsection}{\numberline {4.25.1.7}LONGNAME}{77}{subsubsection.4.25.1.7}
+\contentsline {subsubsection}{\numberline {4.25.1.8}obstack\_\discretionary {-}{}{}chunk\_\discretionary {-}{}{}alloc}{77}{subsubsection.4.25.1.8}
+\contentsline {subsubsection}{\numberline {4.25.1.9}obstack\_\discretionary {-}{}{}chunk\_\discretionary {-}{}{}free}{77}{subsubsection.4.25.1.9}
+\contentsline {subsubsection}{\numberline {4.25.1.10}REMAINING\_\discretionary {-}{}{}ARGS}{77}{subsubsection.4.25.1.10}
+\contentsline {subsubsection}{\numberline {4.25.1.11}START\_\discretionary {-}{}{}CYCLE}{78}{subsubsection.4.25.1.11}
+\contentsline {subsubsection}{\numberline {4.25.1.12}WHILE\_\discretionary {-}{}{}GETOPT\_\discretionary {-}{}{}L}{78}{subsubsection.4.25.1.12}
+\contentsline {subsection}{\numberline {4.25.2}Documentazione delle funzioni}{78}{subsection.4.25.2}
+\contentsline {subsubsection}{\numberline {4.25.2.1}init\_\discretionary {-}{}{}params}{78}{subsubsection.4.25.2.1}
+\contentsline {section}{\numberline {4.26}Riferimenti per il file src/proxy/include/pthread\_\discretionary {-}{}{}ext.h}{78}{section.4.26}
+\contentsline {subsection}{\numberline {4.26.1}Documentazione delle definizioni}{80}{subsection.4.26.1}
+\contentsline {subsubsection}{\numberline {4.26.1.1}cond\_\discretionary {-}{}{}init}{80}{subsubsection.4.26.1.1}
+\contentsline {subsubsection}{\numberline {4.26.1.2}mutex\_\discretionary {-}{}{}init}{80}{subsubsection.4.26.1.2}
+\contentsline {section}{\numberline {4.27}Riferimenti per il file src/proxy/include/thread\_\discretionary {-}{}{}functs.h}{80}{section.4.27}
+\contentsline {subsection}{\numberline {4.27.1}Documentazione delle definizioni}{82}{subsection.4.27.1}
+\contentsline {subsubsection}{\numberline {4.27.1.1}FINEDIMONDO}{82}{subsubsection.4.27.1.1}
+\contentsline {subsection}{\numberline {4.27.2}Documentazione delle funzioni}{82}{subsection.4.27.2}
+\contentsline {subsubsection}{\numberline {4.27.2.1}init\_\discretionary {-}{}{}scheduler}{82}{subsubsection.4.27.2.1}
+\contentsline {subsubsection}{\numberline {4.27.2.2}main\_\discretionary {-}{}{}add\_\discretionary {-}{}{}job}{82}{subsubsection.4.27.2.2}
+\contentsline {subsubsection}{\numberline {4.27.2.3}thread\_\discretionary {-}{}{}memento}{82}{subsubsection.4.27.2.3}
+\contentsline {section}{\numberline {4.28}Riferimenti per il file src/proxy/include/toclient.h}{83}{section.4.28}
+\contentsline {subsection}{\numberline {4.28.1}Documentazione delle funzioni}{84}{subsection.4.28.1}
+\contentsline {subsubsection}{\numberline {4.28.1.1}toclient}{84}{subsubsection.4.28.1.1}
+\contentsline {section}{\numberline {4.29}Riferimenti per il file src/proxy/include/toserver.h}{85}{section.4.29}
+\contentsline {subsection}{\numberline {4.29.1}Documentazione delle funzioni}{86}{subsection.4.29.1}
+\contentsline {subsubsection}{\numberline {4.29.1.1}fetch}{86}{subsubsection.4.29.1.1}
+\contentsline {subsubsection}{\numberline {4.29.1.2}handle\_\discretionary {-}{}{}prefetchPool}{86}{subsubsection.4.29.1.2}
+\contentsline {subsubsection}{\numberline {4.29.1.3}handle\_\discretionary {-}{}{}serverPool}{86}{subsubsection.4.29.1.3}
+\contentsline {section}{\numberline {4.30}Riferimenti per il file src/proxy/include/types.h}{87}{section.4.30}
+\contentsline {subsection}{\numberline {4.30.1}Documentazione delle ridefinizioni di tipo (typedef)}{88}{subsection.4.30.1}
+\contentsline {subsubsection}{\numberline {4.30.1.1}LIST}{88}{subsubsection.4.30.1.1}
+\contentsline {section}{\numberline {4.31}Riferimenti per il file src/proxy/include/uni\_\discretionary {-}{}{}list.h}{88}{section.4.31}
+\contentsline {subsection}{\numberline {4.31.1}Documentazione delle definizioni}{90}{subsection.4.31.1}
+\contentsline {subsubsection}{\numberline {4.31.1.1}container\_\discretionary {-}{}{}of2}{90}{subsubsection.4.31.1.1}
+\contentsline {subsubsection}{\numberline {4.31.1.2}init\_\discretionary {-}{}{}list\_\discretionary {-}{}{}head}{90}{subsubsection.4.31.1.2}
+\contentsline {subsection}{\numberline {4.31.2}Documentazione delle funzioni}{90}{subsection.4.31.2}
+\contentsline {subsubsection}{\numberline {4.31.2.1}alloc\_\discretionary {-}{}{}new\_\discretionary {-}{}{}job}{90}{subsubsection.4.31.2.1}
+\contentsline {subsubsection}{\numberline {4.31.2.2}dequeue}{90}{subsubsection.4.31.2.2}
+\contentsline {subsubsection}{\numberline {4.31.2.3}dequeue\_\discretionary {-}{}{}job}{90}{subsubsection.4.31.2.3}
+\contentsline {subsubsection}{\numberline {4.31.2.4}enqueue}{90}{subsubsection.4.31.2.4}
+\contentsline {subsubsection}{\numberline {4.31.2.5}enqueue\_\discretionary {-}{}{}job}{90}{subsubsection.4.31.2.5}
+\contentsline {subsubsection}{\numberline {4.31.2.6}exists\_\discretionary {-}{}{}job\_\discretionary {-}{}{}res}{90}{subsubsection.4.31.2.6}
+\contentsline {subsubsection}{\numberline {4.31.2.7}init\_\discretionary {-}{}{}job\_\discretionary {-}{}{}queue}{91}{subsubsection.4.31.2.7}
+\contentsline {subsubsection}{\numberline {4.31.2.8}new\_\discretionary {-}{}{}list}{91}{subsubsection.4.31.2.8}
+\contentsline {subsubsection}{\numberline {4.31.2.9}push\_\discretionary {-}{}{}job}{91}{subsubsection.4.31.2.9}
+\contentsline {subsubsection}{\numberline {4.31.2.10}remove\_\discretionary {-}{}{}elem}{91}{subsubsection.4.31.2.10}
+\contentsline {subsubsection}{\numberline {4.31.2.11}remove\_\discretionary {-}{}{}job}{91}{subsubsection.4.31.2.11}
+\contentsline {subsubsection}{\numberline {4.31.2.12}run\_\discretionary {-}{}{}job}{91}{subsubsection.4.31.2.12}
+\contentsline {subsubsection}{\numberline {4.31.2.13}update\_\discretionary {-}{}{}list}{91}{subsubsection.4.31.2.13}
+\contentsline {section}{\numberline {4.32}Riferimenti per il file src/proxy/init.c}{91}{section.4.32}
+\contentsline {subsection}{\numberline {4.32.1}Documentazione delle funzioni}{92}{subsection.4.32.1}
+\contentsline {subsubsection}{\numberline {4.32.1.1}handle\_\discretionary {-}{}{}client\_\discretionary {-}{}{}request}{92}{subsubsection.4.32.1.1}
+\contentsline {subsubsection}{\numberline {4.32.1.2}init\_\discretionary {-}{}{}proxy\_\discretionary {-}{}{}clientside}{93}{subsubsection.4.32.1.2}
+\contentsline {subsubsection}{\numberline {4.32.1.3}main}{93}{subsubsection.4.32.1.3}
+\contentsline {subsubsection}{\numberline {4.32.1.4}start\_\discretionary {-}{}{}threads}{93}{subsubsection.4.32.1.4}
+\contentsline {subsection}{\numberline {4.32.2}Documentazione delle variabili}{94}{subsection.4.32.2}
+\contentsline {subsubsection}{\numberline {4.32.2.1}cache}{94}{subsubsection.4.32.2.1}
+\contentsline {subsubsection}{\numberline {4.32.2.2}cache\_\discretionary {-}{}{}arg}{94}{subsubsection.4.32.2.2}
+\contentsline {subsubsection}{\numberline {4.32.2.3}cache\_\discretionary {-}{}{}hash\_\discretionary {-}{}{}table}{94}{subsubsection.4.32.2.3}
+\contentsline {subsubsection}{\numberline {4.32.2.4}cachePool}{94}{subsubsection.4.32.2.4}
+\contentsline {subsubsection}{\numberline {4.32.2.5}global}{94}{subsubsection.4.32.2.5}
+\contentsline {subsubsection}{\numberline {4.32.2.6}prefetch}{94}{subsubsection.4.32.2.6}
+\contentsline {subsubsection}{\numberline {4.32.2.7}prefetch\_\discretionary {-}{}{}arg}{94}{subsubsection.4.32.2.7}
+\contentsline {subsubsection}{\numberline {4.32.2.8}prefetchPool}{94}{subsubsection.4.32.2.8}
+\contentsline {subsubsection}{\numberline {4.32.2.9}pt\_\discretionary {-}{}{}attr}{94}{subsubsection.4.32.2.9}
+\contentsline {subsubsection}{\numberline {4.32.2.10}server}{94}{subsubsection.4.32.2.10}
+\contentsline {subsubsection}{\numberline {4.32.2.11}server\_\discretionary {-}{}{}thread\_\discretionary {-}{}{}args}{94}{subsubsection.4.32.2.11}
+\contentsline {subsubsection}{\numberline {4.32.2.12}serverPool}{94}{subsubsection.4.32.2.12}
+\contentsline {section}{\numberline {4.33}Riferimenti per il file src/proxy/params.c}{94}{section.4.33}
+\contentsline {subsection}{\numberline {4.33.1}Documentazione delle funzioni}{95}{subsection.4.33.1}
+\contentsline {subsubsection}{\numberline {4.33.1.1}help}{95}{subsubsection.4.33.1.1}
+\contentsline {subsubsection}{\numberline {4.33.1.2}init\_\discretionary {-}{}{}params}{95}{subsubsection.4.33.1.2}
+\contentsline {subsubsection}{\numberline {4.33.1.3}mkshortopt}{95}{subsubsection.4.33.1.3}
+\contentsline {section}{\numberline {4.34}Riferimenti per il file src/proxy/thread\_\discretionary {-}{}{}functs.c}{95}{section.4.34}
+\contentsline {subsection}{\numberline {4.34.1}Documentazione delle funzioni}{96}{subsection.4.34.1}
+\contentsline {subsubsection}{\numberline {4.34.1.1}init\_\discretionary {-}{}{}scheduler}{96}{subsubsection.4.34.1.1}
+\contentsline {subsubsection}{\numberline {4.34.1.2}main\_\discretionary {-}{}{}add\_\discretionary {-}{}{}job}{96}{subsubsection.4.34.1.2}
+\contentsline {subsubsection}{\numberline {4.34.1.3}thread\_\discretionary {-}{}{}memento}{97}{subsubsection.4.34.1.3}
+\contentsline {subsection}{\numberline {4.34.2}Documentazione delle variabili}{97}{subsection.4.34.2}
+\contentsline {subsubsection}{\numberline {4.34.2.1}oldoutptfd}{97}{subsubsection.4.34.2.1}
+\contentsline {section}{\numberline {4.35}Riferimenti per il file src/proxy/toclient.c}{97}{section.4.35}
+\contentsline {subsection}{\numberline {4.35.1}Documentazione delle funzioni}{98}{subsection.4.35.1}
+\contentsline {subsubsection}{\numberline {4.35.1.1}toclient}{98}{subsubsection.4.35.1.1}
+\contentsline {section}{\numberline {4.36}Riferimenti per il file src/proxy/toserver.c}{98}{section.4.36}
+\contentsline {subsection}{\numberline {4.36.1}Documentazione delle funzioni}{98}{subsection.4.36.1}
+\contentsline {subsubsection}{\numberline {4.36.1.1}fetch}{98}{subsubsection.4.36.1.1}
+\contentsline {subsubsection}{\numberline {4.36.1.2}handle\_\discretionary {-}{}{}prefetchPool}{98}{subsubsection.4.36.1.2}
+\contentsline {subsubsection}{\numberline {4.36.1.3}handle\_\discretionary {-}{}{}serverPool}{99}{subsubsection.4.36.1.3}
+\contentsline {section}{\numberline {4.37}Riferimenti per il file src/proxy/uni\_\discretionary {-}{}{}list.c}{99}{section.4.37}
+\contentsline {subsection}{\numberline {4.37.1}Documentazione delle funzioni}{100}{subsection.4.37.1}
+\contentsline {subsubsection}{\numberline {4.37.1.1}alloc\_\discretionary {-}{}{}new\_\discretionary {-}{}{}job}{100}{subsubsection.4.37.1.1}
+\contentsline {subsubsection}{\numberline {4.37.1.2}dequeue}{100}{subsubsection.4.37.1.2}
+\contentsline {subsubsection}{\numberline {4.37.1.3}dequeue\_\discretionary {-}{}{}job}{100}{subsubsection.4.37.1.3}
+\contentsline {subsubsection}{\numberline {4.37.1.4}enqueue}{100}{subsubsection.4.37.1.4}
+\contentsline {subsubsection}{\numberline {4.37.1.5}enqueue\_\discretionary {-}{}{}job}{100}{subsubsection.4.37.1.5}
+\contentsline {subsubsection}{\numberline {4.37.1.6}exists\_\discretionary {-}{}{}job\_\discretionary {-}{}{}res}{100}{subsubsection.4.37.1.6}
+\contentsline {subsubsection}{\numberline {4.37.1.7}init\_\discretionary {-}{}{}job\_\discretionary {-}{}{}queue}{100}{subsubsection.4.37.1.7}
+\contentsline {subsubsection}{\numberline {4.37.1.8}new}{101}{subsubsection.4.37.1.8}
+\contentsline {subsubsection}{\numberline {4.37.1.9}push}{101}{subsubsection.4.37.1.9}
+\contentsline {subsubsection}{\numberline {4.37.1.10}push\_\discretionary {-}{}{}job}{101}{subsubsection.4.37.1.10}
+\contentsline {subsubsection}{\numberline {4.37.1.11}remove\_\discretionary {-}{}{}elem}{101}{subsubsection.4.37.1.11}
+\contentsline {subsubsection}{\numberline {4.37.1.12}remove\_\discretionary {-}{}{}job}{101}{subsubsection.4.37.1.12}
+\contentsline {subsubsection}{\numberline {4.37.1.13}run\_\discretionary {-}{}{}job}{101}{subsubsection.4.37.1.13}
+\contentsline {subsubsection}{\numberline {4.37.1.14}update\_\discretionary {-}{}{}list}{101}{subsubsection.4.37.1.14}
+\contentsline {subsection}{\numberline {4.37.2}Documentazione delle variabili}{101}{subsection.4.37.2}
+\contentsline {subsubsection}{\numberline {4.37.2.1}oldoutptfd}{101}{subsubsection.4.37.2.1}

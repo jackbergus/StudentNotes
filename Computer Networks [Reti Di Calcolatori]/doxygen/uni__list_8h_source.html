@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Proxy(c)2012:  File sorgente src/proxy/include/uni_list.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Generato da Doxygen 1.7.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Proxy(c)2012</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;globali</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>src/proxy/include/uni_list.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="uni__list_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef __UNI_LIST__H__</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define __UNI_LIST__H__</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006         <span class="comment">/*      Standard library        */</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include        &lt;stddef.h&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include        &lt;stdlib.h&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include        &lt;stdio.h&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012         <span class="comment">/*      Project&#39;s library       */</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include        &quot;<a class="code" href="proxy_2include_2libhashtable_8h.html">libhashtable.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include        &quot;<a class="code" href="thread__functs_8h.html">thread_functs.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include        &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include        &quot;<a class="code" href="init__globals_8h.html">init_globals.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include        &quot;<a class="code" href="communication_8h.html">communication.h</a>&quot;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 
+<a name="l00027"></a><a class="code" href="uni__list_8h.html#ae49e3fa44233ce660ab817ffecbecc96">00027</a> <span class="preprocessor">#define init_list_head(head) \</span>
+<a name="l00028"></a>00028 <span class="preprocessor">        ((LIST*)head)-&gt;next = NULL</span>
+<a name="l00029"></a>00029 <span class="preprocessor"></span>
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 
+<a name="l00035"></a><a class="code" href="uni__list_8h.html#a852666257c741fda09ea02e1998cd4ae">00035</a> <span class="preprocessor">#define container_of2(ptr, type, member, ret)                   \</span>
+<a name="l00036"></a>00036 <span class="preprocessor">        </span><span class="comment">/*do {          */</span>                                      \
+<a name="l00037"></a>00037         <span class="comment">/*const typeof( ((type *)0)-&gt;member ) *__mptr = (ptr);  \</span>
+<a name="l00038"></a>00038 <span class="comment">        ret = (type *)( (char *)__mptr - offsetof(type,member) );*/</span>\
+<a name="l00039"></a>00039         ret = (type *)( (char *)ptr - offsetof(type,member) )<span class="comment">/*;} while(0)*/</span>
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 <a class="code" href="struct____mialista____.html">LIST</a>* <a class="code" href="uni__list_8h.html#a58f899f6297a4b361d38dc5a57036fca">new_list</a>(<span class="keywordtype">void</span>);
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 <a class="code" href="struct____mialista____.html">LIST</a>* <a class="code" href="uni__list_8h.html#a4bd2b3e90322306f37a038d728eae005">dequeue</a>(<a class="code" href="struct____mialista____.html">LIST</a>** ptr);
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 <span class="keywordtype">void</span> <a class="code" href="uni__list_8h.html#a47b764899ed23cda7335b2017b0492ad">enqueue</a>(<a class="code" href="struct____mialista____.html">LIST</a>* ptr, <a class="code" href="struct____mialista____.html">LIST</a>* include);
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <a class="code" href="struct____mialista____.html">LIST</a>* <a class="code" href="uni__list_8h.html#ac69f6919a0286577009ec0fbe00844bc">remove_elem</a>(<a class="code" href="struct____mialista____.html">LIST</a>*ptr, <a class="code" href="struct____mialista____.html">LIST</a>* elem);
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051         <span class="comment">/********************************/</span>
+<a name="l00052"></a>00052                         <span class="comment">/* FUNZIONI DI GESTIONE DEI JOB */</span>
+<a name="l00053"></a>00053                         <span class="comment">/*      (uni_list.c)            */</span>
+<a name="l00054"></a>00054                         <span class="comment">/********************************/</span>
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056 
+<a name="l00060"></a>00060 <span class="keywordtype">void</span> <a class="code" href="uni__list_8h.html#a5606f0504ed5a78f851f322d09cd0217">init_job_queue</a>(<a class="code" href="struct____mialista____.html">LIST</a>* tmp);
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 
+<a name="l00067"></a>00067 <a class="code" href="structJOB__QUEUE.html">JOB_QUEUE</a>* <a class="code" href="uni__list_8h.html#a9bcd0be561081ab230c122ba31428104">dequeue_job</a>(<a class="code" href="struct____mialista____.html">LIST</a>* ptr);
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <span class="keywordtype">void</span> <a class="code" href="uni__list_8h.html#a3a228945ba73b194700cec47b45a359c">run_job</a>(<span class="keywordtype">int</span> k, <a class="code" href="structJOB__QUEUE.html">JOB_QUEUE</a>* tmp);
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 
+<a name="l00077"></a>00077 <a class="code" href="structJOB__QUEUE.html">JOB_QUEUE</a>* <a class="code" href="uni__list_8h.html#a2b8166fc25329d89f6509e810ab670b2">remove_job</a>(<a class="code" href="struct____mialista____.html">LIST</a>* ptr, <a class="code" href="structJOB__QUEUE.html">JOB_QUEUE</a>* elem);
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 
+<a name="l00086"></a>00086 <a class="code" href="structJOB__QUEUE.html">JOB_QUEUE</a>* <a class="code" href="uni__list_8h.html#a73b0293d6caa6d5c58b16ed26fa5f1e8">alloc_new_job</a>(<span class="keywordtype">void</span> (*procedura)(), <span class="keywordtype">void</span>* args);
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089 
+<a name="l00093"></a>00093 <span class="keywordtype">void</span> <a class="code" href="uni__list_8h.html#ad605522765b4e3c23507f8ce39b5e797">enqueue_job</a>(<a class="code" href="struct____mialista____.html">LIST</a>* ptr, <a class="code" href="structJOB__QUEUE.html">JOB_QUEUE</a>* include);
+<a name="l00094"></a>00094 
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096 
+<a name="l00100"></a>00100 <span class="keywordtype">void</span> <a class="code" href="uni__list_8h.html#ad32474e098b7a61c39496bf214207289">push_job</a>(<a class="code" href="struct____mialista____.html">LIST</a>* ptr, <a class="code" href="structJOB__QUEUE.html">JOB_QUEUE</a>* include);
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103 
+<a name="l00108"></a>00108 <span class="keywordtype">char</span> <a class="code" href="uni__list_8h.html#a1b875b188f0d63832eb0832a507a095b">exists_job_res</a>(<a class="code" href="struct____mialista____.html">LIST</a>* ptr, <span class="keywordtype">char</span>* path);
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 
+<a name="l00125"></a>00125 <span class="keywordtype">void</span> <a class="code" href="uni__list_8h.html#a656744c55192b9d6ec0d5d5d6f69ed3f">update_list</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">void</span> (*func)(), <span class="keywordtype">int</span> curr_pos, <span class="keywordtype">int</span> MAX_POS,\
+<a name="l00126"></a>00126         <span class="keywordtype">int</span> bufferlow, <span class="keywordtype">int</span> bufferhight);
+<a name="l00127"></a>00127 
+<a name="l00128"></a>00128 
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131 <span class="preprocessor">#endif</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Strutture dati</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definizioni</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Generato il Fri Feb 17 2012 14:42:44 per Proxy(c)2012 da&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
+</body>
+</html>

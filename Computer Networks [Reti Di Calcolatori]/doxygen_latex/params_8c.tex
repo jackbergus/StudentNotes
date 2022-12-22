@@ -1,0 +1,68 @@
+\hypertarget{params_8c}{
+\section{Riferimenti per il file src/proxy/params.c}
+\label{params_8c}\index{src/proxy/params.c@{src/proxy/params.c}}
+}
+{\ttfamily \#include \char`\"{}params.h\char`\"{}}\par
+Grafo delle dipendenze di inclusione per params.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{params_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{params_8c_ab821595501ba02405e2b73740eeb58fc}{mkshortopt} (struct option $\ast$longopt)
+\item 
+void \hyperlink{params_8c_a97ee70a8770dc30d06c744b24eb2fcfc}{help} ()
+\item 
+int \hyperlink{params_8c_afaf7d30794de45a759063054ec9257a8}{init\_\-params} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, struct \hyperlink{structproxy}{proxy} $\ast$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{params_8c_a97ee70a8770dc30d06c744b24eb2fcfc}{
+\index{params.c@{params.c}!help@{help}}
+\index{help@{help}!params.c@{params.c}}
+\subsubsection[{help}]{\setlength{\rightskip}{0pt plus 5cm}void help (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{params_8c_a97ee70a8770dc30d06c744b24eb2fcfc}
+\hyperlink{params_8c_a97ee70a8770dc30d06c744b24eb2fcfc}{help()}: Stampa in output l'help sull'utilizzo del programma \hypertarget{params_8c_afaf7d30794de45a759063054ec9257a8}{
+\index{params.c@{params.c}!init\_\-params@{init\_\-params}}
+\index{init\_\-params@{init\_\-params}!params.c@{params.c}}
+\subsubsection[{init\_\-params}]{\setlength{\rightskip}{0pt plus 5cm}int init\_\-params (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}, }
+\item[{struct {\bf proxy} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}
+\label{params_8c_afaf7d30794de45a759063054ec9257a8}
+\hyperlink{params_8h_afaf7d30794de45a759063054ec9257a8}{init\_\-params()}: Effettua il parsing dei parametri accettati dal main. 
+\begin{DoxyParams}{Parametri}
+{\em args,:} & lunghezza dei parametri \\
+\hline
+{\em argv,:} & Parametri di lunghezza dichiarata nel parametro precedente \\
+\hline
+{\em params,:} & Puntatore allo stato di connessione lato client \\
+\hline
+\end{DoxyParams}
+
+
+INIZIO DEL RICONOSCIMENTO DEI PARAMETRI 
+
+\hypertarget{params_8c_ab821595501ba02405e2b73740eeb58fc}{
+\index{params.c@{params.c}!mkshortopt@{mkshortopt}}
+\index{mkshortopt@{mkshortopt}!params.c@{params.c}}
+\subsubsection[{mkshortopt}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ mkshortopt (
+\begin{DoxyParamCaption}
+\item[{struct option $\ast$}]{longopt}
+\end{DoxyParamCaption}
+)}}
+\label{params_8c_ab821595501ba02405e2b73740eeb58fc}
+\hyperlink{params_8c_ab821595501ba02405e2b73740eeb58fc}{mkshortopt()}: Given the struct option data structure, it returns the correspondent shortopts char, by allocation of a string 

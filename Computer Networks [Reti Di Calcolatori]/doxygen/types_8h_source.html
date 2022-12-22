@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Proxy(c)2012:  File sorgente src/proxy/include/types.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Generato da Doxygen 1.7.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Proxy(c)2012</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;globali</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>src/proxy/include/types.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="types_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef __TYPES_H__</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define __TYPES_H__</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 
+<a name="l00005"></a>00005         <span class="comment">/*      Standard library        */</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include        &lt;arpa/inet.h&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include        &lt;pthread.h&gt;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010         <span class="comment">/*      Project&#39;s library       */</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include        &quot;<a class="code" href="proxy_2include_2consts_8h.html">consts.h</a>&quot;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 
+<a name="l00019"></a><a class="code" href="structrequest.html">00019</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>
+<a name="l00020"></a>00020 {
+<a name="l00022"></a><a class="code" href="structrequest.html#ac447850484fbd4c1c9452883f3d19a29">00022</a>         <span class="keywordtype">char</span>                    <a class="code" href="structrequest.html#ac447850484fbd4c1c9452883f3d19a29">TYPE</a>;                   
+<a name="l00023"></a><a class="code" href="structrequest.html#a57b4438b836ceeb60da037e42ae402a2">00023</a>         <span class="keywordtype">char</span>                    PATH[<a class="code" href="proxy_2include_2consts_8h.html#ab99ded389af74001a6298fc9e44e74e5">MAX_PATH</a>]; 
+<a name="l00024"></a><a class="code" href="structrequest.html#ac8e95bcd354032facb72350865d93654">00024</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    <a class="code" href="structrequest.html#ac8e95bcd354032facb72350865d93654">rangelow</a>;               
+<a name="l00025"></a><a class="code" href="structrequest.html#a0b27c2650c7ee47d638b89d1398177fc">00025</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    <a class="code" href="structrequest.html#a0b27c2650c7ee47d638b89d1398177fc">rangehight</a>;             
+<a name="l00027"></a>00027 } <a class="code" href="structrequest.html">request</a>;
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030                 <span class="comment">/***********************************************/</span>
+<a name="l00031"></a>00031                 <span class="comment">/* Strutture dati per il passaggio degli args* */</span>
+<a name="l00032"></a>00032                 <span class="comment">/***********************************************/</span>
+<a name="l00033"></a>00033 
+<a name="l00038"></a><a class="code" href="structmsg.html">00038</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>
+<a name="l00039"></a>00039 {       
+<a name="l00041"></a><a class="code" href="structmsg.html#a6c8d25eefec0d18f66eabc7bf9fc272f">00041</a>         <span class="keywordtype">int</span>             <a class="code" href="structmsg.html#a6c8d25eefec0d18f66eabc7bf9fc272f">sock</a>;   
+<a name="l00042"></a><a class="code" href="structmsg.html#a352d360ff9728d5158f3124f989c1652">00042</a>         <a class="code" href="structrequest.html">request</a> <a class="code" href="structmsg.html#a352d360ff9728d5158f3124f989c1652">rq</a>;             
+<a name="l00044"></a>00044 } <a class="code" href="structmsg.html">msg</a>;
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 
+<a name="l00051"></a><a class="code" href="structreslist.html">00051</a> <span class="keyword">struct </span><a class="code" href="structreslist.html">reslist</a>
+<a name="l00052"></a>00052 {
+<a name="l00054"></a><a class="code" href="structreslist.html#af9f8c3937012dd9cb2c9e23d9f1b26b6">00054</a>         <span class="keywordtype">int</span>   <a class="code" href="structreslist.html#af9f8c3937012dd9cb2c9e23d9f1b26b6">prefetch_num</a>;     
+<a name="l00055"></a><a class="code" href="structreslist.html#a4d68e4d0391bee43195113957429e1e3">00055</a>         <span class="keywordtype">char</span>* <a class="code" href="structreslist.html#a4d68e4d0391bee43195113957429e1e3">remote_path</a>;      
+<a name="l00057"></a>00057 };
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 <span class="comment">/* LIST:</span>
+<a name="l00060"></a>00060 <span class="comment"> * Definizione di una struttura di dati lista minimale </span>
+<a name="l00061"></a>00061 <span class="comment"> */</span>
+<a name="l00062"></a><a class="code" href="struct____mialista____.html">00062</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____mialista____.html">__mialista__</a>
+<a name="l00063"></a>00063 {
+<a name="l00065"></a><a class="code" href="struct____mialista____.html#aab946fc138a0f007cffc45a8027e828d">00065</a>         <span class="keyword">struct </span><a class="code" href="struct____mialista____.html">__mialista__</a>* <a class="code" href="struct____mialista____.html#aab946fc138a0f007cffc45a8027e828d">next</a>;  
+<a name="l00067"></a>00067 } <a class="code" href="types_8h.html#a0eda502ebc820356adc18000f1a3b35f">LIST</a>;
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 
+<a name="l00075"></a><a class="code" href="structJOB.html">00075</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00076"></a>00076 {
+<a name="l00078"></a><a class="code" href="structJOB.html#af2a002df2c631342f8ac2e9f53847850">00078</a>         void (*procedura)();    
+<a name="l00079"></a><a class="code" href="structJOB.html#a054753fc5e69ea142b6c071adfbe0e6e">00079</a>         <span class="keywordtype">void</span>  *<a class="code" href="structJOB.html#a054753fc5e69ea142b6c071adfbe0e6e">args</a>;                    
+<a name="l00081"></a>00081 } <a class="code" href="structJOB.html">JOB</a>;
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085 
+<a name="l00090"></a><a class="code" href="structJOB__QUEUE.html">00090</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00091"></a>00091 {
+<a name="l00093"></a><a class="code" href="structJOB__QUEUE.html#a062357df307cecd98a9e1e7b05400d09">00093</a>         <a class="code" href="struct____mialista____.html">LIST</a>    <a class="code" href="structJOB__QUEUE.html#a062357df307cecd98a9e1e7b05400d09">head</a>;   
+<a name="l00094"></a><a class="code" href="structJOB__QUEUE.html#a8b47ceebda88577d79dab26e02d65bde">00094</a>         <a class="code" href="structJOB.html">JOB</a>             <a class="code" href="structJOB__QUEUE.html#a8b47ceebda88577d79dab26e02d65bde">todo</a>;   
+<a name="l00096"></a>00096 } <a class="code" href="structJOB__QUEUE.html">JOB_QUEUE</a>;
+<a name="l00097"></a>00097 
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 
+<a name="l00105"></a><a class="code" href="structSCHEDULING.html">00105</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>
+<a name="l00106"></a>00106 {       
+<a name="l00108"></a><a class="code" href="structSCHEDULING.html#a229bb49fdd326aa1018d1722fe912032">00108</a>         <a class="code" href="struct____mialista____.html">LIST</a>                            <a class="code" href="structSCHEDULING.html#a229bb49fdd326aa1018d1722fe912032">planning</a>;       
+<a name="l00109"></a><a class="code" href="structSCHEDULING.html#aaec89a3dc46fa4387acabc5d0a82f0bd">00109</a>         pthread_mutex_t         <a class="code" href="structSCHEDULING.html#aaec89a3dc46fa4387acabc5d0a82f0bd">qlock</a>;          
+<a name="l00110"></a><a class="code" href="structSCHEDULING.html#a5b4e86c8746c9ae4e032fd4d47947af8">00110</a>         pthread_cond_t          <a class="code" href="structSCHEDULING.html#a5b4e86c8746c9ae4e032fd4d47947af8">non_empty</a>;      
+<a name="l00111"></a><a class="code" href="structSCHEDULING.html#a2e6094f26221c0be66ac7def1d02d337">00111</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span>      <a class="code" href="structSCHEDULING.html#a2e6094f26221c0be66ac7def1d02d337">qsize</a>;          
+<a name="l00113"></a>00113 } <a class="code" href="structSCHEDULING.html">SCHEDULING</a>;
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116 
+<a name="l00121"></a><a class="code" href="structARGS__ONE.html">00121</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00122"></a>00122 {
+<a name="l00124"></a><a class="code" href="structARGS__ONE.html#a2ab0ae198a435c7ac8eba5989ff4650b">00124</a>         <a class="code" href="structSCHEDULING.html">SCHEDULING</a>*     <a class="code" href="structARGS__ONE.html#a2ab0ae198a435c7ac8eba5989ff4650b">sched</a>;  
+<a name="l00125"></a><a class="code" href="structARGS__ONE.html#a655646e2e844c6563932c042bdeed66c">00125</a>         <span class="keywordtype">char</span>            <a class="code" href="structARGS__ONE.html#a655646e2e844c6563932c042bdeed66c">whoami</a>; 
+<a name="l00127"></a>00127 } <a class="code" href="structARGS__ONE.html">ARGS_ONE</a>;
+<a name="l00128"></a>00128 
+<a name="l00129"></a>00129 
+<a name="l00133"></a><a class="code" href="structconnection.html">00133</a> <span class="keyword">struct </span><a class="code" href="structconnection.html">connection</a>
+<a name="l00134"></a>00134 {
+<a name="l00136"></a><a class="code" href="structconnection.html#a5bb81a57f0db72ea26bfa85b3ead6653">00136</a>         <span class="keywordtype">int</span>     <a class="code" href="structconnection.html#a5bb81a57f0db72ea26bfa85b3ead6653">fd_client</a>;              
+<a name="l00137"></a><a class="code" href="structconnection.html#a2906fb676dd78cf78ff63f6ac1c7f1d0">00137</a>         <span class="keywordtype">int</span>     <a class="code" href="structconnection.html#a2906fb676dd78cf78ff63f6ac1c7f1d0">fd_server</a>;              
+<a name="l00138"></a><a class="code" href="structconnection.html#a7567ce596b311e606b465e0f2fbf17b6">00138</a>         <span class="keywordtype">int</span>     <a class="code" href="structconnection.html#a7567ce596b311e606b465e0f2fbf17b6">tentativi</a>;              
+<a name="l00139"></a><a class="code" href="structconnection.html#a8336ba2f653330fe728b52edd7d6d2b3">00139</a>         <span class="keywordtype">int</span>     <a class="code" href="structconnection.html#a8336ba2f653330fe728b52edd7d6d2b3">expiry</a>;                 
+<a name="l00140"></a><a class="code" href="structconnection.html#abe305d592cdaa7b373988774c0eebfe0">00140</a>         <span class="keywordtype">char</span>    <a class="code" href="structconnection.html#abe305d592cdaa7b373988774c0eebfe0">PATH</a>[<a class="code" href="proxy_2include_2consts_8h.html#ab99ded389af74001a6298fc9e44e74e5">MAX_PATH</a>]; 
+<a name="l00141"></a><a class="code" href="structconnection.html#a3939675d1ec7045c864a2df3bf5f8e7e">00141</a>         <span class="keywordtype">char</span>    <a class="code" href="structconnection.html#a3939675d1ec7045c864a2df3bf5f8e7e">sIP</a>[16];                
+<a name="l00142"></a><a class="code" href="structconnection.html#a9ee6aa71d1fe23b32954f2d6383d04a0">00142</a>         <span class="keywordtype">char</span>    <a class="code" href="structconnection.html#a9ee6aa71d1fe23b32954f2d6383d04a0">sPort</a>[7];               
+<a name="l00144"></a>00144 };
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146 
+<a name="l00151"></a><a class="code" href="structproxy.html">00151</a> <span class="keyword">struct </span><a class="code" href="structproxy.html">proxy</a>
+<a name="l00152"></a>00152 {
+<a name="l00154"></a><a class="code" href="structproxy.html#adf308cdebd9b8469203f9fe4853eae1f">00154</a>         <span class="keyword">struct </span>sockaddr_in <a class="code" href="structproxy.html#adf308cdebd9b8469203f9fe4853eae1f">meStesso</a>;
+<a name="l00155"></a><a class="code" href="structproxy.html#a8c6d5c10908adaf299234cb136db7f0a">00155</a>         <span class="keywordtype">int</span>             <a class="code" href="structproxy.html#a8c6d5c10908adaf299234cb136db7f0a">fd</a>;             
+<a name="l00156"></a><a class="code" href="structproxy.html#a9f8993de9d5183a0e089c527367bcfab">00156</a>         <span class="keywordtype">int</span>             <a class="code" href="structproxy.html#a9f8993de9d5183a0e089c527367bcfab">level</a>;  
+<a name="l00157"></a><a class="code" href="structproxy.html#a8815d037163f8e46d1a65562abdd28cf">00157</a>         in_addr_t       <a class="code" href="structproxy.html#a8815d037163f8e46d1a65562abdd28cf">ip</a>;             
+<a name="l00158"></a><a class="code" href="structproxy.html#a339f078e8c6ad542d969105534e272a5">00158</a>         <span class="keywordtype">int</span>             <a class="code" href="structproxy.html#a339f078e8c6ad542d969105534e272a5">port</a>;   
+<a name="l00160"></a>00160 };
+<a name="l00161"></a>00161 
+<a name="l00162"></a>00162 
+<a name="l00163"></a>00163 <span class="preprocessor">#endif</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Strutture dati</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definizioni</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Generato il Fri Feb 17 2012 14:42:44 per Proxy(c)2012 da&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
+</body>
+</html>

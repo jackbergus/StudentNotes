@@ -1,0 +1,68 @@
+\hypertarget{hash_8h_source}{
+\section{src/hashtable/include/hash.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{ * hash.h}
+00003 \textcolor{comment}{ * This file is part of hashtable}
+00004 \textcolor{comment}{ *}
+00005 \textcolor{comment}{ * Copyright (C) 2012 - Giacomo Bergami}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * hashtable is free software; you can redistribute it and/or modify}
+00008 \textcolor{comment}{ * it under the terms of the GNU General Public License as published by}
+00009 \textcolor{comment}{ * the Free Software Foundation; either version 2 of the License, or}
+00010 \textcolor{comment}{ * (at your option) any later version.}
+00011 \textcolor{comment}{ *}
+00012 \textcolor{comment}{ * hashtable is distributed in the hope that it will be useful,}
+00013 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00014 \textcolor{comment}{ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00015 \textcolor{comment}{ * GNU General Public License for more details.}
+00016 \textcolor{comment}{ *}
+00017 \textcolor{comment}{ * You should have received a copy of the GNU General Public License}
+00018 \textcolor{comment}{ * along with hashtable; if not, write to the Free Software}
+00019 \textcolor{comment}{ * Foundation, Inc., 51 Franklin St, Fifth Floor, }
+00020 \textcolor{comment}{ * Boston, MA  02110-1301  USA}
+00021 \textcolor{comment}{ */}
+00022 \textcolor{preprocessor}{#ifndef \_\_HASH\_\_H\_}
+00023 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define \_\_HASH\_\_H\_}
+00024 \textcolor{preprocessor}{}
+00025 
+00026 \textcolor{comment}{/*      Standard Library        */}
+00027 \textcolor{preprocessor}{#ifndef         \_BSD\_SOURCE}
+\hypertarget{hash_8h_source_l00028}{}\hyperlink{hash_8h_ad3d8a3bd0c0b677acef144f2c2ef6d73}{00028} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define         \_BSD\_SOURCE}
+00029 \textcolor{preprocessor}{}\textcolor{preprocessor}{#endif}
+00030 \textcolor{preprocessor}{}\textcolor{preprocessor}{#include        <time.h>}
+00031 \textcolor{preprocessor}{#include        <stdlib.h>}
+00032 \textcolor{preprocessor}{#include        <stdio.h>}
+00033 
+00034 
+00035 \textcolor{comment}{/*      Project's Library       */}
+00036 \textcolor{preprocessor}{#include        "\hyperlink{hashtable_2include_2consts_8h}{consts.h}"}
+00037 
+00038 
+00039 \textcolor{comment}{/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
+00040 
+00041 
+\hypertarget{hash_8h_source_l00045}{}\hyperlink{structhash__tbl}{00045} \textcolor{keyword}{struct }\hyperlink{structhash__tbl}{hash_tbl} \{
+\hypertarget{hash_8h_source_l00046}{}\hyperlink{structhash__tbl_a2e5c0eaf53366ff9035d6df7f2573da4}{00046}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{structhash__tbl_a2e5c0eaf53366ff9035d6df7f2573da4}{elements};
+\hypertarget{hash_8h_source_l00047}{}\hyperlink{structhash__tbl_a92ab2049c1a00e9dcd20c26f22462f77}{00047}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{structhash__tbl_a92ab2049c1a00e9dcd20c26f22462f77}{value};
+00048 \};
+00049 
+00053 \textcolor{keywordtype}{void} \hyperlink{hash_8c_a6dcb7de7b1e0498d4f99f9199325c729}{init_hashtbl}(\textcolor{keyword}{struct} \hyperlink{structhash__tbl}{hash_tbl}* p);
+00054 
+00058 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{hash_8c_a7b0847148879f4bfa893ce4db130f22f}{hashb}(\textcolor{keywordtype}{char} *p, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} MULT, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} NHASH);
+00059 
+00063 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{hash_8c_ab452b41a0ffaccf36bb382238124f330}{hash}(\textcolor{keywordtype}{char} *p);
+00064 
+00065 
+00069 \textcolor{keywordtype}{int} \hyperlink{hash_8c_a2dcd8f9d9b55138e007aeb5b813df204}{hash_exists}(\textcolor{keyword}{struct} \hyperlink{structhash__tbl}{hash_tbl}* tbl, \textcolor{keywordtype}{char}* p);
+00070 
+00074 \textcolor{keywordtype}{void} \hyperlink{hash_8c_acd21ba5a0179be626894e32908278459}{hash_insert}(\textcolor{keyword}{struct} \hyperlink{structhash__tbl}{hash_tbl}* tbl, \textcolor{keywordtype}{char}* p);
+00075 
+00079 \textcolor{keywordtype}{void} \hyperlink{hash_8c_a8857fd885d033ec6bd8c5b959e5071b3}{hash_remove}(\textcolor{keyword}{struct} \hyperlink{structhash__tbl}{hash_tbl}* tbl, \textcolor{keywordtype}{char}* p);
+00080 
+00084 \textcolor{keywordtype}{int} \hyperlink{hash_8c_afbb8d3b9239601b0d881ea29d9f0644f}{hash_occupied}(\textcolor{keyword}{struct} \hyperlink{structhash__tbl}{hash_tbl}* tbl);
+00085 
+00086 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

@@ -1,0 +1,114 @@
+\hypertarget{filesystem_8h_source}{
+\section{src/hashtable/include/filesystem.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{ * filesystem.h}
+00003 \textcolor{comment}{ * This file is part of hashtable}
+00004 \textcolor{comment}{ *}
+00005 \textcolor{comment}{ * Copyright (C) 2012 - Giacomo Bergami}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * hashtable is free software; you can redistribute it and/or modify}
+00008 \textcolor{comment}{ * it under the terms of the GNU General Public License as published by}
+00009 \textcolor{comment}{ * the Free Software Foundation; either version 2 of the License, or}
+00010 \textcolor{comment}{ * (at your option) any later version.}
+00011 \textcolor{comment}{ *}
+00012 \textcolor{comment}{ * hashtable is distributed in the hope that it will be useful,}
+00013 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00014 \textcolor{comment}{ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00015 \textcolor{comment}{ * GNU General Public License for more details.}
+00016 \textcolor{comment}{ *}
+00017 \textcolor{comment}{ * You should have received a copy of the GNU General Public License}
+00018 \textcolor{comment}{ * along with hashtable; if not, write to the Free Software}
+00019 \textcolor{comment}{ * Foundation, Inc., 51 Franklin St, Fifth Floor, }
+00020 \textcolor{comment}{ * Boston, MA  02110-1301  USA}
+00021 \textcolor{comment}{ */}
+00022 \textcolor{preprocessor}{#ifndef \_\_FS\_\_H\_\_}
+00023 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define \_\_FS\_\_H\_\_}
+00024 \textcolor{preprocessor}{}
+00025 \textcolor{comment}{/* Questo programma effettua l'LS di tutto le sottodirectory e}
+00026 \textcolor{comment}{   quella corrente */}
+\hypertarget{filesystem_8h_source_l00027}{}\hyperlink{filesystem_8h_a369266c24eacffb87046522897a570d5}{00027} \textcolor{preprocessor}{#define \_GNU\_SOURCE}
+00028 \textcolor{preprocessor}{}
+00029 
+00030 \textcolor{comment}{/*      Standard library        */}
+00031 \textcolor{preprocessor}{#include        <sys/types.h>}
+00032 \textcolor{preprocessor}{#include        <sys/mman.h>}
+00033 \textcolor{preprocessor}{#include        <sys/mman.h>}
+00034 \textcolor{preprocessor}{#include        <sys/stat.h>}
+00035 \textcolor{preprocessor}{#include        <obstack.h>}
+00036 \textcolor{preprocessor}{#include        <stdlib.h>}
+00037 \textcolor{preprocessor}{#include        <string.h>}
+00038 \textcolor{preprocessor}{#include        <unistd.h>}
+00039 \textcolor{preprocessor}{#include        <libgen.h>}
+00040 \textcolor{preprocessor}{#include        <dirent.h>}
+00041 \textcolor{preprocessor}{#include        <stdio.h>}
+00042 \textcolor{preprocessor}{#include        <fcntl.h>}
+00043 \textcolor{preprocessor}{#include        <time.h>}
+00044 \textcolor{preprocessor}{#include        <ftw.h>}
+00045 
+00046 \textcolor{comment}{/*      Project's Library       */}
+00047 \textcolor{preprocessor}{#include        "\hyperlink{hashtable_2include_2consts_8h}{consts.h}"}
+00048 
+00049 
+00050 \textcolor{comment}{/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
+00051 
+00052 
+00053 \textcolor{keywordtype}{char}* \hyperlink{filesystem_8c_a190fe9c539b35b922ea73c7e0a91f342}{obtain_local}(\textcolor{keywordtype}{char}* remote);
+00054 \textcolor{keywordtype}{void}    \hyperlink{filesystem_8c_ad43c01993d7f6e284ee3e383c7d162ea}{recursiveDelete}(\textcolor{keywordtype}{char}* \hyperlink{init_8c_a34ae3d0938b9d34157018973a8d1534c}{cache});
+00055 
+00056 
+\hypertarget{filesystem_8h_source_l00061}{}\hyperlink{filesystem_8h_a2d4da5463c1f828177d279738cf7558f}{00061} \textcolor{preprocessor}{#define close\_map(mem) do \{                                             \(\backslash\)}
+00062 \textcolor{preprocessor}{                                int val = munmap((void*)mem,FILE\_SIZE); \(\backslash\)}
+00063 \textcolor{preprocessor}{                                kassert(val>=0,  "Error unmapping file");\(\backslash\)}
+00064 \textcolor{preprocessor}{                       \}while(0)}
+00065 \textcolor{preprocessor}{}
+\hypertarget{filesystem_8h_source_l00069}{}\hyperlink{filesystem_8h_af722ac599c55f38dd8beed1e42580507}{00069} \textcolor{preprocessor}{#define cache\_free() \(\backslash\)}
+00070 \textcolor{preprocessor}{        recursiveDelete("cache")}
+00071 \textcolor{preprocessor}{}
+00072 
+\hypertarget{filesystem_8h_source_l00073}{}\hyperlink{filesystem_8h_af3c3df6c9906ede8f09fa2af74cb28d5}{00073} \textcolor{preprocessor}{#define FILE\_SIZE                       sizeof(RES\_FILE)}
+00074 \textcolor{preprocessor}{}
+\hypertarget{filesystem_8h_source_l00075}{}\hyperlink{filesystem_8h_acc4a9ad83f9350a588d117e0c8916d45}{00075} \textcolor{preprocessor}{#define NOW                             ((unsigned int)(time(NULL)))}
+\hypertarget{filesystem_8h_source_l00076}{}\hyperlink{filesystem_8h_ad7b0421efe66df6fb70086cba3e12240}{00076} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define PAST(x)                         (NOW-((unsigned int)x))}
+\hypertarget{filesystem_8h_source_l00077}{}\hyperlink{filesystem_8h_aed5cf7a4e96374c4cde2e38ab06b2aec}{00077} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EXPIRED(creation,expiry)        (((unsigned int)expiry)>PAST(creation))}
+00078 \textcolor{preprocessor}{}               
+00079                                 \textcolor{comment}{/**************************************/}
+00081                                 \textcolor{comment}{/**************************************/}
+00082 
+00095 \textcolor{keywordtype}{char}    \hyperlink{filesystem_8c_a65074cfd748ed70c0d9059845bdfcfaf}{file_exists}( \textcolor{keywordtype}{char} * filename, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} *time, \textcolor{keywordtype}{char}*                 i
+      s\_blank, 
+00096                                                                                                                  
+       \textcolor{keyword}{struct} stat*   retbuf, 
+00097                                                                                                                  
+       \textcolor{keywordtype}{int}*                   pfd);
+00098 
+00099 
+00100 \textcolor{keywordtype}{char}    \hyperlink{filesystem_8c_a9f0c9e11c1f7e44a1311d85759e20b15}{folder_empty}( \textcolor{keywordtype}{char} *dirname);
+00101 
+00102 
+00103 
+00104                                         \textcolor{comment}{/***************************/}
+00106                                         \textcolor{comment}{/***************************/}
+00107 
+00108 
+00126 \textcolor{keywordtype}{char}*   \hyperlink{filesystem_8c_a5fe76e8b94c9acd4f281f70feaf475e9}{resource_exists}(\textcolor{keywordtype}{char}* remote, \textcolor{keywordtype}{int} deallocate, \textcolor{keywordtype}{char}*             result,
+00127                                                                                                          
+       \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}* time, 
+00128                                                                                                          
+       \textcolor{keywordtype}{char}*          blank, 
+00129                                                                                                          
+       \textcolor{keyword}{struct} stat*   retbuf, 
+00130                                                                                                          
+       \textcolor{keywordtype}{int}*                   pfd);
+00131 
+00132 
+00143 \textcolor{keywordtype}{void}    \hyperlink{filesystem_8c_aa3d66f4f6df47fbd507644860c8655c8}{re_new_resource}( \textcolor{keywordtype}{char}* cache\_path, \textcolor{keyword}{struct} stat *retbuf, \textcolor{keywordtype}{int} *pfd);
+00144 
+00145 
+00152 \textcolor{keywordtype}{void}    \hyperlink{filesystem_8c_a171f1a6dc274a446c1c7b0be9125a86d}{resource_remove}( \textcolor{keywordtype}{char}* path);
+00153 
+00154 
+00155 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}
