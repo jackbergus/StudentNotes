@@ -1,0 +1,79 @@
+\chapter{Gestione delle Reti}
+\section{Denial of Service (DoS)}
+La minaccia maggiore per i sistemi informatici è quella della mancata fruizione
+di un servizio mediante ``cyberextorsion'', mirando ad una perdita economica
+da parte di chi detiene la fornitura del servizio stesso. Mentre nel mondo
+fisico questo metodo di attacco è molto ridotto perché per effettuare SPAM, è
+necessario sobbarcarsi dei costi troppo ingenti, questo non avviene nel mondo
+informatico, dove i costi sono molto ridotti se non nulli. Per risolvere un
+potenziale attacco si potrebbero effettuare le seguenti considerazioni:
+\begin{itemize}
+\diam Si potrebbe cercare di evitare l'attacco mediante l'utilizzo di \textit{blacklist},
+	non consentendo più l'accesso ad un dato utente: tuttavia in questo
+	caso potrei escludere un accesso legittimo di un utente con (es.) lo
+	stesso numero di IP.
+\diam Potrei cassare una richiesta onerosa, anche se alcune potrebbero essere
+	in buona fede: si potrebbe quindi richiedere al potenziale attaccante
+	un ``costo'' sufficientemente elevato da demotivarlo nel perseguire
+	l'attacco.
+	
+	Tuttavia questa situazione potrebbe essere aggirata
+	richiedendo chiedendo a tanti clienti
+	di effettuare moltissime richieste che stiano al di sotto della 
+	soglia d'allarme. Questo tipo d'attacco è chiamato un DDoS, ovvero un
+	distributed DoS, che diventa quasi impossibile da distinguere da una
+	situazione problematica reale, ma non causata da attacco.
+\end{itemize}
+Molti sistemi utilizzano quindi dei filtri anti-spam, allo scopo di evitare
+richieste da potenziali attaccanti.
+
+Descriviamo ora varie tipologie di attacchi di tipo Denial of Service, che 
+sfruttano la fase di handshake del protocollo TCP:
+\begin{itemize}
+\item\textbf{Denial of Service tramite Syn-Flooding} Tramite questa tecnica, si mira 
+	ad inviare alla vittima un pacchetto IP modificato, in modo che sia
+	cambiato l'indirizzo dell'attaccante/mittente con quello di un altro host
+	casuale nella rete (che può quindi essere anche non esistente), 
+	tramite una tecnica di \textit{spoofing}; quest'ultimo  non risponderà allo 
+	\texttt{SYN-ACK} della vittima che avrà ricevuto un \texttt{SYN}, con la quale 
+	non aveva iniziato  ad instaurare nessuna comunicazione. In questo modo,
+	finché non scadrà il nostro timeout, la vittima terrà occupata una
+	sua risorsa, occupando quindi la memoria del suo sistema. 
+	
+	Essendo quest'attacco di tipo flooding, l'attaccante potrebbe inviare
+	sempre nuove richieste di tipo \texttt{SYN}, effettuando spoofing nel pacchetto
+	e modificando il mittente con differenti mittenti casuali. In questo modo
+	si vogliono impedire anche eventuali collegamenti legittimi nei 
+	confronti del sistema attaccato, rendendo indisponibile il servizio.
+\item \textbf{Syn-flooding reflector}.  Con questa tecnica invece effettuiamo l'invio
+	del pacchetto, sul quale è stato effettuato spoofing e modificato il
+	campo mittente con quella vittima, ad un host casuale intermedio che,
+	ricevendo il \texttt{SYN}, invierà lo \texttt{SYN-ACK} alla vittima. In questo
+	caso verranno replicati i riceventi, che sono ignari del vero attacco
+	in corso dal vero mittente che però non conoscono, i quali invieranno 
+	tutti la lororisposta al sistema attaccato. 
+	
+	In questo caso non verranno quindi consumate risorse del
+	sistema attaccato, ma bensì verrà occupato tutto il canale di comunicazione
+	verso questo: anche in questo modo si mina la fruibilità del servizio,
+	in quanto si blocca l'accesso del canale di comunicazione.
+\item\textbf{Bot-net (DDos)}. Tramite questa tecnica si ha un computer ``padrone'', che ha 
+	la possibilità di inviare dei comandi ad una rete costituita da computers detti
+	\textit{zombie}(s), in modo da orchestrare l'attacco verso una stessa vittima:
+	questo è possibile perché gli zombie(s) che costituiscono la bot-net,
+	sono sempre in ascolto del ``padrone''.  Tali zombie si ottengono
+	tramite l'installazione inconscia di software, che opera all'interno di
+	computer casalinghi senza dare segni evidenti agli utenti dei sistemi
+	infettati.
+\end{itemize}
+
+
+In pratica, è quasi impossibile essere in grado di prevenire o/e difendersi
+da un attacco di tipo DoS: non esiste quindi un unico tipo di difesa possibile
+in merito, anche perché le tecnologie di attacco sono in continua evoluzione,
+parallelamente alle tecniche di difesa. All'interno dei routers possono comunque
+essere implementate delle tecniche di difesa contro DoS, anche se raramente 
+sono divulgate le caratteristiche di previsione degli attacchi, poiché in questo
+campo la security by secrecy è l'unica arma possibile per non divulgare il modo
+con il quale viene sventato l'attacco, e per non minare il sistema che viene
+commercializzato.

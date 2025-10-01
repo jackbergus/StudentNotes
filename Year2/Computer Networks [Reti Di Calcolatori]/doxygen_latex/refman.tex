@@ -1,0 +1,117 @@
+\documentclass[a4paper]{book}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Proxy(c)2012 }\\
+\vspace*{1cm}
+{\large Generato da Doxygen 1.7.3}\\
+\vspace*{0.5cm}
+{\small Fri Feb 17 2012 14:42:44}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+\chapter{Indice delle strutture dati}
+\input{annotated}
+\chapter{Indice dei file}
+\input{files}
+\chapter{Documentazione delle classi}
+\input{struct____mialista____}
+\input{structARGS__ONE}
+\input{structconnection}
+\input{structCS__struct}
+\input{structhash__tbl}
+\input{structHRES}
+\input{structJOB}
+\input{structJOB__QUEUE}
+\input{structlist__ptrint}
+\input{structmsg}
+\input{structproxy}
+\input{structrequest}
+\input{structrequest__cache}
+\input{structreslist}
+\input{structSCHEDULING}
+\chapter{Documentazione dei file}
+\input{filesystem_8c}
+\input{fsys_8c}
+\input{hash_8c}
+\input{hres_8c}
+\input{hashtable_2include_2consts_8h}
+\input{proxy_2include_2consts_8h}
+\input{filesystem_8h}
+\input{fsys_8h}
+\input{hash_8h}
+\input{hres_8h}
+\input{lett__scritt_8h}
+\input{hashtable_2include_2libhashtable_8h}
+\input{proxy_2include_2libhashtable_8h}
+\input{lett__scritt_8c}
+\input{communication_8c}
+\input{connect_8c}
+\input{bank__functs_8h}
+\input{bank__head_8h}
+\input{communication_8h}
+\input{connect_8h}
+\input{init_8h}
+\input{init__globals_8h}
+\input{lists_8h}
+\input{macro_8h}
+\input{params_8h}
+\input{pthread__ext_8h}
+\input{thread__functs_8h}
+\input{toclient_8h}
+\input{toserver_8h}
+\input{types_8h}
+\input{uni__list_8h}
+\input{init_8c}
+\input{params_8c}
+\input{thread__functs_8c}
+\input{toclient_8c}
+\input{toserver_8c}
+\input{uni__list_8c}
+\printindex
+\end{document}

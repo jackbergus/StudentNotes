@@ -1,0 +1,62 @@
+\hypertarget{structSCHEDULING}{
+\section{Riferimenti per la struct SCHEDULING}
+\label{structSCHEDULING}\index{SCHEDULING@{SCHEDULING}}
+}
+
+
+{\ttfamily \#include $<$types.h$>$}
+
+
+
+Diagramma di collaborazione per SCHEDULING:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{structSCHEDULING__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Campi}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct____mialista____}{LIST} \hyperlink{structSCHEDULING_a229bb49fdd326aa1018d1722fe912032}{planning}
+\item 
+pthread\_\-mutex\_\-t \hyperlink{structSCHEDULING_aaec89a3dc46fa4387acabc5d0a82f0bd}{qlock}
+\item 
+pthread\_\-cond\_\-t \hyperlink{structSCHEDULING_a5b4e86c8746c9ae4e032fd4d47947af8}{non\_\-empty}
+\item 
+unsigned short int \hyperlink{structSCHEDULING_a2e6094f26221c0be66ac7def1d02d337}{qsize}
+\end{DoxyCompactItemize}
+
+
+
+\subsection{Descrizione dettagliata}
+\hyperlink{structSCHEDULING}{SCHEDULING}: Questa struttura dati serve per ricordarsi, all'interno del programma, lo stato corrente dell'esecuzione dei lavori all'interno del proxY. 
+
+\subsection{Documentazione dei campi}
+\hypertarget{structSCHEDULING_a5b4e86c8746c9ae4e032fd4d47947af8}{
+\index{SCHEDULING@{SCHEDULING}!non\_\-empty@{non\_\-empty}}
+\index{non\_\-empty@{non\_\-empty}!SCHEDULING@{SCHEDULING}}
+\subsubsection[{non\_\-empty}]{\setlength{\rightskip}{0pt plus 5cm}pthread\_\-cond\_\-t {\bf SCHEDULING::non\_\-empty}}}
+\label{structSCHEDULING_a5b4e86c8746c9ae4e032fd4d47947af8}
+Condizione di coda non vuota \hypertarget{structSCHEDULING_a229bb49fdd326aa1018d1722fe912032}{
+\index{SCHEDULING@{SCHEDULING}!planning@{planning}}
+\index{planning@{planning}!SCHEDULING@{SCHEDULING}}
+\subsubsection[{planning}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LIST} {\bf SCHEDULING::planning}}}
+\label{structSCHEDULING_a229bb49fdd326aa1018d1722fe912032}
+Lista dei \hyperlink{structJOB}{JOB} che devono essere svolti dai thread correnti \hypertarget{structSCHEDULING_aaec89a3dc46fa4387acabc5d0a82f0bd}{
+\index{SCHEDULING@{SCHEDULING}!qlock@{qlock}}
+\index{qlock@{qlock}!SCHEDULING@{SCHEDULING}}
+\subsubsection[{qlock}]{\setlength{\rightskip}{0pt plus 5cm}pthread\_\-mutex\_\-t {\bf SCHEDULING::qlock}}}
+\label{structSCHEDULING_aaec89a3dc46fa4387acabc5d0a82f0bd}
+Lock per l'accesso alla lista \hypertarget{structSCHEDULING_a2e6094f26221c0be66ac7def1d02d337}{
+\index{SCHEDULING@{SCHEDULING}!qsize@{qsize}}
+\index{qsize@{qsize}!SCHEDULING@{SCHEDULING}}
+\subsubsection[{qsize}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short int {\bf SCHEDULING::qsize}}}
+\label{structSCHEDULING_a2e6094f26221c0be66ac7def1d02d337}
+Dimensione della coda dei dati 
+
+La documentazione per questa struct è stata generata a partire dal seguente file:\begin{DoxyCompactItemize}
+\item 
+src/proxy/include/\hyperlink{types_8h}{types.h}\end{DoxyCompactItemize}

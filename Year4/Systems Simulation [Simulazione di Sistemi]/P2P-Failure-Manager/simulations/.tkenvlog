@@ -1,0 +1,3622 @@
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x228f700-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x23bae00-2 "607x336+0+60:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x25438b0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x227d060-2 "607x336+1+61:normal""
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2eefc00-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3ae76e0-2 "607x336+512+253:normal""
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2f92b30-2 """
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x318ea90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315c470 ptr0x318ea90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315c520 ptr0x316fdd0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x311dce0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315c6d0 ptr0x311dce0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3192180 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315c780 ptr0x3192180"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3185d90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315c840 ptr0x3185d90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x31114e0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3162dc0 ptr0x31114e0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x30f2bd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3162e80 ptr0x30f2bd0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3043600 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3162f40 ptr0x3043600"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x31966e0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3163000 ptr0x31966e0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x317d020 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31630c0 ptr0x317d020"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x310ab90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3163180 ptr0x310ab90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x311dce0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3163240 ptr0x311dce0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3185d90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3163230 ptr0x3185d90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d4d50 ptr0x316fdd0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x318ea90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d4e30 ptr0x318ea90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x311ad80 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d8ef0 ptr0x311ad80"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3164ec0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d90a0 ptr0x3164ec0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3190e30 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d9150 ptr0x3190e30"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x318a410 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d9210 ptr0x318a410"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x30f8fa0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315c900 ptr0x30f8fa0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3108850 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315c9c0 ptr0x3108850"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3183a50 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315ca80 ptr0x3183a50"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x317f370 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315cb40 ptr0x317f370"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x318ea90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315cc00 ptr0x318ea90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3178940 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315ccc0 ptr0x3178940"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x317d020 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315cd80 ptr0x317d020"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3164ec0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315ce40 ptr0x3164ec0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x318ea90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315cdf0 ptr0x318ea90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x31742d0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3163300 ptr0x31742d0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x318ea90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31633e0 ptr0x318ea90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x310ab90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3163490 ptr0x310ab90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x311dce0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315e0f0 ptr0x311dce0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3190e30 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315e1a0 ptr0x3190e30"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3185d90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315e260 ptr0x3185d90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3192180 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315e320 ptr0x3192180"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x30f8fa0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315e4a0 ptr0x30f8fa0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3108850 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315e560 ptr0x3108850"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3183a50 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d3f90 ptr0x3183a50"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x317f370 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d4050 ptr0x317f370"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x318ea90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d4110 ptr0x318ea90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3178940 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d41d0 ptr0x3178940"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x317d020 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d4290 ptr0x317d020"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3164ec0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d4350 ptr0x3164ec0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x311dce0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d4410 ptr0x311dce0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3164ec0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d4620 ptr0x3164ec0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x31765f0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d46d0 ptr0x31765f0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x318a410 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d4790 ptr0x318a410"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3190e30 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31d4850 ptr0x3190e30"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x311f200 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x315dd80 ptr0x311f200"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x317d020 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31db9d0 ptr0x317d020"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3106510 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31dba90 ptr0x3106510"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3194430 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31fa940 ptr0x3194430"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x316da90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31faa00 ptr0x316da90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3164ec0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31faac0 ptr0x3164ec0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x311dce0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31fac60 ptr0x311dce0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x30f2bd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31faed0 ptr0x30f2bd0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x31720a0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31fefa0 ptr0x31720a0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3185d90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31ff050 ptr0x3185d90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3164ec0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31ff130 ptr0x3164ec0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x311ad80 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31ff1e0 ptr0x311ad80"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3183a50 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31ff390 ptr0x3183a50"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x311ad80 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31ff440 ptr0x311ad80"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x311dce0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31ff520 ptr0x311dce0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x31742d0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3203650 ptr0x31742d0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3041940 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3203730 ptr0x3041940"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3190e30 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x31fad80 ptr0x3190e30"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3203a00 ptr0x316fdd0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3113a90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3203ac0 ptr0x3113a90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x30f8fa0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3203c50 ptr0x30f8fa0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3108850 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3203d10 ptr0x3108850"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3183a50 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3203dd0 ptr0x3183a50"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x317f370 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3203e90 ptr0x317f370"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x318ea90 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3203f50 ptr0x318ea90"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3178940 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3204010 ptr0x3178940"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x317d020 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x32040d0 ptr0x317d020"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: tkenv.cc#1913: ptr0x3164ec0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $modptr"
+    (procedure "graphicalModuleWindow:animateSenddirectDelivery" line 6)
+    invoked from within
+"graphicalModuleWindow:animateSenddirectDelivery .ptr0x2f92b30-2 ptr0x3204190 ptr0x3164ec0"
+
+
+Tcl error: tkenv.cc#1919: ptr0x316fdd0 not found
+    while executing
+"error "$tag not found""
+    (procedure "graphicalModuleWindow:getSubmodCoords" line 4)
+    invoked from within
+"graphicalModuleWindow:getSubmodCoords $c $mod1ptr"
+    (procedure "doAnimateGroup" line 41)
+    invoked from within
+"doAnimateGroup $jobgroup($stage)"
+    (procedure "doConcurrentAnimations" line 32)
+    invoked from within
+"doConcurrentAnimations $tkenv(animjobs)"
+    (procedure "performAnimations" line 4)
+    invoked from within
+"performAnimations"
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x30b2420-2 "607x336+513+221:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3252510-2 "607x336+541+288:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x318a030-2 "607x336+541+288:normal""
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x1984970-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x1941b60-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x35c9fa0-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0xf89710-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x1cd54e0-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x1cf5150-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3f92a50-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x1f47cb0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3d15590-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3e1e4f0-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3d83b00-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3f615a0-2 "607x336+111+220:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3d91230-2 "607x336+111+220:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3ea9c10-2 "607x336+111+220:normal""
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3945310-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3ac87c0-2 "607x336+168+291:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3961d20-2 "607x336+168+291:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3ae22d0-2 "607x336+168+291:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3943240-2 "607x336+168+291:normal""
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2a5a0e0-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x222bc20-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x404eb80-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3f3d7b0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3fbe2d0-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x122c360-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2ec3610-2 "607x336+297+257:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2efe970-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2fee9e0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2fee9e0-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x392cdf0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3a74370-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3bea4a0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3a9e2c0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3b0db50-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2b25e80-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x4439030-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x436bf10-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x43488b0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x43502a0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x455bd50-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x4559170-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x434df30-2 """
+
+
+Tcl error: modinsp.cc#289: invalid command name ".ptr0x449c8a0-2.c"
+    while executing
+".ptr0x449c8a0-2.c delete all"
+
+
+Tcl error: modinsp.cc#237: invalid command name ".ptr0x449c8a0-2.c"
+    while executing
+"$c bbox "mod""
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 12)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x449c8a0-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3034370-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x32a3eb0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3174940-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3175180-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x31e5f50-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x33d4b40-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3157ce0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x31c2320-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3175860-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0xffaf70-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2d8d9c0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x37c6c70-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3191310-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2bae590-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2c82340-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2f47d10-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x33f8500-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x37e1a80-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2dd77d0-2 "607x336+1+61:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3132d10-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3af0a60-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3767ee0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x381cae0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3af0a60-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2d126b0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x312f350-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2bc2450-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3365890-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x40c64c0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3d38460-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3d51a00-2 "607x336+1+61:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x3da63a0-2 "607x336+1+61:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x2ad2ba0-2 """
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x35f68a0-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x47e6170-2 """
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x4b83330-2 "607x336+1+61:normal""
+
+
+Tcl error: modinsp.cc#237: missing operand at _@_
+in expression "-_@_"
+    (parsing expression "-")
+    invoked from within
+"expr [lindex $bb 2]-[lindex $bb 0]"
+    (procedure "graphicalModuleWindow:adjustWindowSizeAndZoom" line 13)
+    invoked from within
+"graphicalModuleWindow:adjustWindowSizeAndZoom $w"
+    (procedure "createGraphicalModWindow" line 104)
+    invoked from within
+"createGraphicalModWindow .ptr0x4b940b0-2 "607x336+1+61:normal""
+
+

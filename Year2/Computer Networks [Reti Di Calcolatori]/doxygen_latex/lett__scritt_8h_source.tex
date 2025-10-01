@@ -1,0 +1,68 @@
+\hypertarget{lett__scritt_8h_source}{
+\section{src/hashtable/include/lett\_\-scritt.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{ * lett\_scritt.h}
+00003 \textcolor{comment}{ * This file is part of hashtable}
+00004 \textcolor{comment}{ *}
+00005 \textcolor{comment}{ * Copyright (C) 2012 - Giacomo Bergami}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * hashtable is free software; you can redistribute it and/or modify}
+00008 \textcolor{comment}{ * it under the terms of the GNU General Public License as published by}
+00009 \textcolor{comment}{ * the Free Software Foundation; either version 2 of the License, or}
+00010 \textcolor{comment}{ * (at your option) any later version.}
+00011 \textcolor{comment}{ *}
+00012 \textcolor{comment}{ * hashtable is distributed in the hope that it will be useful,}
+00013 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00014 \textcolor{comment}{ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00015 \textcolor{comment}{ * GNU General Public License for more details.}
+00016 \textcolor{comment}{ *}
+00017 \textcolor{comment}{ * You should have received a copy of the GNU General Public License}
+00018 \textcolor{comment}{ * along with hashtable; if not, write to the Free Software}
+00019 \textcolor{comment}{ * Foundation, Inc., 51 Franklin St, Fifth Floor, }
+00020 \textcolor{comment}{ * Boston, MA  02110-1301  USA}
+00021 \textcolor{comment}{ */}
+00022 \textcolor{preprocessor}{#ifndef \_\_LETT\_SCRITT\_\_H\_\_}
+00023 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define \_\_LETT\_SCRITT\_\_H\_\_}
+00024 \textcolor{preprocessor}{}
+00025 
+00026 \textcolor{comment}{/*      Standard Library        */}
+00027 \textcolor{preprocessor}{#include        <semaphore.h>}
+00028 \textcolor{preprocessor}{#include        <pthread.h>}
+00029 \textcolor{preprocessor}{#include        <unistd.h>}
+00030 \textcolor{preprocessor}{#include        <stdlib.h>}
+00031 \textcolor{preprocessor}{#include        <stdio.h>}
+00032 
+00033 
+00034 \textcolor{comment}{/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
+00035 
+00036 
+\hypertarget{lett__scritt_8h_source_l00037}{}\hyperlink{lett__scritt_8h_abb293b5fc19bb8afcd3f45099b1da41f}{00037} \textcolor{preprocessor}{#define WREAD   0}
+\hypertarget{lett__scritt_8h_source_l00038}{}\hyperlink{lett__scritt_8h_a114cfcc3174a77912ed503925f0d5c3d}{00038} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define WWRITE  1}
+00039 \textcolor{preprocessor}{}
+\hypertarget{lett__scritt_8h_source_l00040}{}\hyperlink{lett__scritt_8h_a40291e8f268436330befe2491f6495de}{00040} \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}    \hyperlink{lett__scritt_8h_a40291e8f268436330befe2491f6495de}{ANYTYPE};
+00041 
+\hypertarget{lett__scritt_8h_source_l00042}{}\hyperlink{structCS__struct}{00042} \textcolor{keyword}{struct }\hyperlink{structCS__struct}{CS_struct} \{
+\hypertarget{lett__scritt_8h_source_l00043}{}\hyperlink{structCS__struct_af065e125e4ff3613892e0d2fbfe8f7dc}{00043}         pthread\_mutex\_t \hyperlink{structCS__struct_af065e125e4ff3613892e0d2fbfe8f7dc}{attr};
+00044 \};
+00045 
+\hypertarget{lett__scritt_8h_source_l00046}{}\hyperlink{lett__scritt_8h_a1a82c4835f55136d206fd9b693eaed81}{00046} \textcolor{preprocessor}{#define P(x)    sem\_wait(x)}
+\hypertarget{lett__scritt_8h_source_l00047}{}\hyperlink{lett__scritt_8h_a5d2e64c561275bcf703c30edd5494288}{00047} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define V(x)    sem\_post(x)}
+00048 \textcolor{preprocessor}{}
+00054 \textcolor{keywordtype}{void} \hyperlink{lett__scritt_8h_a5a585dad64840fecdeee952f1a0dd2c7}{init_struct}(\textcolor{keyword}{struct} \hyperlink{structCS__struct}{CS_struct}* data);
+00055 
+00056 
+00064 \textcolor{keywordtype}{void} \hyperlink{lett__scritt_8h_ab2e0f5d11ed3c6a348647408f42b86f8}{struct_do_read}(\textcolor{keyword}{struct} \hyperlink{structCS__struct}{CS_struct}* data);
+00065 
+00070 \textcolor{keywordtype}{void} \hyperlink{lett__scritt_8h_a8824e29f9520eaa8156027bb92a61f51}{struct_end_read}(\textcolor{keyword}{struct} \hyperlink{structCS__struct}{CS_struct}* data);
+00071 
+00072 
+00077 \textcolor{keywordtype}{void} \hyperlink{lett__scritt_8h_a1bf83dffac1b1b47807b19464e969df3}{struct_do_write}(\textcolor{keyword}{struct} \hyperlink{structCS__struct}{CS_struct}* data);
+00078 
+00083 \textcolor{keywordtype}{void} \hyperlink{lett__scritt_8h_a1ef0e88641b0749417d4f76cf92ce77a}{struct_end_write}(\textcolor{keyword}{struct} \hyperlink{structCS__struct}{CS_struct} *data);
+00084 
+00085 
+00086 \textcolor{preprocessor}{#endif }
+\end{DoxyCode}

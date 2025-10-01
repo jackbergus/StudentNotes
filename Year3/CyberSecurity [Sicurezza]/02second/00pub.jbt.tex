@@ -1,0 +1,285 @@
+\chapter{Gestione delle chiavi}
+\section{Gestione delle chiavi pubbliche - Certificati}
+In quanto non dobbiamo trattare la gestione delle chiavi private nella crittografia
+asimmetrica, in quanto queste rimarranno sempre, dovremmo porre l'attenzione
+sulla divulgazione delle chiavi pubbliche. 
+
+Se un utente \texttt A effettua un annuncio pubblico della sua chiave pubblica (es.)
+per poter raggiungere anche un possibile interlocutore \texttt B, questa
+forma di comunicazione non richiede la presenza di intermediari, ma si ha il
+problema di un possibile \textit{man-in-the-middle attack}: se lo comunichiamo
+direttamente all'interno di un canale di comunicazione, un ascoltatore malevolo \texttt X
+potrebbe cambiare tale chiave con la propria di modo che, quando \texttt B vuole
+aver garanzia di comunicare con \texttt A, utilizzerà la chiave pubblica che 
+crederà di \texttt B ma che è in realtà di \texttt X, di modo che \texttt X riceverà la comunicazione
+da \texttt B che crederà di parlare con \texttt A. Questo potrebbe anche provocare il
+seguente disagio: entrambi i lati della comunicazione potrebbero credere di 
+comunicare con il diretto interessato, senza aver modo di controllare che,
+effettivamente, la comunicazione è mediata da \texttt X. Si può quindi vedere che 
+ciò è stato possibile perché \textbf{la comunicazione non garantisce la 
+confidenzialità}.
+
+
+Una soluzione possibile è quella di ritornare ad un ente centralizzato e 
+fidato, che è responsabile della pubblicazione delle chiavi: tuttavia anche in
+questo contesto abbiamo che dei possibili ``elenchi pubblici'' possano essere
+falsificati, violandone quindi le informazioni. Inoltre, dobbiamo 
+assicurarci che anche la registrazione delle informazioni debba avvenire in un
+modo sicuro, altrimenti l'informazione potrebbe essere (es.) compromessa persino
+qualora \texttt A chieda all'ente di aggiornare l'informazione; inoltre la stessa
+directory dove possono esssere presenti queste chiavi può essere al contempo non
+sicura, compromettendo tutti i dati contenuti al suo interno. 
+
+Possiamo quindi concludere che una soluzione praticabile è quella dei \textbf{certificati},
+all'interno dei quali vengono trasportate le chiavi pubbliche: queste sono
+quindi sono rese autentiche dalla \textbf{firma} dell'autorità garante:
+\begin{itemize}
+\item In questo modo si verifica l'eliminazione dell'attacco \textit{man-in-the-middle},
+	in quanto in questo modo non è possibile modificare la chiave pubblica
+	nel certificato senza alterarlo
+\item Si garantisce l'attualità delle chiavi, mitigando il problema del furto della
+	chiave privata
+\end{itemize}
+\bigskip
+
+Dobbiamo ora generare un oggetto che possa prevenire l'attacco \textit{man-in-the-middle},
+ovvero dobbiamo fare in modo, durante lo scambio delle chiavi, che un terzo 
+possa spacciarsi per un altro utente del sistema, cambiando semplicemente la 
+chiave pubblica: come abbiamo già visto, possiamo avere questa garanzia tramite un
+\textbf{certificato} rilasciato (es.) da un'autorità garante (che applica la sua 
+firma sul documento) verso la quale riponiamo
+fiducia: questo deve quindi incaricarsi di garantire che l'oggetto venga
+consegnato direttamente nelle mani di chi lo richiede, e deve essere in grado
+di accertare l'identità dell'individuo, che deve essere presente (assieme alla
+sua chiave pubblica) all'interno del certificato. 
+
+
+Per fare un esempio pratico, all'interno di un ambito ristretto, si può ritenere
+la mail del richiedente una garanzia sufficiente per ottenere un certificato,
+in quanto si ha la garanzia che solamente quel possibile destinatario sia in 
+grado di poter leggere la mail (garanzia d'identità \textit{out of band}). Tuttavia
+ciò non si rivela più sufficiente qualora siano richiesti ulteriori dati sul 
+soggetto.
+\medskip
+
+Definiamo inoltre \textbf{ PKI} (\textit{Public Key Infrastructure}) l'insieme dei servizi
+logicamente indipendenti fornibili da una rete di:
+\begin{itemize}
+\item \textbf{Registration Authority}: effettua l'ottenimento di una richiesta di un
+	certificato da parte di un utente.
+\item \textbf{Certification Authority}: effettua il controllo sull'identità 
+	del richiedente, ed ha quindi il compito di rilasciare i certificati; 
+	si può realizzare tramite procedure automatizzate
+	e non richiedendo il contatto diretto con l'interessato.
+\end{itemize}
+In genere le \textit{PKI} contengono un insieme di servizi e di protocolli per
+fornire (tramite il processo di certificazione), immagazinare, \textbf{validare} 
+(ovvero, controllare che il certificato sia da considerarsi tutt'ora valido)
+e revocare certificati. 
+I \textit{certificate servers}, che contengono al loro interno database di chiavi
+accessibili dalla rete, permettono ai loro utenti di effettuare una richiesta
+di inserimento di un nuovo certificato personale (processo di \textbf{certificazione}), 
+o di ottenere quello di qualcun altro. 
+
+\subsection {X.509}
+Questo certificato si basa sul concetto di ``trust'', che è presente anche 
+nell'ambito umano: chi accetta come valido un certificato come un passaporto,
+implicitamente ripone fiducia anche nell'ente, detto \textit{Certification Authority} 
+che lo ha rilasciato. 
+
+La \textit{X.509} è un ente di standardizzazione che utilizza un certificato con particolari
+campi:
+\begin{itemize}
+\diam \texttt{Subject}: \textit{Distringuished Name} (Common Name, Organization or Company, 
+	Oraganizational Unit, City/Locality, State/Province, Country (ISO code)),
+	\textit{Public Key}
+\diam \texttt{Issuer} (colui che ha rilasciato il certificato): \textit{Distinguished 
+	name}, \textit{Signature} 
+\diam \texttt{Validity}: \textit{Not Before Date}, \textit{Not After Date}
+\diam \texttt{Administrative Info}: \textit{Version}, \textit{Serial Number}
+\diam \texttt{Extended Info}:  \dots
+\end{itemize}
+Come possiamo vedere dal campo \texttt{Subject}, non è sufficiente avere il solo
+\textit{Common Name}, in quanto in questo modo non si potrebbero gestire
+i casi di omonimia. Inoltre, aggiungendo le ulteriori caratteristiche di cui
+sotto, uno stesso soggetto può avere diversi certificati, in base al contesto
+nel quale li deve utilizzare.
+
+Dobbiamo inoltre notare che, all'interno di uno stesso
+\textit{PKI}, possono essere presenti anche più \textit{Certification Authority} (CA)
+decentralizzati, creando in questo modo una gerarchia diffusa di fiducia all'interno
+del sistema. Inoltre, uno stesso CA può essere delegato da un PKI per certificare
+altri CA: in questo modo si ha a che fare con una gerarchia di CA, fino ad
+arrivare agli utenti, che costituiscono le foglie del sistema. Si può inoltre 
+sottolineare come, uno stesso ente, possa rilasciare 
+anche più tipologie di certificati, ad esempio, ad uno stesso utente.
+\medskip
+
+Supponiamo ora di creare un certificato nella forma:
+\begin{center}
+<Distinguished Name U, Public Key U, Signature CA X>
+\end{center}
+Per convincermi che questo certificato è valido, devo essere certo che anche la
+firma di X sia valida: dovrò quindi ottenere un ulteriore certificato per X 
+firmato da un altro CA, strutturato in modo analogo a sopra ma con la firma di
+un altro CA; questa catena di certificati prima o poi dovrà essere interrotta
+con un'autocertificato di un'entità \textit{Root Authority}, che ovvero pone la sua stessa
+firma sul suo Distinguished name e la sua chiave pubblica.
+
+In genere questi certificati sono cablati all'interno di applicativi, di modo
+che possiamo conoscere a priori chi ritenere una Root Authority affidabile; in questo 
+modo, è sufficiente che arrivi un certificato di una CA rilasciato da un Root
+noto, per ottenere garanzia sulla chiave pubblica in esso contenuta.
+\medskip
+
+In seguito, dobbiamo considerare i casi con i quali possiamo ottenere la validazione
+o la revoca di un certificato:
+\begin{description}
+\item [Validazione] tale operazione è necessaria in quanto l'informazione di un 
+	certificato può cambiare col tempo, e quindi abbiamo l'esigenza di 
+	controllare se tali certificati sono da considerarsi o meno \textit{aggiornati}
+	ed \textit{autentici}. Si può effettuare questa operazione \textbf{offline}, ma a questo
+	punto si può effettuare il controllo unicamente andando ad analizzare 
+	il certificato, e controllando il suo periodo di validità; l'operazione
+	è inoltre fattibile anche \textbf{online}, ed in questo modo si può sempre 
+	chiedere ad ogni istante al CA che l'ha rilasciato se il certificato 
+	corrente è valido (uno strumento simile si potrebbe avere nel controllo
+	offline tramite una lista dei certificati non più validi, anche se questo
+	elenco non può essere tenuto in costante aggiornamento).
+\item [Revoca] La revoca del certificato può avvenire qualora si reputi che 
+	le informazioni in esso contenute, non sono più valide. Questo può avvenire
+	(\emph{i}) perché la firma del CA, per un motivo grave, non è più valida,
+	(\emph{ii}) perché l'utente ha cambiato la sua chiave segreta - e
+	contemporaneamente quella pubblica, (\emph{iii}) le informazioni riguardanti
+	l'utente cambiano. La revoca del certificato in modalità \textbf{offline}
+	diventa critica, mentre il problema risulta triviale in modalità
+	\textbf{online}. 
+\end{description}
+
+\subsection{PGP (Pretty Good Privacy)}
+Il sistema PGP introduce un nuovo sistema per l'attribuzione dell'affidabilità
+in un modello non gerarchico: in quello gerarchico invece, abbiamo che una root authority
+può assumere questo privilegio unicamente tramite una conoscenza \textit{out of band},
+la quale implica una conoscenza di come questo abbia operato nel passato.
+
+Questo sistema invece, da la possibilità ad ognuno di autocerficarsi, garantendo
+inoltre relazioni di fiducia tra utenti, di modo da creare un grafo di relazioni
+di affidabilità, che può cambiare contestualmente al cambiamento delle relazioni
+tra utenti. Tale pacchetto software (disponibile anche freeware), consente l'uso
+di:
+\begin{itemize}
+\diam Generazione, e gestione delle chiavi
+\diam Cifratura e decifratura, firma e verifica di documenti digitali
+\diam $\Rightarrow$ gestione di una VPN sicura.
+\diam Creazione di Self-Decrypting Arhchives
+\diam Cancellazione permanente di file, directory e spazio sul disco.
+\end{itemize}
+
+Il sistema di mantenimento delle chiavi, prevede di conservare per noi criptate
+secondo una \textit{passphrase} ben conosciuta, le chiavi pubbliche e private di
+un utente che, al contrario delle password numeriche, possono essere ricordate
+facilmente dall'utente, ma sono ottenibili difficilmente tramite un attacco di
+forza bruta. In questo modo, l'utente può anche generare ma non vedere mai le
+sue chiavi pubbliche e private, ma è necessario che non si dimentichi tale
+\textit{passphrase}.
+\medskip
+
+Possiamo ora vedere quali azioni dovrà compiere il mittente per inviare un 
+documento: una volta compresso il documento, egli genererà una chiave di 
+sessione con la quale cripterà il compresso, codificandolo assieme a detta chiave 
+con quella pubblica del destinatario. Quest'ultimo potrà aprire il suo documento
+tramite la sua chiave privata, che gli permetterà di accedere alla chiave di 
+sessione per poi poter decifrare il messaggio a lui solo destinato.
+
+Possiamo notare che, tramite la compressione, abbiamo un rafforzamento del 
+protocollo poiché, in questo modo, si può evitare l'attacco statistico del
+plaintext: comprimendo il testo apparirà di natura casuale, in quanto 
+non si mantiene l'ordinamento del documento, poiché le lettere verranno 
+mappate in un modo differente. Altro vantaggio che si ottiene tramite la 
+compressione è la ridotta dimensione del messaggio da inviare a destinazione.
+
+All'interno dei cifrari a chiavi pubbliche, in genere queste chiavi vengono sempre
+comunicati tramite certificati, che sono strutturati in un modo differente rispetto
+a \textit{X.509}:
+\begin{itemize}
+\diam Chiave pubblica di U e caratteristiche della chiave (lunghezza, algoritmo,
+	data di creazione e sua durata)
+\diam Informazioni sull'identità di U
+\diam Auto-firma di U
+\diam Indicazione dell'algoritmo simmetrico di codifica
+\end{itemize}
+Inoltre il sistema PGP è in grado di gestire (e quindi riconoscere) il sistema
+X.509, anche se non è supportata l'interoperabilità dei due sistemi, nel senso
+del riconoscimento nei certificati PGP quelli X.509.
+Mettiamo ora in luce le differenze tra questi due sistemi di Key Management:
+\begin{itemize}
+\item In PGP non esiste il concetto di ``Registration Authority'', come invece
+	avviene per l'altro standard;
+\item In PGP il certificato nasce  autofirmato, mentre in X.509 viene firmato
+	dalla suddetta ``Registration Authority'';
+\item In PGP possono essere ammesse identità multiple per uno stesso utente, 
+	mentre X.509 deve essere in grado di identificare singolarmente ciascuna
+	di quelle entità per evitare l'ambiguità
+\item Si ripone fiducia nei confronti di un certificato non solo dal numero di
+	firme in esse presenti, ma anche da quante firme sono presenti nei
+	certificati dei firmatari.
+\end{itemize}
+Per conesntire le identità multiple, all'interno di uno stesso certificato
+possono essere presenti coppie multiple chiavi-identità, ciascuna delle volte
+firmate un numero non precisato di volte e ciascuna con ruoli differenti, e
+utilizzi in differenti contesti.
+
+
+Il certificato quindi nasce già da subito come autocertificato, e a questo 
+punto ogni utente diventa in un certo modo come ``autority'' di sè stesso,
+senza essersi rivolto ad alcuna autorità; per testare l'autorevolezza del certificato,
+verrano esposte delle altre firme all'interno dello stesso di altri utenti, 
+alle quali si può assegnare i seguenti gradi di attendibilità:
+(\textit i) \textbf{complete} trust, (\textit{ii}) \textbf{marginal} trust e (\textit{iii})
+\textbf{untrusted}. Inoltre, all'interno di questo contesto, dobbiamo essere in 
+grado di dividere la \textbf{fiducia} che riponiamo su di un utente, dalla 
+\textbf{validità} del certificato che esso utilizza: potrei riporre fiducia in un
+certificato perché esso mi viene presentato da quella persona in persona,
+attestando quindi la validità del certificato, e sostituendo in questo modo
+la certificazione di un singolo utente. Possiamo quindi distinguere tre modelli 
+differenti di affidabilità:
+\begin{description}
+\item[Direct Trust] ottengo la fiducia solamente delle persone con le quali
+	interagisco direttamente
+\item[Hiearchical Trust] la fiducia viene riposta nei confronti di un ente
+	emittente in modo assoluto, tramite una conoscenza out-of-band della
+	sua affidabilità
+\item[Web of Trust] Si viene a creare un grafo arbitrario di affidabilità.
+	Non esistendo una CA, tutti potranno essere CA in quanto tutti hanno la
+	possibilità di firmare i certificati presenti. Inoltre, il primo 
+	utente che mette una firma in un certificato viene definito come
+	\textbf{introducer}, ed ognuno può considerare più o meno affidabile quel
+	certificato, in base alla firme delle entità presenti all'interno di
+	quel certificato. La struttura di una ``rete'' è anche dovuta all'assenza
+	di autorità centrali di certificazione. Tuttavia le relazioni del grafo
+	nè sono da considerarsi simmetriche, nè sono da considerarsi transitive,
+	in quanto non sempre la fiducia, anche nella vita reale, è una relazione
+	di quel tipo, e contemporaneamente quei valori settati all'interno del 
+	certificato per ogni firma, possono cambiare con il tempo.
+\end{description}
+
+Abbiamo inoltre che, se una persona riceve un'affidabilità del tipo \textit{Completely
+trust}, essa diventerà come una ``CA'', mentre una chiave è considerata come
+valida se almeno un utente l'ha indicato come \textit{Completely trusted}, o più di
+due firme \textit{Marginally trusted.}
+
+Possiamo fornire alcuni dati:
+\textit{
+\begin{itemize}
+\item Le chiavi segrete da 80b sono equivalenti a quelle pubbliche da 1024b;
+	le chiavi segrete da 1028b invece sono equivalenti a quelle pubbliche a
+	3000b
+\item In quanto le chiavi segrete a 56b oggi non sono sicure, e quelle a 128b 
+	magari non lo saranno nel futuro coi computer quantistici, quelle a 256b
+	sono ritenute sufficientemente sicure anche in un futuro lontato
+\item Gli algoritmi a chiave privata utilizzata sono CAST, Triple-DES, IDEA ed AES;
+	quelli a chiave pubblica sono DSS ed RSA, mentre come algoritmo di HASH si
+	usa SHA1. 
+\end{itemize}
+}
+

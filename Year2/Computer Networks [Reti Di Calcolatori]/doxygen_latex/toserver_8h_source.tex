@@ -1,0 +1,34 @@
+\hypertarget{toserver_8h_source}{
+\section{src/proxy/include/toserver.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef \_\_TOSERVER\_H\_\_}
+00002 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define \_\_TOSERVER\_H\_\_}
+00003 \textcolor{preprocessor}{}
+00004 
+00005 \textcolor{comment}{/*      Proxy's Library */}
+00006 \textcolor{preprocessor}{#include        "\hyperlink{communication_8h}{communication.h}"}
+00007 \textcolor{preprocessor}{#include        "\hyperlink{thread__functs_8h}{thread_functs.h}"}
+00008 \textcolor{preprocessor}{#include        "\hyperlink{proxy_2include_2libhashtable_8h}{libhashtable.h}"}
+00009 \textcolor{preprocessor}{#include        "\hyperlink{init__globals_8h}{init_globals.h}"}
+00010 \textcolor{preprocessor}{#include        "\hyperlink{toclient_8h}{toclient.h}"}
+00011 \textcolor{preprocessor}{#include        "\hyperlink{connect_8h}{connect.h}"}
+00012 \textcolor{preprocessor}{#include        "\hyperlink{params_8h}{params.h}"}
+00013 \textcolor{preprocessor}{#include        "\hyperlink{types_8h}{types.h}"}
+00014 \textcolor{preprocessor}{#include        "\hyperlink{macro_8h}{macro.h}"}
+00015 
+00016 
+00017 \textcolor{comment}{/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
+00018 
+00027 \textcolor{keywordtype}{int}             \hyperlink{toserver_8h_a011d09dc3c763ec3a26b0706a0e8d173}{fetch}( \textcolor{keywordtype}{char}* buffer, \textcolor{keywordtype}{char}* remote\_path, \textcolor{keywordtype}{int} fdclient);
+00028 
+00029 
+00033 \textcolor{keywordtype}{void}    \hyperlink{toserver_8h_afaf61404515e765b53f67004ae097034}{handle_serverPool}( \textcolor{keywordtype}{int} whoami, \hyperlink{structmsg}{msg}* params);
+00034 
+00035 
+00036 \textcolor{keywordtype}{void}    \hyperlink{toserver_8h_a631a452041188727281fda66f1db8dee}{handle_prefetchPool}( \textcolor{keywordtype}{int} whoami, \textcolor{keyword}{struct} \hyperlink{structreslist}{reslist}* prefetch\_res);
+00037 
+00038 
+00039 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

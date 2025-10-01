@@ -1,0 +1,106 @@
+\hypertarget{macro_8h_source}{
+\section{src/proxy/include/macro.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef \_\_MACRO\_\_H\_\_}
+00002 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define \_\_MACRO\_\_H\_\_}
+00003 \textcolor{preprocessor}{}
+00004 
+00005 \textcolor{comment}{/*      Standard library        */}
+00006 \textcolor{preprocessor}{#include        <sys/socket.h>}
+00007 \textcolor{preprocessor}{#include        <sys/types.h>}
+00008 \textcolor{preprocessor}{#include        <sys/stat.h>}
+00009 \textcolor{preprocessor}{#include        <unistd.h>}
+00010 \textcolor{preprocessor}{#include        <string.h>}
+00011 \textcolor{preprocessor}{#include        <stdio.h>}
+00012 \textcolor{preprocessor}{#include        <errno.h>}
+00013 \textcolor{preprocessor}{#include        <ctype.h>}
+00014 \textcolor{preprocessor}{#include        <fcntl.h>}
+00015 
+00016 \textcolor{comment}{/*      Project's Library       */}
+00017 \textcolor{preprocessor}{#include        "\hyperlink{proxy_2include_2consts_8h}{consts.h}"}
+00018 
+00019 \textcolor{comment}{/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
+00020 
+00027 \textcolor{comment}{/*      CPrintf( int foreground\_color, ...)     */}
+\hypertarget{macro_8h_source_l00028}{}\hyperlink{macro_8h_af3a90ce610048c9469b825ba9f3ddc4d}{00028} \textcolor{preprocessor}{#define CPrintf( fg\_color, ...)                                                                                                 \(\backslash\)
+      }
+00029 \textcolor{preprocessor}{\{                                                                                                                                                               \(\backslash\)
+      }
+00030 \textcolor{preprocessor}{        }\textcolor{comment}{/*      set color mode  */}                                                                                                              \(\backslash\)
+      
+00031         printf( "%s%d;%d%s", START\_COLOR, BOLD, (fg\_color),     END\_COLOR);                             \(\backslash\)
+      
+00032                                                                                                                                                                 \(\backslash\)
+      
+00033         \textcolor{comment}{/*      print original message  */}                                                                                              \(\backslash\)
+      
+00034         printf( \_\_VA\_ARGS\_\_);                                                                                                           \(\backslash\)
+      
+00035                                                                                                                                                                 \(\backslash\)
+      
+00036         \textcolor{comment}{/*      unset color mode        */}                                                                                                      \(\backslash\)
+      
+00037         printf( "%s", RESET\_COLOR);                                                                                                     \(\backslash\)
+      
+00038 \}
+00039 
+00040                 \textcolor{comment}{/***********************/}
+00041                 \textcolor{comment}{/* PREPROCESSOR MACROS */}
+00042                 \textcolor{comment}{/***********************/}
+\hypertarget{macro_8h_source_l00043}{}\hyperlink{macro_8h_a187fa7a4ed5c7b7e5bc7a8d7fc1b86cf}{00043} \textcolor{preprocessor}{#define ONCONDRET1(cond) if (cond) return 1}
+00044 \textcolor{preprocessor}{}
+00045 
+00053 \textcolor{preprocessor}{#ifndef DEBUG}
+00054 \textcolor{preprocessor}{}\textcolor{preprocessor}{        #ifndef TESTING}
+\hypertarget{macro_8h_source_l00055}{}\hyperlink{macro_8h_a1eb49ad6c54663208db1fcc1260a8f6f}{00055} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define kassert(a,...) \(\backslash\)}
+00056 \textcolor{preprocessor}{                        while(0)}
+00057 \textcolor{preprocessor}{}\textcolor{preprocessor}{        #else}
+00058 \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define kassert(a,...)                                                                                                          \(\backslash\)
+      }
+00059 \textcolor{preprocessor}{                        do \{                                                                                                                            \(\backslash\)
+      }
+00060 \textcolor{preprocessor}{                                if (!(a)) \{                                                                                                     \(\backslash\)
+      }
+00061 \textcolor{preprocessor}{                                        printf("DBG ERROR errno %d at file %s lin
+      e %d:\(\backslash\)n",errno,\_\_FILE\_\_,\_\_LINE\_\_); fflush(NULL); \(\backslash\)}
+00062 \textcolor{preprocessor}{                                        printf(\_\_VA\_ARGS\_\_);             fflush(N
+      ULL);                                   \(\backslash\)}
+00063 \textcolor{preprocessor}{                                        exit(1);                                                                                                        \(\backslash\)
+      }
+00064 \textcolor{preprocessor}{                                \}                                                                                                                               \(\backslash\)
+      }
+00065 \textcolor{preprocessor}{                        \} while(0)}
+00066 \textcolor{preprocessor}{}\textcolor{preprocessor}{        #endif}
+00067 \textcolor{preprocessor}{}\textcolor{preprocessor}{#else}
+00068 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define kassert(a,...)                                                                                                                  \(\backslash\)
+      }
+00069 \textcolor{preprocessor}{                do \{                                                                                                                                    \(\backslash\)
+      }
+00070 \textcolor{preprocessor}{                        if (!(a)) \{                                                                                                             \(\backslash\)
+      }
+00071 \textcolor{preprocessor}{                                printf("DBG ERROR errno: %d at file %s line %d:\(\backslash\)n
+      ",errno,\_\_FILE\_\_,\_\_LINE\_\_); fflush(NULL); \(\backslash\)}
+00072 \textcolor{preprocessor}{                                printf(\_\_VA\_ARGS\_\_);  fflush(NULL);                                                             \(\backslash\)
+      }
+00073 \textcolor{preprocessor}{                                exit(1);                                                                                                                \(\backslash\)
+      }
+00074 \textcolor{preprocessor}{                        \}                                                                                                                                       \(\backslash\)
+      }
+00075 \textcolor{preprocessor}{                \} while(0)}
+00076 \textcolor{preprocessor}{}\textcolor{preprocessor}{#endif}
+00077 \textcolor{preprocessor}{}
+00078 
+00079 
+00086 \textcolor{comment}{/* SET\_TIMEOUT(struct timeval* timeout) */}
+\hypertarget{macro_8h_source_l00087}{}\hyperlink{macro_8h_a16f0e97342dea9152b03af7b281fd457}{00087} \textcolor{preprocessor}{#define SET\_TIMEOUT(timeout)\{                                                                                                   \(\backslash\)
+      }
+00088 \textcolor{preprocessor}{        (timeout)->tv\_sec               =       MAX\_TIME;                                                                               \(\backslash\)
+      }
+00089 \textcolor{preprocessor}{        (timeout)->tv\_usec              =       MAX\_uTIME;                                                                              \(\backslash\)
+      }
+00090 \textcolor{preprocessor}{\}}
+00091 \textcolor{preprocessor}{}
+00092 \textcolor{preprocessor}{#endif }
+\end{DoxyCode}

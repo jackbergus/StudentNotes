@@ -1,0 +1,40 @@
+\hypertarget{communication_8h_source}{
+\section{src/proxy/include/communication.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef \_\_COMMUNIC\_\_H\_\_}
+00002 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define \_\_COMMUNIC\_\_H\_\_}
+00003 \textcolor{preprocessor}{}
+\hypertarget{communication_8h_source_l00004}{}\hyperlink{communication_8h_a369266c24eacffb87046522897a570d5}{00004} \textcolor{preprocessor}{#define \_GNU\_SOURCE}
+00005 \textcolor{preprocessor}{}
+00006 
+00007 \textcolor{comment}{/*      Standard Library        */}
+00008 \textcolor{preprocessor}{#include <stdio.h>}
+00009 \textcolor{preprocessor}{#include <stdlib.h>}
+00010 
+00011 
+00012 \textcolor{comment}{/*      Project's Library       */}
+00013 \textcolor{preprocessor}{#include "\hyperlink{macro_8h}{macro.h}"}
+00014 \textcolor{preprocessor}{#include "\hyperlink{types_8h}{types.h}"}
+00015 
+00016 
+00017 \textcolor{keywordtype}{char}* \hyperlink{communication_8c_a39ad01fec548910dd7fd722537033534}{get_resource_alloc}(\textcolor{keywordtype}{char}* text, \textcolor{keywordtype}{char}** next);
+00018 
+\hypertarget{communication_8h_source_l00027}{}\hyperlink{communication_8h_ae6be846173beb2523efa0e39a2647f9e}{00027} \textcolor{preprocessor}{#define distance(ptr1,ptr2) ((!(sizeof(ptr1)==sizeof(ptr2))) ? -1 : (((ptr2)-(ptr
+      1))/sizeof(*ptr1)))}
+00028 \textcolor{preprocessor}{}
+00029 
+00030 \textcolor{keywordtype}{int} \hyperlink{communication_8c_abbd2fd5049554023af399048ad6d4062}{dorequest}(\textcolor{keywordtype}{char}* \hyperlink{structrequest}{request}, \textcolor{keywordtype}{int} TYPE, \textcolor{keywordtype}{char}* path, \textcolor{keywordtype}{int} low, \textcolor{keywordtype}{int} hight) ;
+00031 \textcolor{keywordtype}{int} \hyperlink{communication_8c_a09cedc111b49debbe01a911404453c26}{doreply}(\textcolor{keywordtype}{char} *reply, \textcolor{keywordtype}{int} TYPE, \textcolor{keywordtype}{int} len, \textcolor{keywordtype}{int} empire, \textcolor{keywordtype}{int} low, \textcolor{keywordtype}{int} hight, \textcolor{keywordtype}{char}*
+       content);
+00032 \hyperlink{structrequest}{request}* \hyperlink{communication_8c_aba3197538fb2869ab4a55528246dd131}{parseRequest}(\textcolor{keywordtype}{char}* buf, \textcolor{keywordtype}{int} len);
+00033 \textcolor{keywordtype}{int} \hyperlink{communication_8c_ab12714b42bbc6fd90428798fda112559}{parseHead}(\textcolor{keywordtype}{char}* buf, \textcolor{keywordtype}{int} buflen, \textcolor{keywordtype}{int}* len, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}* expire, \textcolor{keywordtype}{int}* low, \textcolor{keywordtype}{in
+      t}* hight, \textcolor{keywordtype}{char}** cont);
+00034 \textcolor{keywordtype}{char}* \hyperlink{communication_8c_af9904e9c60828f623aaf1da8db0f5ee0}{getIP}(\textcolor{keywordtype}{char}* URL, \textcolor{keywordtype}{char}* dest);
+00035 \textcolor{keywordtype}{char}* \hyperlink{communication_8c_aa1b29de3719021427beab813714d5759}{getPort}(\textcolor{keywordtype}{char}* URLp, \textcolor{keywordtype}{char}* dest);
+00036 
+00037 
+00038 
+00039 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

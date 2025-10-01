@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$connect_8h.html" title="src/proxy/include/connect.h" alt="" coords="319,83,500,112"/>
+<area shape="rect" id="node13" href="$uni__list_8h.html" title="src/proxy/include/uni_list.h" alt="" coords="144,315,320,344"/>
+<area shape="rect" id="node19" href="$init_8h.html" title="src/proxy/include/init.h" alt="" coords="389,547,541,576"/>
+<area shape="rect" id="node21" href="$toserver_8h.html" title="src/proxy/include/toserver.h" alt="" coords="597,469,779,499"/>
+<area shape="rect" id="node34" href="$params_8h.html" title="src/proxy/include/params.h" alt="" coords="827,392,1005,421"/>
+<area shape="rect" id="node5" href="$toclient_8h.html" title="src/proxy/include/toclient.h" alt="" coords="447,160,625,189"/>
+<area shape="rect" id="node7" href="$init__globals_8h.html" title="src/proxy/include/init_globals.h" alt="" coords="373,237,573,267"/>
+<area shape="rect" id="node9" href="$bank__functs_8h.html" title="src/proxy/include/bank_functs.h" alt="" coords="344,315,549,344"/>
+<area shape="rect" id="node15" href="$thread__functs_8h.html" title="src/proxy/include/thread_functs.h" alt="" coords="125,392,339,421"/>
+<area shape="rect" id="node24" href="$lists_8h.html" title="src/proxy/include/lists.h" alt="" coords="363,392,523,421"/>
+</map>

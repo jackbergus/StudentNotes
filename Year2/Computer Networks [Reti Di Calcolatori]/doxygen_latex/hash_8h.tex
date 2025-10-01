@@ -1,0 +1,131 @@
+\hypertarget{hash_8h}{
+\section{Riferimenti per il file src/hashtable/include/hash.h}
+\label{hash_8h}\index{src/hashtable/include/hash.h@{src/hashtable/include/hash.h}}
+}
+{\ttfamily \#include $<$time.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include \char`\"{}consts.h\char`\"{}}\par
+Grafo delle dipendenze di inclusione per hash.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{hash_8h__incl}
+\end{center}
+\end{figure}
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{hash_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structhash__tbl}{hash\_\-tbl}
+\end{DoxyCompactItemize}
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{hash_8h_ad3d8a3bd0c0b677acef144f2c2ef6d73}{\_\-BSD\_\-SOURCE}
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{hash_8h_a6dcb7de7b1e0498d4f99f9199325c729}{init\_\-hashtbl} (struct \hyperlink{structhash__tbl}{hash\_\-tbl} $\ast$p)
+\item 
+unsigned int \hyperlink{hash_8h_a7b0847148879f4bfa893ce4db130f22f}{hashb} (char $\ast$p, unsigned int MULT, unsigned int NHASH)
+\item 
+unsigned int \hyperlink{hash_8h_ab452b41a0ffaccf36bb382238124f330}{hash} (char $\ast$p)
+\item 
+int \hyperlink{hash_8h_a2dcd8f9d9b55138e007aeb5b813df204}{hash\_\-exists} (struct \hyperlink{structhash__tbl}{hash\_\-tbl} $\ast$tbl, char $\ast$p)
+\item 
+void \hyperlink{hash_8h_acd21ba5a0179be626894e32908278459}{hash\_\-insert} (struct \hyperlink{structhash__tbl}{hash\_\-tbl} $\ast$tbl, char $\ast$p)
+\item 
+void \hyperlink{hash_8h_a8857fd885d033ec6bd8c5b959e5071b3}{hash\_\-remove} (struct \hyperlink{structhash__tbl}{hash\_\-tbl} $\ast$tbl, char $\ast$p)
+\item 
+int \hyperlink{hash_8h_afbb8d3b9239601b0d881ea29d9f0644f}{hash\_\-occupied} (struct \hyperlink{structhash__tbl}{hash\_\-tbl} $\ast$tbl)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{hash_8h_ad3d8a3bd0c0b677acef144f2c2ef6d73}{
+\index{hash.h@{hash.h}!\_\-BSD\_\-SOURCE@{\_\-BSD\_\-SOURCE}}
+\index{\_\-BSD\_\-SOURCE@{\_\-BSD\_\-SOURCE}!hash.h@{hash.h}}
+\subsubsection[{\_\-BSD\_\-SOURCE}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-BSD\_\-SOURCE}}
+\label{hash_8h_ad3d8a3bd0c0b677acef144f2c2ef6d73}
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{hash_8h_ab452b41a0ffaccf36bb382238124f330}{
+\index{hash.h@{hash.h}!hash@{hash}}
+\index{hash@{hash}!hash.h@{hash.h}}
+\subsubsection[{hash}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int hash (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{hash_8h_ab452b41a0ffaccf36bb382238124f330}
+\hyperlink{hash_8c_ab452b41a0ffaccf36bb382238124f330}{hash()}: Funzione di hash \hypertarget{hash_8h_a2dcd8f9d9b55138e007aeb5b813df204}{
+\index{hash.h@{hash.h}!hash\_\-exists@{hash\_\-exists}}
+\index{hash\_\-exists@{hash\_\-exists}!hash.h@{hash.h}}
+\subsubsection[{hash\_\-exists}]{\setlength{\rightskip}{0pt plus 5cm}int hash\_\-exists (
+\begin{DoxyParamCaption}
+\item[{struct {\bf hash\_\-tbl} $\ast$}]{tbl, }
+\item[{char $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{hash_8h_a2dcd8f9d9b55138e007aeb5b813df204}
+\hyperlink{hash_8c_a2dcd8f9d9b55138e007aeb5b813df204}{hash\_\-exists()}: Verifica che una stringa sia presente all'interno della tavola \hypertarget{hash_8h_acd21ba5a0179be626894e32908278459}{
+\index{hash.h@{hash.h}!hash\_\-insert@{hash\_\-insert}}
+\index{hash\_\-insert@{hash\_\-insert}!hash.h@{hash.h}}
+\subsubsection[{hash\_\-insert}]{\setlength{\rightskip}{0pt plus 5cm}void hash\_\-insert (
+\begin{DoxyParamCaption}
+\item[{struct {\bf hash\_\-tbl} $\ast$}]{tbl, }
+\item[{char $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{hash_8h_acd21ba5a0179be626894e32908278459}
+\hyperlink{hash_8c_acd21ba5a0179be626894e32908278459}{hash\_\-insert()}: Effettua l'inserimento con collisioni \hypertarget{hash_8h_afbb8d3b9239601b0d881ea29d9f0644f}{
+\index{hash.h@{hash.h}!hash\_\-occupied@{hash\_\-occupied}}
+\index{hash\_\-occupied@{hash\_\-occupied}!hash.h@{hash.h}}
+\subsubsection[{hash\_\-occupied}]{\setlength{\rightskip}{0pt plus 5cm}int hash\_\-occupied (
+\begin{DoxyParamCaption}
+\item[{struct {\bf hash\_\-tbl} $\ast$}]{tbl}
+\end{DoxyParamCaption}
+)}}
+\label{hash_8h_afbb8d3b9239601b0d881ea29d9f0644f}
+\hyperlink{hash_8c_afbb8d3b9239601b0d881ea29d9f0644f}{hash\_\-occupied()}: Verifica se l'elemento è occupato \hypertarget{hash_8h_a8857fd885d033ec6bd8c5b959e5071b3}{
+\index{hash.h@{hash.h}!hash\_\-remove@{hash\_\-remove}}
+\index{hash\_\-remove@{hash\_\-remove}!hash.h@{hash.h}}
+\subsubsection[{hash\_\-remove}]{\setlength{\rightskip}{0pt plus 5cm}void hash\_\-remove (
+\begin{DoxyParamCaption}
+\item[{struct {\bf hash\_\-tbl} $\ast$}]{tbl, }
+\item[{char $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{hash_8h_a8857fd885d033ec6bd8c5b959e5071b3}
+\hyperlink{hash_8c_a8857fd885d033ec6bd8c5b959e5071b3}{hash\_\-remove()}: Effettua la rimozione di un elemento o di una collisione \hypertarget{hash_8h_a7b0847148879f4bfa893ce4db130f22f}{
+\index{hash.h@{hash.h}!hashb@{hashb}}
+\index{hashb@{hashb}!hash.h@{hash.h}}
+\subsubsection[{hashb}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int hashb (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p, }
+\item[{unsigned int}]{MULT, }
+\item[{unsigned int}]{NHASH}
+\end{DoxyParamCaption}
+)}}
+\label{hash_8h_a7b0847148879f4bfa893ce4db130f22f}
+\hyperlink{hash_8c_a7b0847148879f4bfa893ce4db130f22f}{hashb()}: Funzione di base per lo hashing \hypertarget{hash_8h_a6dcb7de7b1e0498d4f99f9199325c729}{
+\index{hash.h@{hash.h}!init\_\-hashtbl@{init\_\-hashtbl}}
+\index{init\_\-hashtbl@{init\_\-hashtbl}!hash.h@{hash.h}}
+\subsubsection[{init\_\-hashtbl}]{\setlength{\rightskip}{0pt plus 5cm}void init\_\-hashtbl (
+\begin{DoxyParamCaption}
+\item[{struct {\bf hash\_\-tbl} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{hash_8h_a6dcb7de7b1e0498d4f99f9199325c729}
+\hyperlink{hash_8c_a6dcb7de7b1e0498d4f99f9199325c729}{init\_\-hashtbl()}: Inizializzazione della hashtable 

@@ -1,0 +1,154 @@
+\hypertarget{lett__scritt_8h}{
+\section{Riferimenti per il file src/hashtable/include/lett\_\-scritt.h}
+\label{lett__scritt_8h}\index{src/hashtable/include/lett\_\-scritt.h@{src/hashtable/include/lett\_\-scritt.h}}
+}
+{\ttfamily \#include $<$semaphore.h$>$}\par
+{\ttfamily \#include $<$pthread.h$>$}\par
+{\ttfamily \#include $<$unistd.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+Grafo delle dipendenze di inclusione per lett\_\-scritt.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{lett__scritt_8h__incl}
+\end{center}
+\end{figure}
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{lett__scritt_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCS__struct}{CS\_\-struct}
+\end{DoxyCompactItemize}
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lett__scritt_8h_abb293b5fc19bb8afcd3f45099b1da41f}{WREAD}~0
+\item 
+\#define \hyperlink{lett__scritt_8h_a114cfcc3174a77912ed503925f0d5c3d}{WWRITE}~1
+\item 
+\#define \hyperlink{lett__scritt_8h_a1a82c4835f55136d206fd9b693eaed81}{P}(x)~sem\_\-wait(x)
+\item 
+\#define \hyperlink{lett__scritt_8h_a5d2e64c561275bcf703c30edd5494288}{V}(x)~sem\_\-post(x)
+\end{DoxyCompactItemize}
+\subsection*{Ridefinizioni di tipo (typedef)}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \hyperlink{lett__scritt_8h_a40291e8f268436330befe2491f6495de}{ANYTYPE}
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{lett__scritt_8h_a5a585dad64840fecdeee952f1a0dd2c7}{init\_\-struct} (struct \hyperlink{structCS__struct}{CS\_\-struct} $\ast$data)
+\item 
+void \hyperlink{lett__scritt_8h_ab2e0f5d11ed3c6a348647408f42b86f8}{struct\_\-do\_\-read} (struct \hyperlink{structCS__struct}{CS\_\-struct} $\ast$data)
+\item 
+void \hyperlink{lett__scritt_8h_a8824e29f9520eaa8156027bb92a61f51}{struct\_\-end\_\-read} (struct \hyperlink{structCS__struct}{CS\_\-struct} $\ast$data)
+\item 
+void \hyperlink{lett__scritt_8h_a1bf83dffac1b1b47807b19464e969df3}{struct\_\-do\_\-write} (struct \hyperlink{structCS__struct}{CS\_\-struct} $\ast$data)
+\item 
+void \hyperlink{lett__scritt_8h_a1ef0e88641b0749417d4f76cf92ce77a}{struct\_\-end\_\-write} (struct \hyperlink{structCS__struct}{CS\_\-struct} $\ast$data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{lett__scritt_8h_a1a82c4835f55136d206fd9b693eaed81}{
+\index{lett\_\-scritt.h@{lett\_\-scritt.h}!P@{P}}
+\index{P@{P}!lett_scritt.h@{lett\_\-scritt.h}}
+\subsubsection[{P}]{\setlength{\rightskip}{0pt plus 5cm}\#define P(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~sem\_\-wait(x)}}
+\label{lett__scritt_8h_a1a82c4835f55136d206fd9b693eaed81}
+\hypertarget{lett__scritt_8h_a5d2e64c561275bcf703c30edd5494288}{
+\index{lett\_\-scritt.h@{lett\_\-scritt.h}!V@{V}}
+\index{V@{V}!lett_scritt.h@{lett\_\-scritt.h}}
+\subsubsection[{V}]{\setlength{\rightskip}{0pt plus 5cm}\#define V(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~sem\_\-post(x)}}
+\label{lett__scritt_8h_a5d2e64c561275bcf703c30edd5494288}
+\hypertarget{lett__scritt_8h_abb293b5fc19bb8afcd3f45099b1da41f}{
+\index{lett\_\-scritt.h@{lett\_\-scritt.h}!WREAD@{WREAD}}
+\index{WREAD@{WREAD}!lett_scritt.h@{lett\_\-scritt.h}}
+\subsubsection[{WREAD}]{\setlength{\rightskip}{0pt plus 5cm}\#define WREAD~0}}
+\label{lett__scritt_8h_abb293b5fc19bb8afcd3f45099b1da41f}
+\hypertarget{lett__scritt_8h_a114cfcc3174a77912ed503925f0d5c3d}{
+\index{lett\_\-scritt.h@{lett\_\-scritt.h}!WWRITE@{WWRITE}}
+\index{WWRITE@{WWRITE}!lett_scritt.h@{lett\_\-scritt.h}}
+\subsubsection[{WWRITE}]{\setlength{\rightskip}{0pt plus 5cm}\#define WWRITE~1}}
+\label{lett__scritt_8h_a114cfcc3174a77912ed503925f0d5c3d}
+
+
+\subsection{Documentazione delle ridefinizioni di tipo (typedef)}
+\hypertarget{lett__scritt_8h_a40291e8f268436330befe2491f6495de}{
+\index{lett\_\-scritt.h@{lett\_\-scritt.h}!ANYTYPE@{ANYTYPE}}
+\index{ANYTYPE@{ANYTYPE}!lett_scritt.h@{lett\_\-scritt.h}}
+\subsubsection[{ANYTYPE}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf ANYTYPE}}}
+\label{lett__scritt_8h_a40291e8f268436330befe2491f6495de}
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{lett__scritt_8h_a5a585dad64840fecdeee952f1a0dd2c7}{
+\index{lett\_\-scritt.h@{lett\_\-scritt.h}!init\_\-struct@{init\_\-struct}}
+\index{init\_\-struct@{init\_\-struct}!lett_scritt.h@{lett\_\-scritt.h}}
+\subsubsection[{init\_\-struct}]{\setlength{\rightskip}{0pt plus 5cm}void init\_\-struct (
+\begin{DoxyParamCaption}
+\item[{struct {\bf CS\_\-struct} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}
+\label{lett__scritt_8h_a5a585dad64840fecdeee952f1a0dd2c7}
+\hyperlink{lett__scritt_8h_a5a585dad64840fecdeee952f1a0dd2c7}{init\_\-struct()}: Inizializza la struttura dati passata per argomento, settando il numero dei lettori e degli scrittori, ed inizializzando il semaforo associato al dato \hypertarget{lett__scritt_8h_ab2e0f5d11ed3c6a348647408f42b86f8}{
+\index{lett\_\-scritt.h@{lett\_\-scritt.h}!struct\_\-do\_\-read@{struct\_\-do\_\-read}}
+\index{struct\_\-do\_\-read@{struct\_\-do\_\-read}!lett_scritt.h@{lett\_\-scritt.h}}
+\subsubsection[{struct\_\-do\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}void struct\_\-do\_\-read (
+\begin{DoxyParamCaption}
+\item[{struct {\bf CS\_\-struct} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}
+\label{lett__scritt_8h_ab2e0f5d11ed3c6a348647408f42b86f8}
+\hyperlink{lett__scritt_8h_ab2e0f5d11ed3c6a348647408f42b86f8}{struct\_\-do\_\-read()}: Funzione di accesso mutuamente esclusivo in lettura, al termine della quale si può ottenere il dato richiesto. 
+\begin{DoxyParams}{Parametri}
+{\em data,:} & Indica la struttura dati sulla quale si effettua il lock \\
+\hline
+{\em external,:} & Indica un eventuale locking esterno da rilasciare e di cui riappropriarsi in seguito \\
+\hline
+\end{DoxyParams}
+\hypertarget{lett__scritt_8h_a1bf83dffac1b1b47807b19464e969df3}{
+\index{lett\_\-scritt.h@{lett\_\-scritt.h}!struct\_\-do\_\-write@{struct\_\-do\_\-write}}
+\index{struct\_\-do\_\-write@{struct\_\-do\_\-write}!lett_scritt.h@{lett\_\-scritt.h}}
+\subsubsection[{struct\_\-do\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}void struct\_\-do\_\-write (
+\begin{DoxyParamCaption}
+\item[{struct {\bf CS\_\-struct} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}
+\label{lett__scritt_8h_a1bf83dffac1b1b47807b19464e969df3}
+\hyperlink{lett__scritt_8h_a1bf83dffac1b1b47807b19464e969df3}{struct\_\-do\_\-write()}: Funzione di accesso in scrittura in mutua esclusione, al termine della quale si può scrivere il dato richiesto \hypertarget{lett__scritt_8h_a8824e29f9520eaa8156027bb92a61f51}{
+\index{lett\_\-scritt.h@{lett\_\-scritt.h}!struct\_\-end\_\-read@{struct\_\-end\_\-read}}
+\index{struct\_\-end\_\-read@{struct\_\-end\_\-read}!lett_scritt.h@{lett\_\-scritt.h}}
+\subsubsection[{struct\_\-end\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}void struct\_\-end\_\-read (
+\begin{DoxyParamCaption}
+\item[{struct {\bf CS\_\-struct} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}
+\label{lett__scritt_8h_a8824e29f9520eaa8156027bb92a61f51}
+\hyperlink{lett__scritt_8h_a8824e29f9520eaa8156027bb92a61f51}{struct\_\-end\_\-read()}: Funzione di rilascio della mutua esclusione in lettura sulla struttura dati \hypertarget{lett__scritt_8h_a1ef0e88641b0749417d4f76cf92ce77a}{
+\index{lett\_\-scritt.h@{lett\_\-scritt.h}!struct\_\-end\_\-write@{struct\_\-end\_\-write}}
+\index{struct\_\-end\_\-write@{struct\_\-end\_\-write}!lett_scritt.h@{lett\_\-scritt.h}}
+\subsubsection[{struct\_\-end\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}void struct\_\-end\_\-write (
+\begin{DoxyParamCaption}
+\item[{struct {\bf CS\_\-struct} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}
+\label{lett__scritt_8h_a1ef0e88641b0749417d4f76cf92ce77a}
+\hyperlink{lett__scritt_8h_a1ef0e88641b0749417d4f76cf92ce77a}{struct\_\-end\_\-write()}: Funzione di rilascio della mutua esclusione in scrittura sulla struttura dati 

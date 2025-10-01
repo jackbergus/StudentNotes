@@ -1,0 +1,83 @@
+\hypertarget{proxy_2include_2consts_8h_source}{
+\section{src/proxy/include/consts.h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef \_\_MY\_\_CONSTS\_\_H\_\_}
+00002 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define \_\_MY\_\_CONSTS\_\_H\_\_}
+00003 \textcolor{preprocessor}{}
+00004 
+00005 
+00006 \textcolor{comment}{/*      Costanti di protocollo  */}
+\hypertarget{proxy_2include_2consts_8h_source_l00007}{}\hyperlink{proxy_2include_2consts_8h_a66095fa052d292be7cd4bf1b99934ef6}{00007} \textcolor{preprocessor}{#define INTERVAL\_NOT\_FOUND              405}
+\hypertarget{proxy_2include_2consts_8h_source_l00008}{}\hyperlink{proxy_2include_2consts_8h_a33bfc1f995233887a0414369c36936b8}{00008} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define NOT\_FOUND                               404}
+\hypertarget{proxy_2include_2consts_8h_source_l00009}{}\hyperlink{proxy_2include_2consts_8h_a9b728358e3a34fd5d92e7cf02be1afb3}{00009} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define WRONG\_REQUEST                   403}
+\hypertarget{proxy_2include_2consts_8h_source_l00010}{}\hyperlink{proxy_2include_2consts_8h_a13b7b9ceea0c8133053f90fef1dd7cd7}{00010} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define UNKNOWN\_ERROR                   402}
+\hypertarget{proxy_2include_2consts_8h_source_l00011}{}\hyperlink{proxy_2include_2consts_8h_ae1103fea1e1b3c41ca3322d5389f7162}{00011} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define INFO                                    202}
+\hypertarget{proxy_2include_2consts_8h_source_l00012}{}\hyperlink{proxy_2include_2consts_8h_aba51915c87d64af47fb1cc59348961c9}{00012} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define OK                                              200}
+\hypertarget{proxy_2include_2consts_8h_source_l00013}{}\hyperlink{proxy_2include_2consts_8h_acb181c4edd2db90e071009848fa859b6}{00013} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define OK\_RANGE                                201}
+00014 \textcolor{preprocessor}{}
+\hypertarget{proxy_2include_2consts_8h_source_l00015}{}\hyperlink{proxy_2include_2consts_8h_a31eb86199c8ce8fa36013a5646e29e37}{00015} \textcolor{preprocessor}{#define OK\_INFO                                 202}
+00016 \textcolor{preprocessor}{}
+\hypertarget{proxy_2include_2consts_8h_source_l00017}{}\hyperlink{proxy_2include_2consts_8h_a93490f19b31aee2379f0acc0aa08af06}{00017} \textcolor{preprocessor}{#define MAXREF                                  10}
+\hypertarget{proxy_2include_2consts_8h_source_l00018}{}\hyperlink{proxy_2include_2consts_8h_a2dbaecd0745af6fb7f096c8e989fa2de}{00018} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define MAXIDREF                                10}
+\hypertarget{proxy_2include_2consts_8h_source_l00019}{}\hyperlink{proxy_2include_2consts_8h_a0f4d114d4772fbfc3ff96131cce924aa}{00019} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define MAXCONN                                 5}
+00020 \textcolor{preprocessor}{}
+00021 
+00022 \textcolor{comment}{/*      Constanti del tempo     */}
+\hypertarget{proxy_2include_2consts_8h_source_l00023}{}\hyperlink{proxy_2include_2consts_8h_a4209de7c5948fda9d109bf9e96643d88}{00023} \textcolor{preprocessor}{#define MAX\_uTIME                               0}
+\hypertarget{proxy_2include_2consts_8h_source_l00024}{}\hyperlink{proxy_2include_2consts_8h_a5320d4457a472d8888ec1905bc0e0a1c}{00024} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define MAX\_TIME                                3}
+\hypertarget{proxy_2include_2consts_8h_source_l00025}{}\hyperlink{proxy_2include_2consts_8h_ad9c6c926dc1beaca1a38e2a8219c5c8a}{00025} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define MAX\_TIMESELECT                  4}
+00026 \textcolor{preprocessor}{}
+00027 
+00028 \textcolor{comment}{/*      Constanti del proxy     */}
+\hypertarget{proxy_2include_2consts_8h_source_l00029}{}\hyperlink{proxy_2include_2consts_8h_a2aecdafe28ca6f2da117919e3a878db6}{00029} \textcolor{preprocessor}{#define PROXY\_PORT                              55554}
+\hypertarget{proxy_2include_2consts_8h_source_l00030}{}\hyperlink{proxy_2include_2consts_8h_abad543b636b9a06bc62c9f7e1a66af4f}{00030} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define PROXY\_IP                                "127.0.0.1"}
+\hypertarget{proxy_2include_2consts_8h_source_l00031}{}\hyperlink{proxy_2include_2consts_8h_af05db8aa3ebbf0801f1485dc26b34e6b}{00031} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define NO\_MORE\_THREAD  (THREAD\_COUNT==MAXCONN) }
+00032 \textcolor{preprocessor}{}
+00033 
+\hypertarget{proxy_2include_2consts_8h_source_l00034}{}\hyperlink{proxy_2include_2consts_8h_a363aaaa549154ec81d5f2c797e3ecbb5}{00034} \textcolor{preprocessor}{#define LIMIT\_FILE                      5000}
+00035 \textcolor{preprocessor}{}\textcolor{comment}{/* lungezza massima di un percorso (3° parte di una richiesta miniHttp) */}      
+\hypertarget{proxy_2include_2consts_8h_source_l00036}{}\hyperlink{proxy_2include_2consts_8h_ab99ded389af74001a6298fc9e44e74e5}{00036} \textcolor{preprocessor}{#define MAX\_PATH                        2048}
+00037 \textcolor{preprocessor}{}\textcolor{comment}{/* dimensione massima di un file        */}
+00038 \textcolor{preprocessor}{#ifndef MAX\_FILE}
+\hypertarget{proxy_2include_2consts_8h_source_l00039}{}\hyperlink{proxy_2include_2consts_8h_a19d34ae55fb2e29df830c11df2219da8}{00039} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define MAX\_FILE                5001    }
+00040 \textcolor{preprocessor}{}\textcolor{preprocessor}{#endif}
+\hypertarget{proxy_2include_2consts_8h_source_l00041}{}\hyperlink{proxy_2include_2consts_8h_a4b70916bdf28ed7afd94e4fb98230a90}{00041} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define MAX\_BUFF                        5001}
+\hypertarget{proxy_2include_2consts_8h_source_l00042}{}\hyperlink{proxy_2include_2consts_8h_a3cdaa9c710c8cf182db82fb509b91434}{00042} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define MAXREQUEST                      MAX\_FILE}
+00043 \textcolor{preprocessor}{}
+00044 
+00045 \textcolor{comment}{/* Costanti varie */}
+\hypertarget{proxy_2include_2consts_8h_source_l00046}{}\hyperlink{proxy_2include_2consts_8h_a982a66f513611f7f83ebfa4b4ecf1df9}{00046} \textcolor{preprocessor}{#define GET                             1}
+\hypertarget{proxy_2include_2consts_8h_source_l00047}{}\hyperlink{proxy_2include_2consts_8h_a12c2040f25d8e3a7b9e1c2024c618cb6}{00047} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define INF                             2}
+00048 \textcolor{preprocessor}{}
+00049 
+\hypertarget{proxy_2include_2consts_8h_source_l00050}{}\hyperlink{proxy_2include_2consts_8h_a098dd67cdbb64009d978734640e99742}{00050} \textcolor{preprocessor}{#define UNKNOWN\_ERROR\_SIZE      6       }\textcolor{comment}{/*      402\(\backslash\)n\(\backslash\)n\(\backslash\)0 */}
+00051 
+00052 
+\hypertarget{proxy_2include_2consts_8h_source_l00053}{}\hyperlink{proxy_2include_2consts_8h_a633b0396ff93d336a088412a190a5072}{00053} \textcolor{preprocessor}{#define SOCKET\_ERROR            -1}
+00054 \textcolor{preprocessor}{}
+00055 
+00056 
+00057 \textcolor{comment}{/*      ANSI( CSI) color macros */}
+\hypertarget{proxy_2include_2consts_8h_source_l00058}{}\hyperlink{proxy_2include_2consts_8h_a671ce394cf2072293a99e6765dd6bf72}{00058} \textcolor{preprocessor}{        #define START\_COLOR                     "\(\backslash\)033["}
+\hypertarget{proxy_2include_2consts_8h_source_l00059}{}\hyperlink{proxy_2include_2consts_8h_a475df0d9bbf72a496b3b362ef75a2a0f}{00059} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define END\_COLOR                       "m"     }
+\hypertarget{proxy_2include_2consts_8h_source_l00060}{}\hyperlink{proxy_2include_2consts_8h_ad7c3b975e5552a122f836b02fa138502}{00060} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define RESET\_COLOR                     "\(\backslash\)033[0;37m" }
+00061 \textcolor{preprocessor}{}
+00062         \textcolor{comment}{/*      effects */}
+\hypertarget{proxy_2include_2consts_8h_source_l00063}{}\hyperlink{proxy_2include_2consts_8h_a26cdbb1a00213c810caccf21cd33a631}{00063} \textcolor{preprocessor}{        #define BOLD                            1}
+00064 \textcolor{preprocessor}{}
+00065         \textcolor{comment}{/*      foreground colors       */}
+\hypertarget{proxy_2include_2consts_8h_source_l00066}{}\hyperlink{proxy_2include_2consts_8h_a7b3b25cba33b07c303f3060fe41887f6}{00066} \textcolor{preprocessor}{        #define BLACK                           30}
+\hypertarget{proxy_2include_2consts_8h_source_l00067}{}\hyperlink{proxy_2include_2consts_8h_a8d23feea868a983c8c2b661e1e16972f}{00067} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define RED                                     31      }
+\hypertarget{proxy_2include_2consts_8h_source_l00068}{}\hyperlink{proxy_2include_2consts_8h_acfbc006ea433ad708fdee3e82996e721}{00068} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define GREEN                           32}
+\hypertarget{proxy_2include_2consts_8h_source_l00069}{}\hyperlink{proxy_2include_2consts_8h_abf681265909adf3d3e8116c93c0ba179}{00069} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define YELLOW                          33}
+\hypertarget{proxy_2include_2consts_8h_source_l00070}{}\hyperlink{proxy_2include_2consts_8h_a79d10e672abb49ad63eeaa8aaef57c38}{00070} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define BLUE                            34}
+\hypertarget{proxy_2include_2consts_8h_source_l00071}{}\hyperlink{proxy_2include_2consts_8h_a6f699060902f800f12aaae150f3a708e}{00071} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define MAGENTA                         35}
+\hypertarget{proxy_2include_2consts_8h_source_l00072}{}\hyperlink{proxy_2include_2consts_8h_ad243f93c16bc4c1d3e0a13b84421d760}{00072} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define CYAN                            36}
+\hypertarget{proxy_2include_2consts_8h_source_l00073}{}\hyperlink{proxy_2include_2consts_8h_a87b537f5fa5c109d3c05c13d6b18f382}{00073} \textcolor{preprocessor}{}\textcolor{preprocessor}{        #define WHITE                           37}
+00074 \textcolor{preprocessor}{}\textcolor{comment}{/*---------------------------*/}
+00075 
+00076 
+00077 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

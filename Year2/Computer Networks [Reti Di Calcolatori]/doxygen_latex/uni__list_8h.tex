@@ -1,0 +1,245 @@
+\hypertarget{uni__list_8h}{
+\section{Riferimenti per il file src/proxy/include/uni\_\-list.h}
+\label{uni__list_8h}\index{src/proxy/include/uni\_\-list.h@{src/proxy/include/uni\_\-list.h}}
+}
+{\ttfamily \#include $<$stddef.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include \char`\"{}libhashtable.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}thread\_\-functs.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}init\_\-globals.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}communication.h\char`\"{}}\par
+Grafo delle dipendenze di inclusione per uni\_\-list.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{uni__list_8h__incl}
+\end{center}
+\end{figure}
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{uni__list_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{uni__list_8h_ae49e3fa44233ce660ab817ffecbecc96}{init\_\-list\_\-head}(head)~((\hyperlink{struct____mialista____}{LIST}$\ast$)head)-\/$>$next = NULL
+\item 
+\#define \hyperlink{uni__list_8h_a852666257c741fda09ea02e1998cd4ae}{container\_\-of2}(ptr, type, member, ret)
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct____mialista____}{LIST} $\ast$ \hyperlink{uni__list_8h_a58f899f6297a4b361d38dc5a57036fca}{new\_\-list} (void)
+\item 
+\hyperlink{struct____mialista____}{LIST} $\ast$ \hyperlink{uni__list_8h_a4bd2b3e90322306f37a038d728eae005}{dequeue} (\hyperlink{struct____mialista____}{LIST} $\ast$$\ast$ptr)
+\item 
+void \hyperlink{uni__list_8h_a47b764899ed23cda7335b2017b0492ad}{enqueue} (\hyperlink{struct____mialista____}{LIST} $\ast$ptr, \hyperlink{struct____mialista____}{LIST} $\ast$include)
+\item 
+\hyperlink{struct____mialista____}{LIST} $\ast$ \hyperlink{uni__list_8h_ac69f6919a0286577009ec0fbe00844bc}{remove\_\-elem} (\hyperlink{struct____mialista____}{LIST} $\ast$ptr, \hyperlink{struct____mialista____}{LIST} $\ast$elem)
+\item 
+void \hyperlink{uni__list_8h_a5606f0504ed5a78f851f322d09cd0217}{init\_\-job\_\-queue} (\hyperlink{struct____mialista____}{LIST} $\ast$tmp)
+\item 
+\hyperlink{structJOB__QUEUE}{JOB\_\-QUEUE} $\ast$ \hyperlink{uni__list_8h_a9bcd0be561081ab230c122ba31428104}{dequeue\_\-job} (\hyperlink{struct____mialista____}{LIST} $\ast$ptr)
+\item 
+void \hyperlink{uni__list_8h_a3a228945ba73b194700cec47b45a359c}{run\_\-job} (int k, \hyperlink{structJOB__QUEUE}{JOB\_\-QUEUE} $\ast$tmp)
+\item 
+\hyperlink{structJOB__QUEUE}{JOB\_\-QUEUE} $\ast$ \hyperlink{uni__list_8h_a2b8166fc25329d89f6509e810ab670b2}{remove\_\-job} (\hyperlink{struct____mialista____}{LIST} $\ast$ptr, \hyperlink{structJOB__QUEUE}{JOB\_\-QUEUE} $\ast$elem)
+\item 
+\hyperlink{structJOB__QUEUE}{JOB\_\-QUEUE} $\ast$ \hyperlink{uni__list_8h_a73b0293d6caa6d5c58b16ed26fa5f1e8}{alloc\_\-new\_\-job} (void($\ast$procedura)(), void $\ast$args)
+\item 
+void \hyperlink{uni__list_8h_ad605522765b4e3c23507f8ce39b5e797}{enqueue\_\-job} (\hyperlink{struct____mialista____}{LIST} $\ast$ptr, \hyperlink{structJOB__QUEUE}{JOB\_\-QUEUE} $\ast$include)
+\item 
+void \hyperlink{uni__list_8h_ad32474e098b7a61c39496bf214207289}{push\_\-job} (\hyperlink{struct____mialista____}{LIST} $\ast$ptr, \hyperlink{structJOB__QUEUE}{JOB\_\-QUEUE} $\ast$include)
+\item 
+char \hyperlink{uni__list_8h_a1b875b188f0d63832eb0832a507a095b}{exists\_\-job\_\-res} (\hyperlink{struct____mialista____}{LIST} $\ast$ptr, char $\ast$path)
+\item 
+void \hyperlink{uni__list_8h_a656744c55192b9d6ec0d5d5d6f69ed3f}{update\_\-list} (char $\ast$buffer, void($\ast$func)(), int curr\_\-pos, int MAX\_\-POS, int bufferlow, int bufferhight)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{uni__list_8h_a852666257c741fda09ea02e1998cd4ae}{
+\index{uni\_\-list.h@{uni\_\-list.h}!container\_\-of2@{container\_\-of2}}
+\index{container\_\-of2@{container\_\-of2}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{container\_\-of2}]{\setlength{\rightskip}{0pt plus 5cm}\#define container\_\-of2(
+\begin{DoxyParamCaption}
+\item[{}]{ptr, }
+\item[{}]{type, }
+\item[{}]{member, }
+\item[{}]{ret}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a852666257c741fda09ea02e1998cd4ae}
+{\bfseries Valore:}
+\begin{DoxyCode}
+\textcolor{comment}{/*do \{          */}                                      \(\backslash\)
+        \textcolor{comment}{/*const typeof( ((type *)0)->member ) *\_\_mptr = (ptr);  \(\backslash\)}
+\textcolor{comment}{        ret = (type *)( (char *)\_\_mptr - offsetof(type,member) );*/}\(\backslash\)
+        ret = (type *)( (\textcolor{keywordtype}{char} *)ptr - offsetof(type,member) )
+\end{DoxyCode}
+\hyperlink{uni__list_8h_a852666257c741fda09ea02e1998cd4ae}{container\_\-of2()}: Ottiene il contenitore della struttura dati puntatore \hypertarget{uni__list_8h_ae49e3fa44233ce660ab817ffecbecc96}{
+\index{uni\_\-list.h@{uni\_\-list.h}!init\_\-list\_\-head@{init\_\-list\_\-head}}
+\index{init\_\-list\_\-head@{init\_\-list\_\-head}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{init\_\-list\_\-head}]{\setlength{\rightskip}{0pt plus 5cm}\#define init\_\-list\_\-head(
+\begin{DoxyParamCaption}
+\item[{}]{head}
+\end{DoxyParamCaption}
+)~(({\bf LIST}$\ast$)head)-\/$>$next = NULL}}
+\label{uni__list_8h_ae49e3fa44233ce660ab817ffecbecc96}
+\hyperlink{uni__list_8h_ae49e3fa44233ce660ab817ffecbecc96}{init\_\-list\_\-head()}: Inizializzazione della struttura dati di tipo lista 
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{uni__list_8h_a73b0293d6caa6d5c58b16ed26fa5f1e8}{
+\index{uni\_\-list.h@{uni\_\-list.h}!alloc\_\-new\_\-job@{alloc\_\-new\_\-job}}
+\index{alloc\_\-new\_\-job@{alloc\_\-new\_\-job}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{alloc\_\-new\_\-job}]{\setlength{\rightskip}{0pt plus 5cm}{\bf JOB\_\-QUEUE}$\ast$ alloc\_\-new\_\-job (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)()}]{procedura, }
+\item[{void $\ast$}]{args}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a73b0293d6caa6d5c58b16ed26fa5f1e8}
+\hyperlink{uni__list_8h_a73b0293d6caa6d5c58b16ed26fa5f1e8}{alloc\_\-new\_\-job()}: Dato un puntatore generico a funzione e un puntatore ad una struttura dati dell'argomento che la funzione accetta, viene generato un nuovo elemento della lista \hypertarget{uni__list_8h_a4bd2b3e90322306f37a038d728eae005}{
+\index{uni\_\-list.h@{uni\_\-list.h}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{dequeue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LIST}$\ast$ dequeue (
+\begin{DoxyParamCaption}
+\item[{{\bf LIST} $\ast$$\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a4bd2b3e90322306f37a038d728eae005}
+\hyperlink{uni__list_8h_a4bd2b3e90322306f37a038d728eae005}{dequeue()}: Disaccoda il primo elemento dalla lista \hypertarget{uni__list_8h_a9bcd0be561081ab230c122ba31428104}{
+\index{uni\_\-list.h@{uni\_\-list.h}!dequeue\_\-job@{dequeue\_\-job}}
+\index{dequeue\_\-job@{dequeue\_\-job}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{dequeue\_\-job}]{\setlength{\rightskip}{0pt plus 5cm}{\bf JOB\_\-QUEUE}$\ast$ dequeue\_\-job (
+\begin{DoxyParamCaption}
+\item[{{\bf LIST} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a9bcd0be561081ab230c122ba31428104}
+dequeue\_\-job\_\-queue(): Disaccoda il primo elemento dalla lista ed esegue il primo lavoro \hypertarget{uni__list_8h_a47b764899ed23cda7335b2017b0492ad}{
+\index{uni\_\-list.h@{uni\_\-list.h}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{enqueue}]{\setlength{\rightskip}{0pt plus 5cm}void enqueue (
+\begin{DoxyParamCaption}
+\item[{{\bf LIST} $\ast$}]{ptr, }
+\item[{{\bf LIST} $\ast$}]{include}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a47b764899ed23cda7335b2017b0492ad}
+\hyperlink{uni__list_8h_a47b764899ed23cda7335b2017b0492ad}{enqueue()}: Accoda un elemento particolare della lista \hypertarget{uni__list_8h_ad605522765b4e3c23507f8ce39b5e797}{
+\index{uni\_\-list.h@{uni\_\-list.h}!enqueue\_\-job@{enqueue\_\-job}}
+\index{enqueue\_\-job@{enqueue\_\-job}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{enqueue\_\-job}]{\setlength{\rightskip}{0pt plus 5cm}void enqueue\_\-job (
+\begin{DoxyParamCaption}
+\item[{{\bf LIST} $\ast$}]{ptr, }
+\item[{{\bf JOB\_\-QUEUE} $\ast$}]{include}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_ad605522765b4e3c23507f8ce39b5e797}
+\hyperlink{uni__list_8h_ad605522765b4e3c23507f8ce39b5e797}{enqueue\_\-job()}: Accoda un elemento particolare della lista \hypertarget{uni__list_8h_a1b875b188f0d63832eb0832a507a095b}{
+\index{uni\_\-list.h@{uni\_\-list.h}!exists\_\-job\_\-res@{exists\_\-job\_\-res}}
+\index{exists\_\-job\_\-res@{exists\_\-job\_\-res}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{exists\_\-job\_\-res}]{\setlength{\rightskip}{0pt plus 5cm}char exists\_\-job\_\-res (
+\begin{DoxyParamCaption}
+\item[{{\bf LIST} $\ast$}]{ptr, }
+\item[{char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a1b875b188f0d63832eb0832a507a095b}
+\hyperlink{uni__list_8h_a1b875b188f0d63832eb0832a507a095b}{exists\_\-job\_\-res()}: Effettua la verifica che sia già stata inoltrata tale richiesta di download remoto \hypertarget{uni__list_8h_a5606f0504ed5a78f851f322d09cd0217}{
+\index{uni\_\-list.h@{uni\_\-list.h}!init\_\-job\_\-queue@{init\_\-job\_\-queue}}
+\index{init\_\-job\_\-queue@{init\_\-job\_\-queue}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{init\_\-job\_\-queue}]{\setlength{\rightskip}{0pt plus 5cm}void init\_\-job\_\-queue (
+\begin{DoxyParamCaption}
+\item[{{\bf LIST} $\ast$}]{tmp}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a5606f0504ed5a78f851f322d09cd0217}
+\hyperlink{uni__list_8h_a5606f0504ed5a78f851f322d09cd0217}{init\_\-job\_\-queue()}: Creazione di un nuovo elemento lista
+
+LISTE PER LA CODA DEI \hyperlink{structJOB}{JOB} \hyperlink{uni__list_8h_a5606f0504ed5a78f851f322d09cd0217}{init\_\-job\_\-queue()}: Creazione di un nuovo elemento lista \hypertarget{uni__list_8h_a58f899f6297a4b361d38dc5a57036fca}{
+\index{uni\_\-list.h@{uni\_\-list.h}!new\_\-list@{new\_\-list}}
+\index{new\_\-list@{new\_\-list}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{new\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LIST}$\ast$ new\_\-list (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a58f899f6297a4b361d38dc5a57036fca}
+\hypertarget{uni__list_8h_ad32474e098b7a61c39496bf214207289}{
+\index{uni\_\-list.h@{uni\_\-list.h}!push\_\-job@{push\_\-job}}
+\index{push\_\-job@{push\_\-job}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{push\_\-job}]{\setlength{\rightskip}{0pt plus 5cm}void push\_\-job (
+\begin{DoxyParamCaption}
+\item[{{\bf LIST} $\ast$}]{ptr, }
+\item[{{\bf JOB\_\-QUEUE} $\ast$}]{include}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_ad32474e098b7a61c39496bf214207289}
+\hyperlink{uni__list_8h_ad32474e098b7a61c39496bf214207289}{push\_\-job()}: Mette in testa della lista l'elemento \hypertarget{uni__list_8h_ac69f6919a0286577009ec0fbe00844bc}{
+\index{uni\_\-list.h@{uni\_\-list.h}!remove\_\-elem@{remove\_\-elem}}
+\index{remove\_\-elem@{remove\_\-elem}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{remove\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LIST}$\ast$ remove\_\-elem (
+\begin{DoxyParamCaption}
+\item[{{\bf LIST} $\ast$}]{ptr, }
+\item[{{\bf LIST} $\ast$}]{elem}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_ac69f6919a0286577009ec0fbe00844bc}
+\hyperlink{uni__list_8h_ac69f6919a0286577009ec0fbe00844bc}{remove\_\-elem()}: rimuove un dato elemento dalla lista \hypertarget{uni__list_8h_a2b8166fc25329d89f6509e810ab670b2}{
+\index{uni\_\-list.h@{uni\_\-list.h}!remove\_\-job@{remove\_\-job}}
+\index{remove\_\-job@{remove\_\-job}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{remove\_\-job}]{\setlength{\rightskip}{0pt plus 5cm}{\bf JOB\_\-QUEUE}$\ast$ remove\_\-job (
+\begin{DoxyParamCaption}
+\item[{{\bf LIST} $\ast$}]{ptr, }
+\item[{{\bf JOB\_\-QUEUE} $\ast$}]{elem}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a2b8166fc25329d89f6509e810ab670b2}
+\hyperlink{uni__list_8h_a2b8166fc25329d89f6509e810ab670b2}{remove\_\-job()}: rimuove un dato elemento dalla lista \hypertarget{uni__list_8h_a3a228945ba73b194700cec47b45a359c}{
+\index{uni\_\-list.h@{uni\_\-list.h}!run\_\-job@{run\_\-job}}
+\index{run\_\-job@{run\_\-job}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{run\_\-job}]{\setlength{\rightskip}{0pt plus 5cm}void run\_\-job (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{{\bf JOB\_\-QUEUE} $\ast$}]{tmp}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a3a228945ba73b194700cec47b45a359c}
+\hypertarget{uni__list_8h_a656744c55192b9d6ec0d5d5d6f69ed3f}{
+\index{uni\_\-list.h@{uni\_\-list.h}!update\_\-list@{update\_\-list}}
+\index{update\_\-list@{update\_\-list}!uni_list.h@{uni\_\-list.h}}
+\subsubsection[{update\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}void update\_\-list (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{void($\ast$)()}]{func, }
+\item[{int}]{curr\_\-pos, }
+\item[{int}]{MAX\_\-POS, }
+\item[{int}]{bufferlow, }
+\item[{int}]{bufferhight}
+\end{DoxyParamCaption}
+)}}
+\label{uni__list_8h_a656744c55192b9d6ec0d5d5d6f69ed3f}
+\hyperlink{uni__list_8h_a656744c55192b9d6ec0d5d5d6f69ed3f}{update\_\-list()}: Dato un buffer dove è contenuta la parte di risorsa che è stata scaricata, aggiunge alla lista res\_\-list le risorse solamente se queste non sono già presenti in cache o se non stanno per essere scaricate. 
+\begin{DoxyParams}{Parametri}
+{\em buffer,:} & buffer dove è contenuta tutta la risorsa remota \\
+\hline
+{\em func,:} & funzione associata all'esecuzione della risorsa \\
+\hline
+{\em curr\_\-pos,:} & identifica il livello corrente nell'albero di download di prefetching \\
+\hline
+{\em MAX\_\-POS,:} & identifica la posizione massima invalicabile, oltre la quale non si effettuerà più download \\
+\hline
+{\em bufferlow,:} & Dimensione bassa del buffer da leggere \\
+\hline
+{\em bufferhight,:} & Dimensione alta del buffer da leggere \\
+\hline
+\end{DoxyParams}
