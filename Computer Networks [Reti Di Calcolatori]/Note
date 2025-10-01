@@ -1,8 +1,0 @@
-
-> handle_client_request( init.c):
-		la ricezione della richiesta si basa sul fatto che con 1 sola read riusciamo a ricevere tutta la richiesta..
-		senza neanche gestire EINTR!
-		
-
-
-Ci sono deti /*TODO*/	sopra degli if.. sono casi in cui non ho capito cosa viene controllato
